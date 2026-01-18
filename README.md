@@ -6,6 +6,7 @@
 
 ### A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning
 
+![Image](https://github.com/user-attachments/assets/da2e605a-8d4c-41f7-bf0a-0b8b6f558117)
 
 [![Paper](https://img.shields.io/badge/Paper-ISMB%202026-blue.svg)](https://doi.org/XXXXX)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -22,7 +23,8 @@
 ## 📋 Overview
 
 **BioREASONIC** is an agentic causal-oriented GraphRAG system designed to perform multi-aware biomedical reasoning. It bridges the gap between large language models (LLMs) and trustworthy biomedical AI by integrating causal knowledge graphs, genetic risk scoring, and explainable reasoning.
-![Image](https://github.com/user-attachments/assets/ff4e20b7-4f86-46eb-8805-b3054eee4657)
+
+![Image](https://github.com/user-attachments/assets/dcc85552-9d3f-4dbe-a9e6-498421d62aca)
 
 <p align="center">
   <img src="assets/figures/bioreasonc_overview.png" alt="BioREASONIC System Overview" width="95%"/>
