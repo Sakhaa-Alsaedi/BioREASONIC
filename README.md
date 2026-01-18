@@ -1,12 +1,11 @@
 <div align="center">
 
-<img src="assets/logos/bioreasonc_agent_icon.png" alt="BioREASONIC Agent" width="120"/>
+<img width="5985" height="1072" alt="Image" src="https://github.com/user-attachments/assets/64a268ca-9fe2-4dda-a012-e6430a559704" />
 
 # BioREASONIC
 
 ### A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning
 
-<img src="assets/logos/bioreasonc_explainer_logo.png" alt="BioREASONIC Explainer" width="280"/>
 
 [![Paper](https://img.shields.io/badge/Paper-ISMB%202026-blue.svg)](https://doi.org/XXXXX)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
