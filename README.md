@@ -6,7 +6,7 @@
 
 ### A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning
 
-![Image](https://github.com/user-attachments/assets/da2e605a-8d4c-41f7-bf0a-0b8b6f558117)
+![Image](https://github.com/user-attachments/assets/f7456ef1-818e-49fb-92be-e247b708cc21)
 
 [![Paper](https://img.shields.io/badge/Paper-ISMB%202026-blue.svg)](https://doi.org/XXXXX)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -14,7 +14,7 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.x-008CC1.svg)](https://neo4j.com/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://github.com/Sakhaa-Alsaedi/BioREASONIC/graphs/commit-activity)
 
-[📄 Paper](#citation) | [🌐 Web Demo](https://bioreasonicexplainer.kaust.edu.sa) | [📊 Benchmark](#bioreasonicbench) | [🔧 Installation](#installation)
+[Paper](#citation) | [Web Demo](https://bioreasonicexplainer.kaust.edu.sa) | [Benchmark](#bioreasonicbench) | [Installation](#installation)
 
 </div>
 
@@ -24,11 +24,9 @@
 
 **BioREASONIC** is an agentic causal-oriented GraphRAG system designed to perform multi-aware biomedical reasoning. It bridges the gap between large language models (LLMs) and trustworthy biomedical AI by integrating causal knowledge graphs, genetic risk scoring, and explainable reasoning.
 
-![Image](https://github.com/user-attachments/assets/dcc85552-9d3f-4dbe-a9e6-498421d62aca)
+![Image](https://github.com/user-attachments/assets/f7456ef1-818e-49fb-92be-e247b708cc21)
 
-<p align="center">
-  <img src="assets/figures/bioreasonc_overview.png" alt="BioREASONIC System Overview" width="95%"/>
-</p>
+
 
 > **Figure 1:** Overview of the BioREASONIC agentic causal-oriented GraphRAG system showing (A) Genetic Risk Aggregation Scoring System (GRASS), (B) Causal Biomedical Agentic Reasoning with latency-aware dual-path design and causal GraphRAG inference, and (C) BioREASONIC Explainer interface with conversational and omics-enrichment modes.
 
