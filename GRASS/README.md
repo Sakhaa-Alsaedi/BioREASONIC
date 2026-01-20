@@ -79,16 +79,15 @@ GRASS/
 │   ├── AD_snps.csv             # Alzheimer's Disease SNPs
 │   └── t2d_snps.csv            # Type 2 Diabetes SNPs
 ├── annotations/                 # Gene annotations
-│   ├── grch37_genes.csv        # Ensembl GRCh37 genes
-│   └── cache/                  # API response cache
+│   └── grch37_genes.csv        # Ensembl GRCh37 genes
 ├── seedExp/                     # Pre-computed SNP-gene mappings
 ├── enrichment/                  # Enrichment analysis scripts
 │   └── comprehensive_enrichment.py
 ├── output/                      # Generated results
-│   ├── GRASS_AD_gene_scores.csv
-│   ├── GRASS_T2D_gene_scores.csv
-│   └── GRASS_master_scores.csv
-└── docs/                        # Documentation
+    ├── GRASS_AD_gene_scores.csv
+    ├── GRASS_T2D_gene_scores.csv
+    └── GRASS_master_scores.csv
+
 ```
 
 ## Pipeline Steps
