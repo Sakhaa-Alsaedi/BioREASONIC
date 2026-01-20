@@ -1,0 +1,282 @@
+[
+  {
+    "question": "Does gene CDKN2B-AS1 have a direct relationship to Heart Failure, or is it indirect?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'CDKN2B-AS1'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Heart Failure' OR d.id = 'D006333'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'CDKN2B-AS1'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Heart Failure' OR d.id = 'D006333'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "CDKN2B-AS1",
+      "disease": "Heart Failure",
+      "disease_id": "D006333"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Is the query 'pathways for Coronary Artery Disease risk genes' a one-hop or multi-hop query?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Coronary Artery Disease",
+      "disease_id": "D003324"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Is the Gene PCDHA12\u2013Asthma relationship direct or mediated by another node?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'PCDHA12'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Asthma' OR d.id = 'D001249'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'PCDHA12'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Asthma' OR d.id = 'D001249'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "PCDHA12",
+      "disease": "Asthma",
+      "disease_id": "D001249"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Is the query 'pathways for Voice Disorders risk genes' a one-hop or multi-hop query?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Voice Disorders",
+      "disease_id": "D014832"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Does finding pathways for Penile Diseases risk genes require one-hop or multi-hop traversal?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Penile Diseases",
+      "disease_id": "D010409"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Is the Gene MAP2K7\u2013Metabolic Syndrome relationship direct or mediated by another node?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'MAP2K7'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Metabolic Syndrome' OR d.id = 'D024821'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'MAP2K7'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Metabolic Syndrome' OR d.id = 'D024821'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "MAP2K7",
+      "disease": "Metabolic Syndrome",
+      "disease_id": "D024821"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Is the query 'pathways for Pigmentation Disorders risk genes' a one-hop or multi-hop query?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Pigmentation Disorders",
+      "disease_id": "D010859"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Is the Gene SEC14L4\u2013Diabetes, Gestational relationship direct or mediated by another node?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'SEC14L4'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Diabetes, Gestational' OR d.id = 'D016640'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'SEC14L4'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Diabetes, Gestational' OR d.id = 'D016640'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "SEC14L4",
+      "disease": "Diabetes, Gestational",
+      "disease_id": "D016640"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes linked to Jaw Diseases have more than 10 supporting SNPs?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Jaw Diseases' OR d.id = 'D007571'\n            WITH g, r\n            MATCH (s:SNP)-[:MAPS_TO]->(g)\n            WITH g, r, count(s) AS snp_count\n            WHERE snp_count > 10\n            RETURN g.id AS gene, snp_count, r.risk_score AS risk_score\n            ORDER BY snp_count DESC",
+    "task_id": "S2",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Structural constraint handling",
+    "answer_format": "list",
+    "parameters": {
+      "disease": "Jaw Diseases",
+      "disease_id": "D007571",
+      "threshold": 10
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Does gene HLA-C have a direct relationship to Cardiovascular Diseases, or is it indirect?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'HLA-C'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Cardiovascular Diseases' OR d.id = 'D002318'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'HLA-C'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Cardiovascular Diseases' OR d.id = 'D002318'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "HLA-C",
+      "disease": "Cardiovascular Diseases",
+      "disease_id": "D002318"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Does finding pathways for Immunologic Deficiency Syndromes risk genes require one-hop or multi-hop traversal?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Immunologic Deficiency Syndromes",
+      "disease_id": "D007153"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Is the query 'pathways for Male Urogenital Diseases risk genes' a one-hop or multi-hop query?",
+    "cypher": "// This is a meta-query - the answer depends on schema understanding\n            // Gene -[:INCREASES_RISK_OF]-> Disease (1 hop)\n            // Gene -[:TRANSLATED_INTO]-> Protein -[:ANNOTATED_IN_PATHWAY]-> Pathway (2 hops from gene)\n            // So Gene -> Disease -> Pathway requires: Gene->Protein->Pathway = multi-hop\n            RETURN 'multi-hop' AS answer,\n                   'Gene->Protein->Pathway requires 2 hops' AS explanation",
+    "task_id": "S3",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Hop complexity identification",
+    "answer_format": "mcq",
+    "parameters": {
+      "disease": "Male Urogenital Diseases",
+      "disease_id": "D052801"
+    },
+    "category": "reasoning",
+    "options": [
+      "one-hop",
+      "multi-hop"
+    ],
+    "correct_answer": "multi-hop"
+  },
+  {
+    "question": "Does gene DAB2 have a direct relationship to Colitis, Ulcerative, or is it indirect?",
+    "cypher": "// Check for direct relationship\n            OPTIONAL MATCH direct = (g:Gene {id: 'DAB2'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Colitis, Ulcerative' OR d.id = 'D003093'\n            // Check for indirect through SNP\n            OPTIONAL MATCH indirect = (g:Gene {id: 'DAB2'})<-[:MAPS_TO]-(s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            WHERE d.name CONTAINS 'Colitis, Ulcerative' OR d.id = 'D003093'\n            RETURN\n                CASE WHEN direct IS NOT NULL THEN 'direct' ELSE 'indirect' END AS relationship_type,\n                CASE WHEN direct IS NOT NULL THEN true ELSE false END AS has_direct,\n                CASE WHEN indirect IS NOT NULL THEN true ELSE false END AS has_indirect",
+    "task_id": "S1",
+    "taxonomy": "S",
+    "reasoning_type": "Structure-aware",
+    "evaluation_focus": "Direct vs indirect relations",
+    "answer_format": "yes_no",
+    "parameters": {
+      "gene": "DAB2",
+      "disease": "Colitis, Ulcerative",
+      "disease_id": "D003093"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "What genes are associated with increased risk for long QT syndrome?",
+    "cypher": "MATCH (g:Gene)-[:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:2843\"})\n                        RETURN collect(DISTINCT g.id)[0..10] AS genes",
+    "task_id": "S-DISEASE-GENES",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "long QT syndrome",
+      "disease_id": "DOID:2843"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "What diseases are associated with gene VSTM2L?",
+    "cypher": "MATCH (g:Gene {id: \"VSTM2L\"})-[:INCREASES_RISK_OF]->(d:Disease)\n                        RETURN collect(DISTINCT d.name)[0..10] AS diseases",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "diseases",
+    "parameters": {
+      "gene": "VSTM2L"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene does SNP rs12335843 map to?",
+    "cypher": "MATCH (s:SNP {id: \"rs12335843\"})-[:MAPS_TO]->(g:Gene)\n                        RETURN g.id AS gene",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "snp": "rs12335843"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which diseases does SNP rs326 have a putative causal effect on?",
+    "cypher": "MATCH (s:SNP {id: \"rs326\"})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n                        RETURN collect(DISTINCT d.name)[0..5] AS diseases",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "diseases",
+    "parameters": {
+      "snp": "rs326"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Trace the path from SNP rs682928 to its associated diseases through genes.",
+    "cypher": "MATCH (s:SNP {id: \"rs682928\"})-[:MAPS_TO]->(g:Gene)-[:INCREASES_RISK_OF]->(d:Disease)\n                            RETURN g.id AS gene, collect(DISTINCT d.name)[0..5] AS diseases",
+    "task_id": "S-REASONING-PATH",
+    "taxonomy": "S",
+    "type": "multi-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "snp": "rs682928"
+    },
+    "category": "reasoning"
+  }
+]

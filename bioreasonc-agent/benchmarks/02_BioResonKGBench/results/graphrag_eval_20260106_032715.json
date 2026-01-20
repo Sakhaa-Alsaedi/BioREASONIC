@@ -1,0 +1,116 @@
+{
+  "model": "GraphRAG + GPT-3.5-turbo",
+  "timestamp": "20260106_032715",
+  "total_questions": 12,
+  "accuracy": 0.16666666666666666,
+  "results": [
+    {
+      "taxonomy": "S",
+      "task_id": "S-DISEASE-GENES",
+      "ground_truth": "ENSG00000274478",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 22.579193115234375
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "ground_truth": "Arthritis, Psoriatic",
+      "prediction": "asthma, Anti-Asthmatic Agents, celiac disease, ulc",
+      "num_results": 170,
+      "contains_answer": false,
+      "latency_ms": 1945.4851150512695
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "ground_truth": "Emphysema",
+      "prediction": "Asthma, coronary artery disease, pulmonary emphyse",
+      "num_results": 6,
+      "contains_answer": true,
+      "latency_ms": 720.5727100372314
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "ground_truth": "rs2856690",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 18.002033233642578
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-RISK-SCORE",
+      "ground_truth": "ENSG00000285651",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 9.753227233886719
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "ground_truth": "TMEM120A",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 11.118412017822266
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "ground_truth": "CCDC26",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 14.12200927734375
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-TOP-CAUSAL",
+      "ground_truth": "rs2523693",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 10.908126831054688
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "ground_truth": "GEMIN7-AS1",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 7.904291152954102
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "ground_truth": "PHC3",
+      "prediction": "PHC3 translates into the protein PHC3.",
+      "num_results": 18,
+      "contains_answer": true,
+      "latency_ms": 629.6741962432861
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-SHARED-PATHWAY",
+      "ground_truth": "Skin Diseases, Vascular",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 36.95201873779297
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "ground_truth": "TRIM31-AS1",
+      "prediction": "No answer",
+      "num_results": 0,
+      "contains_answer": false,
+      "latency_ms": 15.83552360534668
+    }
+  ]
+}

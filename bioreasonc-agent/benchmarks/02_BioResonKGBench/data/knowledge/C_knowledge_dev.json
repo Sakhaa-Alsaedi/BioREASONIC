@@ -1,0 +1,380 @@
+[
+  {
+    "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1289\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "neurodegenerative disease",
+      "disease_id": "DOID:1289"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs58528265?",
+    "cypher": "MATCH (s:SNP {id: \"rs58528265\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs58528265"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on heart disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:114\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "heart disease",
+      "disease_id": "DOID:114"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs35705950?",
+    "cypher": "MATCH (s:SNP {id: \"rs35705950\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs35705950"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on breast cancer?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1612\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "breast cancer",
+      "disease_id": "DOID:1612"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have strong causal effects on rectum cancer?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1993\"})\n            WHERE r.causal_score > 0.8\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-STRONG-CAUSAL-SNPS",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "rectum cancer",
+      "disease_id": "DOID:1993"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs1265566?",
+    "cypher": "MATCH (s:SNP {id: \"rs1265566\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs1265566"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs186503704?",
+    "cypher": "MATCH (s:SNP {id: \"rs186503704\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs186503704"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on Lewy body dementia?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:12217\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "Lewy body dementia",
+      "disease_id": "DOID:12217"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on female reproductive organ cancer?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:120\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "female reproductive organ cancer",
+      "disease_id": "DOID:120"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs9635726?",
+    "cypher": "MATCH (s:SNP {id: \"rs9635726\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs9635726"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on prostate cancer?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:10283\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "prostate cancer",
+      "disease_id": "DOID:10283"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have very strong evidence for causing attention deficit hyperactivity disorder?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1094\"})\n            WHERE r.evidence_score > 0.8\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "C-VERY-STRONG-EVIDENCE",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "attention deficit hyperactivity disorder",
+      "disease_id": "DOID:1094"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have strong causal effects on atrial fibrillation?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0060224\"})\n            WHERE r.causal_score > 0.8\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-STRONG-CAUSAL-SNPS",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "atrial fibrillation",
+      "disease_id": "DOID:0060224"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs12804004?",
+    "cypher": "MATCH (s:SNP {id: \"rs12804004\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs12804004"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs2428494?",
+    "cypher": "MATCH (s:SNP {id: \"rs2428494\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs2428494"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs533617?",
+    "cypher": "MATCH (s:SNP {id: \"rs533617\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs533617"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have strong causal effects on Antley-Bixler syndrome?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0081289\"})\n            WHERE r.causal_score > 0.8\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-STRONG-CAUSAL-SNPS",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "Antley-Bixler syndrome",
+      "disease_id": "DOID:0081289"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have validated causal effects on cancer?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:162\"})\n            WHERE r.causal_score = 1.0\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-VALIDATED-CAUSAL",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "cancer",
+      "disease_id": "DOID:162"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have strong causal effects on melanoma?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1909\"})\n            WHERE r.causal_score > 0.8\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-STRONG-CAUSAL-SNPS",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "melanoma",
+      "disease_id": "DOID:1909"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on blood coagulation disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1247\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "blood coagulation disease",
+      "disease_id": "DOID:1247"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on pleural disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1532\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "pleural disease",
+      "disease_id": "DOID:1532"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs571202236?",
+    "cypher": "MATCH (s:SNP {id: \"rs571202236\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs571202236"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs12055445?",
+    "cypher": "MATCH (s:SNP {id: \"rs12055445\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs12055445"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on gestational diabetes?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:11714\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "gestational diabetes",
+      "disease_id": "DOID:11714"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs10422256?",
+    "cypher": "MATCH (s:SNP {id: \"rs10422256\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs10422256"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNPs have strong causal effects on vascular disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:178\"})\n            WHERE r.causal_score > 0.8\n            RETURN collect(DISTINCT s.id)[0..5] AS snps",
+    "task_id": "C-STRONG-CAUSAL-SNPS",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snps",
+    "parameters": {
+      "disease": "vascular disease",
+      "disease_id": "DOID:178"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on nicotine dependence?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0050742\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "nicotine dependence",
+      "disease_id": "DOID:0050742"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the strongest causal effect on congenital adrenal insufficiency?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0050546\"})\n            RETURN s.id AS snp\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-CAUSAL-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "congenital adrenal insufficiency",
+      "disease_id": "DOID:0050546"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most strongly affected by SNP rs157595?",
+    "cypher": "MATCH (s:SNP {id: \"rs157595\"})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.causal_score DESC LIMIT 1",
+    "task_id": "C-TOP-DISEASE-FROM-SNP",
+    "taxonomy": "C",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp": "rs157595"
+    },
+    "category": "knowledge"
+  }
+]

@@ -1,0 +1,22 @@
+# BioResonKGBench Knowledge Graph Configuration
+version: 2.0
+
+# Neo4j Database Connection
+# Keys use db_ prefix for compatibility with kg_qa_system_v2.py
+db_url: "34.31.148.159"
+db_port: 7687
+db_user: "neo4j"
+db_password: "password123"
+encrypted: false
+
+# Question Taxonomy
+taxonomy:
+  S: "Structure - Graph navigation and topology understanding"
+  R: "Risk - Quantitative risk assessment"
+  C: "Causal - Causal evidence evaluation"
+  M: "Mechanism - Pathway and semantic understanding"
+
+# Categories
+categories:
+  - knowledge
+  - reasoning

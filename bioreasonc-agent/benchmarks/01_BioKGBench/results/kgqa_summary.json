@@ -1,0 +1,26 @@
+{
+  "total_questions": 698,
+  "dev_size": 60,
+  "test_size": 638,
+  "question_types": {
+    "one-hop": 391,
+    "multi-hop": 200,
+    "conjunction": 107
+  },
+  "entity_types": {
+    "protein": 391
+  },
+  "answer_types": {
+    "protein": 111,
+    "other": 1409,
+    "null": 50
+  },
+  "relationship_patterns": {
+    "protein-protein interaction": 55,
+    "protein-GO_BP": 125,
+    "protein-pathway": 75,
+    "protein-disease": 110,
+    "protein-GO_MF": 120,
+    "gene-protein": 200
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "model": "gpt-4",
+  "results": [
+    {
+      "taxonomy": "S",
+      "task_id": "S-DISEASE-GENES",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000274478",
+      "prediction": "APOB, LDLR, PCSK9, SORT1, MTHFR, LPA, CETP, APOE, ABCA1, ANGPTL4",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Arthritis, Psoriatic",
+      "prediction": "Celiac Disease, Type 1 Diabetes, Rheumatoid Arthritis, Systemic Lupus Erythematosus",
+      "exact_match": false,
+      "f1_score": 0.16666666666666669,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Emphysema",
+      "prediction": "No specific diseases are currently associated with increased risk from gene METTL1.",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-SNP-GENE",
+      "category": "knowledge",
+      "ground_truth": "rs77538922",
+      "prediction": "HSD17B12",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-SNP-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Prostatic Neoplasms",
+      "prediction": "Currently, there is no known disease that SNP rs186054850 has a putative causal effect on.",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "category": "knowledge",
+      "ground_truth": "rs2856690",
+      "prediction": "Not available",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-RISK-SCORE",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000285651",
+      "prediction": "As a language model AI developed by OpenAI, I don't have real-time access to databases or the abilit",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "category": "knowledge",
+      "ground_truth": "TMEM120A",
+      "prediction": "The risk scores for TMEM120A and HLA-DQA1 for Diabetes, Gestational are not specified as they can va",
+      "exact_match": false,
+      "f1_score": 0.05714285714285715,
+      "contains_answer": true
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "category": "knowledge",
+      "ground_truth": "CADM3-AS1",
+      "prediction": "The information provided is insufficient to compare the risk scores of CADM3-AS1 and H3C2 for Depres",
+      "exact_match": false,
+      "f1_score": 0.11764705882352941,
+      "contains_answer": true
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "category": "knowledge",
+      "ground_truth": "rs165255",
+      "prediction": "The information about the p-value for SNP rs165255's effect on Celiac Disease is not readily availab",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": true
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "category": "knowledge",
+      "ground_truth": "CCDC26",
+      "prediction": "No evidence",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-TOP-CAUSAL",
+      "category": "knowledge",
+      "ground_truth": "rs2523693",
+      "prediction": "There isn't a single SNP that has been definitively identified as having the strongest causal effect",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "category": "knowledge",
+      "ground_truth": "GEMIN7-AS1",
+      "prediction": "There is currently no evidence.",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-MR-VALIDATED",
+      "category": "knowledge",
+      "ground_truth": "ESPL1",
+      "prediction": "No",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-CAUSAL-SNP",
+      "category": "knowledge",
+      "ground_truth": "rs9267230",
+      "prediction": "Currently, there are no specific SNPs (Single Nucleotide Polymorphisms) universally recognized as ca",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "category": "knowledge",
+      "ground_truth": "PHC3",
+      "prediction": "Polyhomeotic Homolog 3",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-SHARED-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "Skin Diseases, Vascular",
+      "prediction": "Not specified.",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "TRIM31-AS1",
+      "prediction": "1. Renin-Angiotensin System\n2. Nitric Oxide Synthase Pathway\n3. TGF-beta Signaling Pathway\n4. Apopto",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "MET",
+      "prediction": "Interleukin-1 (IL-1) signaling pathway",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000256206",
+      "prediction": "This gene does not translate into a protein as it is a pseudogene.",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    }
+  ]
+}

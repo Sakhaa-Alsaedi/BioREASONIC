@@ -1,0 +1,1414 @@
+[
+    {
+        "question": "What proteins does the protein P68133 interact with?",
+        "source": "P68133",
+        "entities": {
+            "protein": "P68133"
+        },
+        "answer": [
+            {
+                "name": "GC",
+                "answer": "P02774"
+            },
+            {
+                "name": "GSN",
+                "answer": "P06396"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+        "source": "Q9NYB9",
+        "entities": {
+            "protein": "Q9NYB9"
+        },
+        "answer": [
+            {
+                "name": "ADAM19",
+                "answer": "Q9H013"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you identify proteins that the protein P12814 show interaction with?",
+        "source": "P12814",
+        "entities": {
+            "protein": "P12814"
+        },
+        "answer": [
+            {
+                "name": "GRB2",
+                "answer": "P62993"
+            },
+            {
+                "name": "CAMK2A",
+                "answer": "Q9UQM7"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "I'm curious, which proteins does the protein P63267 interact with?",
+        "source": "P63267",
+        "entities": {
+            "protein": "P63267"
+        },
+        "answer": [
+            {
+                "name": "GRB2",
+                "answer": "P62993"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Do you know what proteins does the protein P36544 interact with?",
+        "source": "P36544",
+        "entities": {
+            "protein": "P36544"
+        },
+        "answer": [
+            {
+                "name": "APP",
+                "answer": "P05067"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What's the amino acid sequence of A0A0A0MTA2?",
+        "source": "A0A0A0MTA2",
+        "entities": {
+            "protein": "A0A0A0MTA2"
+        },
+        "answer": [
+            {
+                "answer": "LRGAAGRLGGGLLVL",
+                "header": "tr|A0A0A0MTA2|A0A0A0MTA2_HUMAN",
+                "source": "UniProt",
+                "size": "15"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you provide the amino acid sequence of A0A286YF18?",
+        "source": "A0A286YF18",
+        "entities": {
+            "protein": "A0A286YF18"
+        },
+        "answer": [
+            {
+                "answer": "MPGLAAEGEAEGWSPSPPLYEEYRPPPLDSIRLPRYVLYLLLAALVVVAVAYAIVGHLIKDLAHDLADWAFGPKPDQEAAPRELRPSLTGEDLEGLDLQLALAWQGEEDAGGGGEGAPSEPPPPPEPRRPSIAFKDPPSRSSFWKLMAT",
+                "header": "sp|A0A286YF18|SMI44_HUMAN",
+                "source": "UniProt",
+                "size": "149"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you tell me the amino acid sequence of A0A2R8Y4M4?",
+        "source": "A0A2R8Y4M4",
+        "entities": {
+            "protein": "A0A2R8Y4M4"
+        },
+        "answer": [
+            {
+                "answer": "MEGAWALPTWKEEGREQAAGQGEEEECPICTEPYGPRERRLALLNCSHGLCVGCLHRLLGSASSADLGRVRCPLCRQKTPVLEWEICRLQEELLQADGPSRQPRREAPASYHRNPGPWGSLEHRYQLRFLAGPVGGRGCLPFLPCPPCLGARLWTLRERGPCARRLALLSLLALELLGLLLVFTPLLLLGLLFVLLDRSGR",
+                "header": "tr|A0A2R8Y4M4|A0A2R8Y4M4_HUMAN",
+                "source": "UniProt",
+                "size": "201"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Please identify the amino acid sequence of A6NI61.",
+        "source": "A6NI61",
+        "entities": {
+            "protein": "A6NI61"
+        },
+        "answer": [
+            {
+                "answer": "MGTLVAKLLLPTLSSLAFLPTVSIAAKRRFHMEAMVYLFTLFFVALHHACNGPGLSVLCFMRHDILEYFSVYGTALSMWVSLMALADFDEPKRSTFVMFGVLTIAVRIYHDRWGYGVYSGPIGTAILIIAAKWLQKMKEKKGLYPDKSVYTQQIGPGLCFGALALMLRFFFEDWDYTYVHSFYHCALAMSFVLLLPKVNKKAGSPGTPAKLDCSTLCCACV",
+                "header": "sp|A6NI61|MYMK_HUMAN",
+                "source": "UniProt",
+                "size": "221"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you display the amino acid sequence that constitutes O60675?",
+        "source": "O60675",
+        "entities": {
+            "protein": "O60675"
+        },
+        "answer": [
+            {
+                "answer": "MTTNPKPNKALKVKKEAGENAPVLSDDELVSMSVRELNQHLRGLTKEEVTRLKQRRRTLKNRGYAASCRIKRVTQKEELERQRVELQQEVEKLARENSSMRLELDALRSKYEALQTFARTVARGPVAPSKVATTSVITIVKSTELSSTSVPFSAAS",
+                "header": "sp|O60675|MAFK_HUMAN",
+                "source": "UniProt",
+                "size": "156"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Which biological processes is the protein O60613 associated with?",
+        "source": "O60613",
+        "entities": {
+            "protein": "O60613"
+        },
+        "answer": [
+            {
+                "answer": "cellular oxidant detoxification",
+                "description": "Any process carried out at the cellular level that reduces or removes the toxicity superoxide radicals or hydrogen peroxide. [GOC:dos, GOC:vw]"
+            },
+            {
+                "answer": "sperm DNA condensation",
+                "description": "The progressive compaction of the spermatid chromatin so that it reaches a level of condensation that is not compatible with nuclear activities such as transcription or DNA replication. [GOC:bf, PMID:11735001]"
+            },
+            {
+                "answer": "'de novo' post-translational protein folding",
+                "description": "The process of assisting in the correct noncovalent folding of newly formed polypeptides or folding intermediates of polypeptides that have exited the ribosome and/or have been stabilized and transferred by other chaperone proteins. This process could involve several cycles of ATP hydrolysis. [GOC:rb]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What biological processes involve the protein Q96MP8?",
+        "source": "Q96MP8",
+        "entities": {
+            "protein": "Q96MP8"
+        },
+        "answer": [
+            {
+                "answer": "protein homooligomerization",
+                "description": "The process of creating protein oligomers, compounds composed of a small number, usually between three and ten, of identical component monomers. Oligomers may be formed by the polymerization of a number of monomers or the depolymerization of a large protein polymer. [GOC:ai]"
+            },
+            {
+                "answer": "intracellular potassium ion homeostasis",
+                "description": "A homeostatic process involved in the maintenance of a steady state level of potassium ions within a cell. [GOC:mah]"
+            },
+            {
+                "answer": "intracellular glutamate homeostasis",
+                "description": "A homeostatic process involved in the maintenance of a steady state level of glutamate within a cell. [GOC:tb]"
+            },
+            {
+                "answer": "positive regulation of transporter activity",
+                "description": "Any process that activates or increases the activity of a transporter. [GOC:mah]"
+            },
+            {
+                "answer": "membrane hyperpolarization",
+                "description": "The process in which membrane potential increases with respect to its steady-state potential, usually from negative potential to a more negative potential. For example, during the repolarization phase of an action potential the membrane potential often becomes more negative or hyperpolarized before returning to the steady-state resting potential. [GOC:dph]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you list the biological processes that the protein Q8NGP9 is associated with?",
+        "source": "Q8NGP9",
+        "entities": {
+            "protein": "Q8NGP9"
+        },
+        "answer": [
+            {
+                "answer": "G protein-coupled receptor signaling pathway",
+                "description": "The series of molecular signals initiated by a ligand binding to its receptor, in which the activated receptor promotes the exchange of GDP for GTP on the alpha-subunit of an associated heterotrimeric G-protein complex. The GTP-bound activated alpha-G-protein then dissociates from the beta- and gamma-subunits to further transmit the signal within the cell. The pathway begins with receptor-ligand interaction, and ends with regulation of a downstream cellular process. The pathway can start from the plasma membrane, Golgi or nuclear membrane. [GOC:bf, GOC:mah, PMID:16902576, PMID:24568158, Wikipedia:G_protein-coupled_receptor]"
+            },
+            {
+                "answer": "detection of chemical stimulus involved in sensory perception of smell",
+                "description": "The series of events involved in the perception of smell in which an olfactory chemical stimulus is received and converted into a molecular signal. [GOC:ai]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you identify which biological processes is the protein O95257 associated with?",
+        "source": "O95257",
+        "entities": {
+            "protein": "O95257"
+        },
+        "answer": [
+            {
+                "answer": "cell differentiation",
+                "description": "The cellular developmental process in which a relatively unspecialized cell, e.g. embryonic or regenerative cell, acquires specialized structural and/or functional features that characterize a specific cell. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state. [ISBN:0198506732]"
+            },
+            {
+                "answer": "positive regulation of p38MAPK cascade",
+                "description": "Any process that activates or increases the frequency, rate or extent of p38MAPK cascade. [GOC:TermGenie]"
+            },
+            {
+                "answer": "positive regulation of apoptotic process",
+                "description": "Any process that activates or increases the frequency, rate or extent of cell death by apoptotic process. [GOC:jl, GOC:mtg_apoptosis]"
+            },
+            {
+                "answer": "regulation of cell cycle",
+                "description": "Any process that modulates the rate or extent of progression through the cell cycle. [GOC:ai, GOC:dph, GOC:tb]"
+            },
+            {
+                "answer": "apoptotic process",
+                "description": "A programmed cell death process which begins when a cell receives an internal (e.g. DNA damage) or external signal (e.g. an extracellular death ligand), and proceeds through a series of biochemical events (signaling pathway phase) which trigger an execution phase. The execution phase is the last step of an apoptotic process, and is typically characterized by rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume (pyknosis), chromatin condensation, nuclear fragmentation (karyorrhexis), plasma membrane blebbing and fragmentation of the cell into apoptotic bodies. When the execution phase is completed, the cell has died. [GOC:cjm, GOC:dhl, GOC:ecd, GOC:go_curators, GOC:mtg_apoptosis, GOC:tb, ISBN:0198506732, PMID:18846107, PMID:21494263]"
+            },
+            {
+                "answer": "positive regulation of JNK cascade",
+                "description": "Any process that activates or increases the frequency, rate or extent of signal transduction mediated by the JNK cascade. [GOC:bf]"
+            },
+            {
+                "answer": "positive regulation of cold-induced thermogenesis",
+                "description": "Any process that activates or increases the frequency, rate or extent of cold-induced thermogenesis. [PMID:27876809]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "I'm curious, biological processes is the protein P60866 associated with?",
+        "source": "P60866",
+        "entities": {
+            "protein": "P60866"
+        },
+        "answer": [
+            {
+                "answer": "translation",
+                "description": "The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome. [GOC:go_curators]"
+            },
+            {
+                "answer": "cytoplasmic translation",
+                "description": "The chemical reactions and pathways resulting in the formation of a protein in the cytoplasm. This is a ribosome-mediated process in which the information in messenger RNA (mRNA) is used to specify the sequence of amino acids in the protein. [GOC:hjd]"
+            },
+            {
+                "answer": "positive regulation of signal transduction by p53 class mediator",
+                "description": "Any process that activates or increases the frequency, rate or extent of signal transduction by p53 class mediator. [GOC:TermGenie]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "In which pathways is the protein O75022 annotated?",
+        "source": "O75022",
+        "entities": {
+            "protein": "O75022"
+        },
+        "answer": [
+            {
+                "answer": "Neutrophil degranulation",
+                "description": "Neutrophil degranulation",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-6798695",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell",
+                "description": "Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-198933",
+                "source": "Reactome"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you identify the pathways where the protein Q92667 is annotated?",
+        "source": "Q92667",
+        "entities": {
+            "protein": "Q92667"
+        },
+        "answer": [
+            {
+                "answer": "Factors involved in megakaryocyte development and platelet production",
+                "description": "Factors involved in megakaryocyte development and platelet production",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-983231",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Mitochondrial calcium ion transport",
+                "description": "Mitochondrial calcium ion transport",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-8949215",
+                "source": "Reactome"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "In what pathways has the protein P43487 been annotated?",
+        "source": "P43487",
+        "entities": {
+            "protein": "P43487"
+        },
+        "answer": [
+            {
+                "answer": "Rev-mediated nuclear export of HIV RNA",
+                "description": "Rev-mediated nuclear export of HIV RNA",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-165054",
+                "source": "Reactome"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you please specify the pathways in which the protein Q01449 is annotated?",
+        "source": "Q01449",
+        "entities": {
+            "protein": "Q01449"
+        },
+        "answer": [
+            {
+                "answer": "Smooth Muscle Contraction",
+                "description": "Smooth Muscle Contraction",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-445355",
+                "source": "Reactome"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What pathways include the protein Q9UPV0?",
+        "source": "Q9UPV0",
+        "entities": {
+            "protein": "Q9UPV0"
+        },
+        "answer": [
+            {
+                "answer": "AURKA Activation by TPX2",
+                "description": "AURKA Activation by TPX2",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-8854518",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Recruitment of NuMA to mitotic centrosomes",
+                "description": "Recruitment of NuMA to mitotic centrosomes",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-380320",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Loss of proteins required for interphase microtubule organization from the centrosome",
+                "description": "Loss of proteins required for interphase microtubule organization from the centrosome",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-380284",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Loss of Nlp from mitotic centrosomes",
+                "description": "Loss of Nlp from mitotic centrosomes",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-380259",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Anchoring of the basal body to the plasma membrane",
+                "description": "Anchoring of the basal body to the plasma membrane",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-5620912",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Recruitment of mitotic centrosome proteins and complexes",
+                "description": "Recruitment of mitotic centrosome proteins and complexes",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-380270",
+                "source": "Reactome"
+            },
+            {
+                "answer": "Regulation of PLK1 Activity at G2/M Transition",
+                "description": "Regulation of PLK1 Activity at G2/M Transition",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-2565942",
+                "source": "Reactome"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What are the structure(s) of protein Q99062-3? Just tell me the PDB ID.",
+        "source": "Q99062-3",
+        "entities": {
+            "protein": "Q99062-3"
+        },
+        "answer": [
+            {
+                "link": "http://www.rcsb.org/structure/2D9Q",
+                "answer": "2D9Q",
+                "source": "Uniprot"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Please provide the PDB ID(s) of the structure(s) of the protein Q96KS0.",
+        "source": "Q96KS0",
+        "entities": {
+            "protein": "Q96KS0"
+        },
+        "answer": [
+            {
+                "link": "http://www.rcsb.org/structure/5V1B",
+                "answer": "5V1B",
+                "source": "Uniprot"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What are the PDB ID(s) for the structure(s) of protein Q7L5Y1?",
+        "source": "Q7L5Y1",
+        "entities": {
+            "protein": "Q7L5Y1"
+        },
+        "answer": [
+            {
+                "link": "http://www.rcsb.org/structure/4A35",
+                "answer": "4A35",
+                "source": "Uniprot"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What is the PDB ID for protein Q9UJY4's structure, or if there are multiple, what are they?",
+        "source": "Q9UJY4",
+        "entities": {
+            "protein": "Q9UJY4"
+        },
+        "answer": [
+            {
+                "link": "http://www.rcsb.org/structure/1MHQ",
+                "answer": "1MHQ",
+                "source": "Uniprot"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Which diseases is the protein M0QYG6 associated with?",
+        "source": "M0QYG6",
+        "entities": {
+            "protein": "M0QYG6"
+        },
+        "answer": [
+            {
+                "answer": "neuroendocrine tumor",
+                "description": "An endocrine gland cancer that has_material_basis_in neuroendocrine cells. [url:http\\://en.wikipedia.org/wiki/Neuroendocrine_cell, url:http\\://en.wikipedia.org/wiki/Neuroendocrine_tumor, url:http\\://www.cancer.gov/dictionary?CdrID=44904]"
+            },
+            {
+                "answer": "alcohol dependence",
+                "description": "A substance dependence that is characterized by tolerance, withdrawal symptoms, increasing use, persistent desire to decrease consumption, time spent obtaining or recovering from alcohol caused by a physical and psychological dependence on alcohol. [url:https\\://en.wikipedia.org/wiki/Alcohol_dependence]"
+            },
+            {
+                "answer": "substance dependence",
+                "description": "A substance-related disorder that involves the continued use of alcohol or other drugs despite problems related to use of the substance. [url:http\\://en.wikipedia.org/wiki/Drug_dependence]"
+            },
+            {
+                "answer": "primary ovarian insufficiency",
+                "description": "An ovarian disease where ovaries do not produce estrogen despite high levels of circulating gonadotropins in women under 40. [url:http\\://en.wikipedia.org/wiki/Premature_ovarian_failure, url:https\\://pubmed.ncbi.nlm.nih.gov/27861765/, url:https\\://www.ncbi.nlm.nih.gov/pmc/articles/PMC7477642/]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you please specify which diseases the protein E9PI22 is associated with?",
+        "source": "E9PI22",
+        "entities": {
+            "protein": "E9PI22"
+        },
+        "answer": [
+            {
+                "answer": "male infertility",
+                "description": "male infertility"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What are the diseases that the protein M0R2J8 is associated with?",
+        "source": "M0R2J8",
+        "entities": {
+            "protein": "M0R2J8"
+        },
+        "answer": [
+            {
+                "answer": "esophagus squamous cell carcinoma",
+                "description": "An esophageal carcinoma that derives_from epithelial squamous cells located_in the esophagus. [url:http\\://www.cancer.gov/cancertopics/types/esophageal]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you identify diseases that the protein Q9NTW7 is associated with?",
+        "source": "Q9NTW7",
+        "entities": {
+            "protein": "Q9NTW7"
+        },
+        "answer": [
+            {
+                "answer": "leukemia",
+                "description": "A cancer that affects the blood or bone marrow characterized by an abnormal proliferation of blood cells. [url:http\\://en.wikipedia.org/wiki/Leukemia, url:http\\://www.cancer.gov/dictionary?CdrID=45343]"
+            },
+            {
+                "answer": "breast cancer",
+                "description": "A thoracic cancer that originates in the mammary gland. [url:http\\://en.wikipedia.org/wiki/Breast_cancer, url:http\\://en.wikipedia.org/wiki/Mammary, url:http\\://www.cancer.gov/cancertopics/types/breast, url:http\\://www.nlm.nih.gov/medlineplus/breastcancer.html, url:https\\://www.genome.gov/Genetic-Disorders/Breast-Cancer]"
+            },
+            {
+                "answer": "childhood leukemia",
+                "description": "A leukemia that occurs in children. [url:http\\://www.nlm.nih.gov/medlineplus/leukemiachildhood.html]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What molecular functions is the protein Q9H8M9 associated with?",
+        "source": "Q9H8M9",
+        "entities": {
+            "protein": "Q9H8M9"
+        },
+        "answer": [
+            {
+                "answer": "protein binding",
+                "description": "Binding to a protein. [GOC:go_curators]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Can you specify the molecular functions that the protein P12525 is associated with?",
+        "source": "P12525",
+        "entities": {
+            "protein": "P12525"
+        },
+        "answer": [
+            {
+                "answer": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+                "description": "Binding to a specific upstream regulatory DNA sequence (transcription factor recognition sequence or binding site) located in cis relative to the transcription start site (i.e., on the same strand of DNA) of a gene transcribed by RNA polymerase II. [GOC:txnOH-2018]"
+            },
+            {
+                "answer": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+                "description": "A DNA-binding transcription factor activity that modulates the transcription of specific gene sets transcribed by RNA polymerase II. [GOC:txnOH-2018]"
+            },
+            {
+                "answer": "DNA-binding transcription factor activity",
+                "description": "A transcription regulator activity that modulates transcription of gene sets via selective and non-covalent binding to a specific double-stranded genomic DNA sequence (sometimes referred to as a motif) within a cis-regulatory region. Regulatory regions include promoters (proximal and distal) and enhancers. Genes are transcriptional units, and include bacterial operons. [GOC:txnOH-2018]"
+            },
+            {
+                "answer": "protein dimerization activity",
+                "description": "The formation of a protein dimer, a macromolecular structure consists of two noncovalently associated identical or nonidentical subunits. [ISBN:0198506732]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Which specific molecular functions is the protein Q9NUD5 associated with?",
+        "source": "Q9NUD5",
+        "entities": {
+            "protein": "Q9NUD5"
+        },
+        "answer": [
+            {
+                "answer": "zinc ion binding",
+                "description": "Binding to a zinc ion (Zn). [GOC:ai]"
+            },
+            {
+                "answer": "double-stranded DNA binding",
+                "description": "Binding to double-stranded DNA. [GOC:elh, GOC:vw]"
+            },
+            {
+                "answer": "RNA binding",
+                "description": "Binding to an RNA molecule or a portion thereof. [GOC:jl, GOC:mah]"
+            },
+            {
+                "answer": "protein binding",
+                "description": "Binding to a protein. [GOC:go_curators]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you tell me what molecular functions is the protein Q96NX5 associated with?",
+        "source": "Q96NX5",
+        "entities": {
+            "protein": "Q96NX5"
+        },
+        "answer": [
+            {
+                "answer": "calmodulin-dependent protein kinase activity",
+                "description": "Calmodulin-dependent catalysis of the reactions: ATP + a protein serine = ADP + protein serine phosphate; and ATP + a protein threonine = ADP + protein threonine phosphate. [GOC:mah, PMID:11264466]"
+            },
+            {
+                "answer": "ATP binding",
+                "description": "Binding to ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator. [ISBN:0198506732]"
+            },
+            {
+                "answer": "calmodulin binding",
+                "description": "Binding to calmodulin, a calcium-binding protein with many roles, both in the calcium-bound and calcium-free states. [GOC:krc]"
+            },
+            {
+                "answer": "protein serine kinase activity",
+                "description": "Catalysis of the reactions: ATP + protein serine = ADP + protein serine phosphate. [RHEA:17989]"
+            },
+            {
+                "answer": "protein binding",
+                "description": "Binding to a protein. [GOC:go_curators]"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What proteins does the protein O94842 act on?",
+        "source": "O94842",
+        "entities": {
+            "protein": "O94842"
+        },
+        "answer": [
+            {
+                "answer": "Q96SB3",
+                "name": "PPP1R9B"
+            },
+            {
+                "answer": "P15692",
+                "name": "VEGFA"
+            },
+            {
+                "answer": "Q5MIZ7",
+                "name": "PPP4R3B"
+            },
+            {
+                "answer": "P41236",
+                "name": "PPP1R2"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "On which proteins does the protein Q9UN86 act?",
+        "source": "Q9UN86",
+        "entities": {
+            "protein": "Q9UN86"
+        },
+        "answer": [
+            {
+                "answer": "O75153",
+                "name": "CLUH"
+            },
+            {
+                "answer": "O15173",
+                "name": "PGRMC2"
+            },
+            {
+                "answer": "Q14694",
+                "name": "USP10"
+            },
+            {
+                "answer": "Q9BYK8",
+                "name": "HELZ2"
+            },
+            {
+                "answer": "Q01085",
+                "name": "TIAL1"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you identify the proteins that the protein Q96RJ6 acts on?",
+        "source": "Q96RJ6",
+        "entities": {
+            "protein": "Q96RJ6"
+        },
+        "answer": [
+            {
+                "answer": "P15884",
+                "name": "TCF4"
+            },
+            {
+                "answer": "Q86U70",
+                "name": "LDB1"
+            },
+            {
+                "answer": "O43679",
+                "name": "LDB2"
+            },
+            {
+                "answer": "Q99081",
+                "name": "TCF12"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "Could you specify the proteins that are acted on by the protein Q6ZNF0?",
+        "source": "Q6ZNF0",
+        "entities": {
+            "protein": "Q6ZNF0"
+        },
+        "answer": [
+            {
+                "answer": "P05187",
+                "name": "ALPP"
+            },
+            {
+                "answer": "P05186",
+                "name": "ALPL"
+            },
+            {
+                "answer": "P10619",
+                "name": "CTSA"
+            },
+            {
+                "answer": "Q9H3G5",
+                "name": "CPVL"
+            },
+            {
+                "answer": "Q9UNW1",
+                "name": "MINPP1"
+            },
+            {
+                "answer": "Q08623",
+                "name": "PUDP"
+            }
+        ],
+        "type": "one-hop"
+    },
+    {
+        "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Molecular_function",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "COL21A1",
+            "name": "collagen type XXI alpha 1 chain"
+        },
+        "MidAttributes": {
+            "id": "Q96P44",
+            "name": "COL21A1"
+        },
+        "answer": [
+            {
+                "answer": "extracellular matrix structural constituent conferring tensile strength",
+                "description": "A constituent of the extracellular matrix that enables the matrix to resist longitudinal stress. [GOC:mah, ISBN:0815316194]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the molecular function of the protein translated from the gene WFDC5?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Molecular_function",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "WFDC5",
+            "name": "WAP four-disulfide core domain 5"
+        },
+        "MidAttributes": {
+            "id": "Q8TCV5",
+            "name": "WFDC5"
+        },
+        "answer": [
+            {
+                "answer": "serine-type endopeptidase inhibitor activity",
+                "description": "Binds to and stops, prevents or reduces the activity of a serine-type endopeptidase. [GOC:ai]"
+            },
+            {
+                "answer": "protein binding",
+                "description": "Binding to a protein. [GOC:go_curators]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the molecular function of the protein translated from the gene TMEM127?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Molecular_function",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "TMEM127",
+            "name": "transmembrane protein 127"
+        },
+        "MidAttributes": {
+            "id": "O75204",
+            "name": "TMEM127"
+        },
+        "answer": [
+            {
+                "answer": "small GTPase binding",
+                "description": "Binding to a small monomeric GTPase. [GOC:mah, PMID:27218782]"
+            },
+            {
+                "answer": "molecular_function",
+                "description": "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. [GOC:pdt]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the molecular function of the protein translated from the gene PLA2G3?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Molecular_function",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "PLA2G3",
+            "name": "phospholipase A2 group III"
+        },
+        "MidAttributes": {
+            "id": "Q9NZ20",
+            "name": "PLA2G3"
+        },
+        "answer": [
+            {
+                "answer": "metal ion binding",
+                "description": "Binding to a metal ion. [GOC:ai]"
+            },
+            {
+                "answer": "calcium-dependent phospholipase A2 activity",
+                "description": "Catalysis of the reaction: phosphatidylcholine + H2O = 1-acylglycerophosphocholine + a carboxylate. This reaction requires Ca2+. [EC:3.1.1.4]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the modified protein translated from the gene THRB and its modification site?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Modified_protein",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "HAS_MODIFIED_SITE"
+        ],
+        "InitialAttributes": {
+            "id": "THRB",
+            "name": "thyroid hormone receptor beta"
+        },
+        "MidAttributes": {
+            "id": "P10828",
+            "name": "THRB"
+        },
+        "answer": [
+            {
+                "answer": null,
+                "description": null
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the modified protein translated from the gene RND3 and its modification site?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Modified_protein",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "HAS_MODIFIED_SITE"
+        ],
+        "InitialAttributes": {
+            "id": "RND3",
+            "name": "Rho family GTPase 3"
+        },
+        "MidAttributes": {
+            "id": "P61587",
+            "name": "RND3"
+        },
+        "answer": [
+            {
+                "answer": null,
+                "description": null
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the modified protein translated from the gene SCN8A and its modification site?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Modified_protein",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "HAS_MODIFIED_SITE"
+        ],
+        "InitialAttributes": {
+            "id": "SCN8A",
+            "name": "sodium voltage-gated channel alpha subunit 8"
+        },
+        "MidAttributes": {
+            "id": "Q9UQD0",
+            "name": "SCN8A"
+        },
+        "answer": [
+            {
+                "answer": null,
+                "description": null
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What is the modified protein translated from the gene EPB41 and its modification site?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Modified_protein",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "HAS_MODIFIED_SITE"
+        ],
+        "InitialAttributes": {
+            "id": "EPB41",
+            "name": "erythrocyte membrane protein band 4.1"
+        },
+        "MidAttributes": {
+            "id": "P11171",
+            "name": "EPB41"
+        },
+        "answer": [
+            {
+                "answer": null,
+                "description": null
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What biological processes are associated with the protein encoded by the gene SPAAR?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Biological_process",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "SPAAR",
+            "name": "small regulatory polypeptide of amino acid response"
+        },
+        "MidAttributes": {
+            "id": "A0A1B0GVQ0",
+            "name": "SPAAR"
+        },
+        "answer": [
+            {
+                "answer": "negative regulation of TORC1 signaling",
+                "description": "Any process that stops, prevents or reduces the frequency, rate or extent of TORC1 signaling. [GO_REF:0000058, GOC:TermGenie, PMID:25366275]"
+            },
+            {
+                "answer": "regulation of skeletal muscle tissue regeneration",
+                "description": "Any process that modulates the frequency, rate or extent of skeletal muscle. [GOC:jl]"
+            },
+            {
+                "answer": "cellular response to amino acid stimulus",
+                "description": "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an amino acid stimulus. An amino acid is a carboxylic acids containing one or more amino groups. [GOC:mah]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What biological processes are associated with the protein encoded by the gene WFDC5?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Biological_process",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "WFDC5",
+            "name": "WAP four-disulfide core domain 5"
+        },
+        "MidAttributes": {
+            "id": "Q8TCV5",
+            "name": "WFDC5"
+        },
+        "answer": [
+            {
+                "answer": "antibacterial humoral response",
+                "description": "An immune response against bacteria mediated through a body fluid. Examples of this process are the antibacterial humoral responses in Mus musculus and Drosophila melanogaster. [GOC:go_curators, GOC:mtg_sensu]"
+            },
+            {
+                "answer": "innate immune response",
+                "description": "Innate immune responses are defense responses mediated by germline encoded components that directly recognize components of potential pathogens. [GO_REF:0000022, GOC:add, GOC:ebc, GOC:mtg_sensu]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What biological processes are associated with the protein encoded by the gene TMEM127?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Biological_process",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "TMEM127",
+            "name": "transmembrane protein 127"
+        },
+        "MidAttributes": {
+            "id": "O75204",
+            "name": "TMEM127"
+        },
+        "answer": [
+            {
+                "answer": "negative regulation of TOR signaling",
+                "description": "Any process that stops, prevents, or reduces the frequency, rate or extent of TOR signaling. [GOC:mah]"
+            },
+            {
+                "answer": "endosome organization",
+                "description": "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of endosomes. [GOC:dph, GOC:jl, GOC:mah]"
+            },
+            {
+                "answer": "regulation of TOR signaling",
+                "description": "Any process that modulates the frequency, rate or extent of TOR signaling. [GOC:mah]"
+            },
+            {
+                "answer": "negative regulation of cell population proliferation",
+                "description": "Any process that stops, prevents or reduces the rate or extent of cell proliferation. [GOC:go_curators]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What biological processes are associated with the protein encoded by the gene EOLA1?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Biological_process",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "EOLA1",
+            "name": "endothelium and lymphocyte associated ASCH domain 1"
+        },
+        "MidAttributes": {
+            "id": "Q8TE69",
+            "name": "EOLA1"
+        },
+        "answer": [
+            {
+                "answer": "regulation of gene expression",
+                "description": "Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product (protein or RNA). [GOC:txnOH-2018]"
+            },
+            {
+                "answer": "regulation of interleukin-6 production",
+                "description": "Any process that modulates the frequency, rate, or extent of interleukin-6 production. [GOC:mah]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What diseases are associated with the protein encoded by the gene KCNS1?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Disease",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "KCNS1",
+            "name": "potassium voltage-gated channel modifier subfamily S member 1"
+        },
+        "MidAttributes": {
+            "id": "Q96KK3",
+            "name": "KCNS1"
+        },
+        "answer": [
+            {
+                "answer": "generalized anxiety disorder",
+                "description": "An anxiety disorder that is characterized by long-lasting anxiety that is not focused on any one object or situation. [url:http\\://en.wikipedia.org/wiki/Anxiety_disorder]"
+            },
+            {
+                "answer": "anxiety disorder",
+                "description": "A cognitive disorder that involves an excessive, irrational dread of everyday situations. [url:http\\://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml]"
+            },
+            {
+                "answer": "phobic disorder",
+                "description": "An anxiety disorder where fear and anxiety are triggered by a specific stimulus or situation. [url:http\\://en.wikipedia.org/wiki/Anxiety_disorder]"
+            },
+            {
+                "answer": "sensory peripheral neuropathy",
+                "description": "A neuropathy that involves damage to nerves of the peripheral nervous system. [url:https\\://www.mayoclinic.org/diseases-conditions/peripheral-neuropathy/symptoms-causes/syc-20352061]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What diseases are associated with the protein encoded by the gene DHFR2?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Disease",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "DHFR2",
+            "name": "dihydrofolate reductase 2"
+        },
+        "MidAttributes": {
+            "id": "Q86XF0",
+            "name": "DHFR2"
+        },
+        "answer": [
+            {
+                "answer": "Down syndrome",
+                "description": "A chromosomal disease that is characterized by flat-looking facial features and weak muscle tone (hypotonia) in infancy and is caused by trisomy of all or a critical portion of chromosome 21 and is associated with intellectual disability. [url:http\\://en.wikipedia.org/wiki/Down_syndrome, url:http\\://ghr.nlm.nih.gov/condition/down-syndrome, url:http\\://www.nichd.nih.gov/health/topics/down/Pages/default.aspx, url:http\\://www.omim.org/entry/190685?search=down%20syndrome&highlight=down%20syndromic%20syndrome, url:https\\://research.nhgri.nih.gov/atlas/condition/trisomy-21]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What diseases are associated with the protein encoded by the gene ATP6V1G3?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Disease",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "ATP6V1G3",
+            "name": "ATPase H+ transporting V1 subunit G3"
+        },
+        "MidAttributes": {
+            "id": "Q96LB4",
+            "name": "ATP6V1G3"
+        },
+        "answer": [
+            {
+                "answer": "nonpapillary renal cell carcinoma",
+                "description": "A hereditary renal cell carcinoma that has_material_basis_in a loss of 3p13-pter sequences. [url:https\\://www.ncbi.nlm.nih.gov/pubmed/2921777, url:https\\://www.ncbi.nlm.nih.gov/pubmed/8415591]"
+            },
+            {
+                "answer": "renal cell carcinoma",
+                "description": "A renal carcinoma that has_material_basis_in the lining of the proximal convoluted renal tubule of the kidney. [url:http\\://en.wikipedia.org/wiki/Renal_cell_carcinoma, url:http\\://www.cancer.gov/dictionary?CdrID=661352]"
+            },
+            {
+                "answer": "clear cell renal cell carcinoma",
+                "description": "A renal cell carcinoma that has_material_basis_in cells that appear very pale or clear when examined under microscope. [url:http\\://www.cancer.gov/dictionary?CdrID=45063, url:https\\://cancergenome.nih.gov/cancersselected/kidneyclearcell]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "What diseases are associated with the protein encoded by the gene GAGE2C?",
+        "InitialType": "Gene",
+        "MidType": "Protein",
+        "FinalType": "Disease",
+        "EdgeTypes": [
+            "TRANSLATED_INTO",
+            "ASSOCIATED_WITH"
+        ],
+        "InitialAttributes": {
+            "id": "GAGE2C",
+            "name": "G antigen 2C"
+        },
+        "MidAttributes": {
+            "id": "Q13066",
+            "name": "GAGE2B"
+        },
+        "answer": [
+            {
+                "answer": "lung carcinoma",
+                "description": "A lung cancer that has_material_basis_in abnormally proliferating cells derives_from epithelial cells and is located_in the lungs and has_symptom cough and has_symptom chest discomfort or pain and has_symptom weight loss and has_symptom hemoptysis. [url:https\\://merck.com/mmpe/sec05/ch062/ch062b.html]"
+            },
+            {
+                "answer": "urinary bladder cancer",
+                "description": "An urinary system cancer that results_in malignant growth located_in the urinary bladder. [url:http\\://en.wikipedia.org/wiki/Bladder_cancer]"
+            },
+            {
+                "answer": "melanoma",
+                "description": "A cell type cancer that has_material_basis_in abnormally proliferating cells derives_from melanocytes which are found in skin, the bowel and the eye. [url:http\\://en.wikipedia.org/wiki/Melanoma, url:https\\://www.ncbi.nlm.nih.gov/pubmed/22123420]"
+            }
+        ],
+        "type": "multi-hop"
+    },
+    {
+        "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Biological_process",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "Q9UKD2"
+        },
+        "Entity2Attributes": {
+            "id": "P62750"
+        },
+        "answer": [
+            {
+                "answer": "ribosomal large subunit assembly",
+                "description": "The aggregation, arrangement and bonding together of constituent RNAs and proteins to form the large ribosomal subunit. [GOC:jl, PMID:30467428]",
+                "id": "GO:0000027"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "Which biological process are the proteins Q9H7B2 and Q14137 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Biological_process",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "Q9H7B2"
+        },
+        "Entity2Attributes": {
+            "id": "Q14137"
+        },
+        "answer": [
+            {
+                "answer": "maturation of LSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
+                "description": "Any process involved in the maturation of a precursor Large SubUnit (LSU) ribosomal RNA (rRNA) molecule into a mature LSU-rRNA molecule from the pre-rRNA molecule originally produced as a tricistronic rRNA transcript that contains the Small Subunit (SSU) rRNA, 5.8S rRNA, and Large Subunit (LSU) in that order from 5' to 3' along the primary transcript. [GOC:curators]",
+                "id": "GO:0000463"
+            },
+            {
+                "answer": "ribosomal large subunit assembly",
+                "description": "The aggregation, arrangement and bonding together of constituent RNAs and proteins to form the large ribosomal subunit. [GOC:jl, PMID:30467428]",
+                "id": "GO:0000027"
+            },
+            {
+                "answer": "regulation of signal transduction by p53 class mediator",
+                "description": "Any process that modulates the frequency, rate or extent of signal transduction by p53 class mediator. [GOC:TermGenie]",
+                "id": "GO:1901796"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "Which pathway are the proteins P02778 and P25106 both annotated in?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Pathway",
+        "EdgeType": "ANNOTATED_IN_PATHWAY",
+        "Entity1Attributes": {
+            "id": "P02778"
+        },
+        "Entity2Attributes": {
+            "id": "P25106"
+        },
+        "answer": [
+            {
+                "id": "R-HSA-380108",
+                "description": "Chemokine receptors bind chemokines",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-380108",
+                "source": "Reactome",
+                "answer": "Chemokine receptors bind chemokines"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "Which pathway are the proteins P02649 and P50120 both annotated in?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Pathway",
+        "EdgeType": "ANNOTATED_IN_PATHWAY",
+        "Entity1Attributes": {
+            "id": "P02649"
+        },
+        "Entity2Attributes": {
+            "id": "P50120"
+        },
+        "answer": [
+            {
+                "id": "R-HSA-975634",
+                "description": "Retinoid metabolism and transport",
+                "linkout": "https://reactome.org/PathwayBrowser/#/R-HSA-975634",
+                "source": "Reactome",
+                "answer": "Retinoid metabolism and transport"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "What molecular function are the proteins P01732 and P32927 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Molecular_function",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "P01732"
+        },
+        "Entity2Attributes": {
+            "id": "P32927"
+        },
+        "answer": [
+            {
+                "description": "Combining with an extracellular or intracellular messenger, and in cooperation with a nearby primary receptor, initiating a change in cell activity. [GOC:go_curators]",
+                "answer": "coreceptor activity"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "What molecular function are the proteins P10415 and Q9UMX3 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Molecular_function",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "P10415"
+        },
+        "Entity2Attributes": {
+            "id": "Q9UMX3"
+        },
+        "answer": [
+            {
+                "description": "Binding to a Bcl-2 homology (BH) protein domain. Bcl-2-related proteins share homology in one to four conserved regions designated the Bcl-2 homology (BH) domains BH1, BH2, BH3 and BH4. These domains contribute at multiple levels to the function of these proteins in cell death and survival. Anti-apoptotic members of the Bcl-2 family have four BH domains (BH1-BH4). Pro-apoptotic members have fewer BH domains. [PMID:11048732, PMID:12133724, PMID:9020082, PMID:9704409]",
+                "answer": "BH domain binding"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "Which disease are the proteins O15303 and P13667 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Disease",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "O15303"
+        },
+        "Entity2Attributes": {
+            "id": "P13667"
+        },
+        "answer": [
+            {
+                "answer": "cancer",
+                "description": "A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis. [url:http\\://en.wikipedia.org/wiki/cancer, url:http\\://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=cancer]",
+                "id": "DOID:162"
+            }
+        ],
+        "type": "conjunction"
+    },
+    {
+        "question": "Which disease are the proteins Q9P2E3 and P50150 both associated with?",
+        "EntityType1": "Protein",
+        "EntityType2": "Protein",
+        "MidType": "Disease",
+        "EdgeType": "ASSOCIATED_WITH",
+        "Entity1Attributes": {
+            "id": "Q9P2E3"
+        },
+        "Entity2Attributes": {
+            "id": "P50150"
+        },
+        "answer": [
+            {
+                "answer": "cancer",
+                "description": "A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis. [url:http\\://en.wikipedia.org/wiki/cancer, url:http\\://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=cancer]",
+                "id": "DOID:162"
+            }
+        ],
+        "type": "conjunction"
+    }
+]

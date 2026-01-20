@@ -1,0 +1,205 @@
+{
+  "model": "claude-3-sonnet",
+  "results": [
+    {
+      "taxonomy": "S",
+      "task_id": "S-DISEASE-GENES",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000274478",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Arthritis, Psoriatic",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Emphysema",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-SNP-GENE",
+      "category": "knowledge",
+      "ground_truth": "rs77538922",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "S",
+      "task_id": "S-SNP-DISEASE",
+      "category": "knowledge",
+      "ground_truth": "Prostatic Neoplasms",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "category": "knowledge",
+      "ground_truth": "rs2856690",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-RISK-SCORE",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000285651",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "category": "knowledge",
+      "ground_truth": "TMEM120A",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "category": "knowledge",
+      "ground_truth": "CADM3-AS1",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "category": "knowledge",
+      "ground_truth": "rs165255",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "category": "knowledge",
+      "ground_truth": "CCDC26",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-TOP-CAUSAL",
+      "category": "knowledge",
+      "ground_truth": "rs2523693",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "category": "knowledge",
+      "ground_truth": "GEMIN7-AS1",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-MR-VALIDATED",
+      "category": "knowledge",
+      "ground_truth": "ESPL1",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "C",
+      "task_id": "C-CAUSAL-SNP",
+      "category": "knowledge",
+      "ground_truth": "rs9267230",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "category": "knowledge",
+      "ground_truth": "PHC3",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-SHARED-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "Skin Diseases, Vascular",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "TRIM31-AS1",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "category": "knowledge",
+      "ground_truth": "MET",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "category": "knowledge",
+      "ground_truth": "ENSG00000256206",
+      "prediction": "ERROR: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: c",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    }
+  ]
+}

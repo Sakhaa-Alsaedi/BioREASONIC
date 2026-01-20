@@ -1,0 +1,30 @@
+{
+  "total_questions": 698,
+  "protein_coverage": {
+    "found": 389,
+    "total": 389,
+    "percentage": 100.0
+  },
+  "answerable": {
+    "yes": 324,
+    "no": 4,
+    "unknown": 370
+  },
+  "by_type": {
+    "one-hop": {
+      "yes": 227,
+      "no": 1,
+      "unknown": 163
+    },
+    "multi-hop": {
+      "yes": 97,
+      "no": 3,
+      "unknown": 100
+    },
+    "conjunction": {
+      "yes": 0,
+      "no": 0,
+      "unknown": 107
+    }
+  }
+}

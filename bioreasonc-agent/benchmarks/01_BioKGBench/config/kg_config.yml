@@ -1,0 +1,66 @@
+# BioKGBench Configuration
+version: 1.0
+
+# Neo4j Database Connection
+# Keys use db_ prefix for compatibility with kg_qa_system_v2.py
+db_url: "34.31.148.159"
+db_port: 7687
+db_user: "neo4j"
+db_password: "password123"
+encrypted: false
+
+# =============================================================================
+# Directory Paths (relative to BioREASONIC root)
+# =============================================================================
+paths:
+  # Knowledge Graph data
+  kg_data: "data/kg"
+  kg_nodes: "data/kg/nodes"
+  kg_edges: "data/kg/edges"
+  kg_mappings: "data/kg/mappings"
+
+  # Source code
+  kg_builder: "src/kg_builder"
+
+  # Benchmarks
+  biokgbench: "benchmarks/01_BioKGBench"
+  bioresonkgbench: "benchmarks/02_BioResonKGBench"
+
+  # Results
+  results: "results"
+  visualizations: "results/visualizations"
+
+  # Logs
+  logs: "logs"
+
+# =============================================================================
+# Knowledge Graph Schema
+# =============================================================================
+schema:
+  nodes:
+    - Gene
+    - Disease
+    - SNP
+    - Protein
+
+  relationships:
+    - type: MAPS_TO
+      source: SNP
+      target: Gene
+    - type: PUTATIVE_CAUSAL_EFFECT
+      source: SNP
+      target: Disease
+    - type: INCREASES_RISK_OF
+      source: Gene
+      target: Disease
+    - type: TRANSLATED_INTO
+      source: Gene
+      target: Protein
+
+# =============================================================================
+# Logging
+# =============================================================================
+logging:
+  level: INFO
+  connector_log: "logs/connector.log"
+  builder_log: "logs/builder.log"

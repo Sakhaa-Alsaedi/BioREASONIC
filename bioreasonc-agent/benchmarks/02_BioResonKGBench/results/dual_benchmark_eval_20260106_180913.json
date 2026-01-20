@@ -1,0 +1,370 @@
+{
+  "timestamp": "20260106_180913",
+  "n_samples": 5,
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o",
+    "claude-3-haiku-20240307"
+  ],
+  "BioKGBench": {
+    "gpt-4o-mini": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p06396",
+            "p02774",
+            "gc",
+            "gsn"
+          ],
+          "predicted": "P68133 interacts with proteins such as CDK1, CDK2, and CCNB1.",
+          "correct": false
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": "Collagen binding, extracellular matrix structural constituent, structural molecule activity.",
+          "correct": false
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": "Apoptosis, cell proliferation",
+          "correct": false
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": "Q9NYB9 interacts with proteins such as RPS6, RPS7, RPL5, RPL11, and RPL23.",
+          "correct": false
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": "P12814 interacts with proteins such as TP53, MDM2, and CDK2.",
+          "correct": false
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p06396",
+            "p02774",
+            "gc",
+            "gsn"
+          ],
+          "predicted": "The protein P68133, also known as the human epidermal growth factor receptor 2 (HER2), interacts with proteins such as GRB2, SHC1, PIK3R1, SRC, and PTK6.",
+          "correct": false
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": "Extracellular matrix structural constituent.",
+          "correct": false
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": "Apoptotic process.",
+          "correct": false
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": "The protein Q9NYB9, also known as NEDD4L, interacts with SCNN1A, SCNN1B, SCNN1G, ENaC, SGK1, and WNK1.",
+          "correct": false
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": "Yes, the protein P12814, also known as Interleukin-6 (IL-6), interacts with the following proteins: IL6R, IL6ST, JAK1, JAK2, STAT3.",
+          "correct": false
+        }
+      ]
+    },
+    "claude-3-haiku-20240307": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p06396",
+            "p02774",
+            "gc",
+            "gsn"
+          ],
+          "predicted": "P68133 interacts with ACTA1, ACTN2, ACTN3, DES, TMOD1, and TTN.",
+          "correct": false
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": "The molecular function of the protein translated from the gene COL21A1 is collagen binding, extracellular matrix structural constituent.",
+          "correct": false
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": "Ribosome biogenesis, translation",
+          "correct": false
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": "Based on my knowledge, the protein Q9NYB9 interacts with the following proteins: HNRNPU, PTBP1, SRSF1, SRSF2, SRSF3, SRSF7.",
+          "correct": false
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": "Based on my knowledge of biomedical data, the protein P12814 has been reported to interact with the following proteins: ACTN1, ACTN2, ACTN3, ACTN4, CAPZB, ITGB1, ITGB3, MYOZ1, MYOZ2, MYOZ3.",
+          "correct": false
+        }
+      ]
+    }
+  },
+  "BioResonKGBench": {
+    "gpt-4o-mini": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "skin disease",
+            "iron deficiency anemia",
+            "diabetic retinopathy",
+            "latent autoimmune diabetes in adults",
+            "psoriatic arthritis"
+          ],
+          "predicted": "Celiac disease, Type 1 diabetes, Multiple sclerosis, Rheumatoid arthritis, Systemic lupus erythematosus.",
+          "correct": true
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": "The risk score for gene CDH13 affecting coronary artery disease is not a fixed value and can vary based on specific studies and populations. Generally, it is associated with a modest risk increase.",
+          "correct": false
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": "I do not have access to specific causal scores for SNP rs61816761's effect on hematologic cancer.",
+          "correct": false
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": "Anaplastic lymphoma kinase (ALK)",
+          "correct": true
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "coronary artery disease",
+            "asthma",
+            "hypertension",
+            "squamous cell carcinoma",
+            "pulmonary emphysema"
+          ],
+          "predicted": "Cancer, neurodegenerative diseases, cardiovascular diseases.",
+          "correct": false
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "skin disease",
+            "iron deficiency anemia",
+            "diabetic retinopathy",
+            "latent autoimmune diabetes in adults",
+            "psoriatic arthritis"
+          ],
+          "predicted": "Celiac disease, type 1 diabetes, multiple sclerosis, systemic lupus erythematosus, rheumatoid arthritis, narcolepsy, myasthenia gravis.",
+          "correct": true
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": "The risk score for gene CDH13 affecting coronary artery disease is not a fixed value and can vary based on specific studies and population data.",
+          "correct": false
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": "I am unable to provide a specific causal score for SNP rs61816761's effect on hematologic cancer as it requires access to specialized databases or studies that evaluate genetic associations and their ",
+          "correct": false
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": "Anaplastic lymphoma kinase (ALK) protein.",
+          "correct": true
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "coronary artery disease",
+            "asthma",
+            "hypertension",
+            "squamous cell carcinoma",
+            "pulmonary emphysema"
+          ],
+          "predicted": "Cancer, intellectual disability, microcephaly.",
+          "correct": false
+        }
+      ]
+    },
+    "claude-3-haiku-20240307": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 40.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "skin disease",
+            "iron deficiency anemia",
+            "diabetic retinopathy",
+            "latent autoimmune diabetes in adults",
+            "psoriatic arthritis"
+          ],
+          "predicted": "Based on my knowledge of genetics and biomedical data, diseases associated with increased risk from the gene HLA-DQA1 include celiac disease, type 1 diabetes, rheumatoid arthritis, multiple sclerosis,",
+          "correct": true
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": "Based on current research, the risk score for the gene CDH13 affecting coronary artery disease is moderate, around 1.2-1.5.",
+          "correct": false
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": "Based on my knowledge of genetics, proteins, diseases, and biological pathways, the causal score for SNP rs61816761's effect on hematologic cancer is 0.87.",
+          "correct": false
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": "The gene ALK (Anaplastic Lymphoma Receptor Tyrosine Kinase) translates into the Anaplastic Lymphoma Kinase (ALK) protein.",
+          "correct": true
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "coronary artery disease",
+            "asthma",
+            "hypertension",
+            "squamous cell carcinoma",
+            "pulmonary emphysema"
+          ],
+          "predicted": "Based on my knowledge of genetics and biomedical data, diseases associated with increased risk from the METTL1 gene include acute myeloid leukemia, myelodysplastic syndrome, and certain types of cance",
+          "correct": false
+        }
+      ]
+    }
+  }
+}

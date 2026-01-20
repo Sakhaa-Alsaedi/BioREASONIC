@@ -1,0 +1,554 @@
+{
+  "timestamp": "20260106_181423",
+  "mode": "KG_ACCESS",
+  "n_samples": 5,
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o",
+    "claude-3-haiku"
+  ],
+  "BioKGBench": {
+    "gpt-4o-mini": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p02774",
+            "p06396",
+            "gsn",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(x:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(x) RETURN DISTINCT x.name AS answer, x.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "p62993",
+            "camk2a",
+            "q9uqm7",
+            "grb2"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p02774",
+            "p06396",
+            "gsn",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "p62993",
+            "camk2a",
+            "q9uqm7",
+            "grb2"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p02774",
+            "p06396",
+            "gsn",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 1\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "p62993",
+            "camk2a",
+            "q9uqm7",
+            "grb2"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    }
+  },
+  "BioResonKGBench": {
+    "gpt-4o-mini": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "celiac disease",
+            "neuromuscular junction disease",
+            "asthma",
+            "pharyngitis",
+            "depressive disorder"
+          ],
+          "predicted": [
+            "pneumonia",
+            "DOID:552",
+            "systemic lupus erythematosus",
+            "DOID:9074",
+            "gestational diabetes"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'CDH13'})-[:INCREASES_RISK_OF]->(d:Disease {id: 'DOID:102'}) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": [
+            "dermatitis",
+            "asthma",
+            "pulmonary emphysema",
+            "hematologic cancer",
+            "occupational asthma"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs61816761'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "hypertension",
+            "asthma",
+            "pulmonary emphysema"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "DOID:1040",
+            "pulmonary emphysema",
+            "DOID:9675",
+            "hypertension"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "celiac disease",
+            "neuromuscular junction disease",
+            "asthma",
+            "pharyngitis",
+            "depressive disorder"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'CDH13'})-[:INCREASES_RISK_OF]->(d:Disease {name: 'coronary artery disease'}) RETURN DISTINCT r.score AS answer LIMIT 50",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 1, column 114 (offset: 113))\n\"MATCH (g:Gene {id: 'CDH13'})-[:INCREASES_RISK_OF]->(d:Disease {name: 'coronary artery disease'}) RETURN DISTINCT r.score AS answer LIMIT 50\"\n                                                                                                                  ^}"
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (s:SNP {id: 'rs61816761'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'hematologic cancer'}) RETURN DISTINCT r.score AS answer LIMIT 50",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 1, column 118 (offset: 117))\n\"MATCH (s:SNP {id: 'rs61816761'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'hematologic cancer'}) RETURN DISTINCT r.score AS answer LIMIT 50\"\n                                                                                                                      ^}"
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: $gene_id})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "hypertension",
+            "asthma",
+            "pulmonary emphysema"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "celiac disease",
+            "neuromuscular junction disease",
+            "asthma",
+            "pharyngitis",
+            "depressive disorder"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+          "type": "R",
+          "gold": [
+            "0.632666926305952"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'CDH13'})-[:INCREASES_RISK_OF]->(d:Disease {name: 'coronary artery disease'}) RETURN DISTINCT d.name AS answer, g.name AS gene_name, d.id AS disease_id, r.score AS risk_score LIMIT ",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 1, column 173 (offset: 172))\n\"MATCH (g:Gene {id: 'CDH13'})-[:INCREASES_RISK_OF]->(d:Disease {name: 'coronary artery disease'}) RETURN DISTINCT d.name AS answer, g.name AS gene_name, d.id AS disease_id, r.score AS risk_score LIMIT 50\"\n                                                                                                                                                                             ^}"
+        },
+        {
+          "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+          "type": "C",
+          "gold": [
+            "1.0"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (s:SNP {id: 'rs61816761'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'hematologic cancer'}) RETURN s.id AS id, s.chromosome AS chromosome, s.position AS position, d.name AS disease, r.score A",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 1, column 192 (offset: 191))\n\"MATCH (s:SNP {id: 'rs61816761'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'hematologic cancer'}) RETURN s.id AS id, s.chromosome AS chromosome, s.position AS position, d.name AS disease, r.score AS causal_score LIMIT 50\"\n                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "hypertension",
+            "asthma",
+            "pulmonary emphysema"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    }
+  }
+}

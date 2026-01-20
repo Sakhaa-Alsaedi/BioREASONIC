@@ -1,0 +1,211 @@
+{
+  "timestamp": "20260106_203902",
+  "n_samples": 20,
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o",
+    "gpt-4-turbo",
+    "claude-3-haiku",
+    "deepseek-v3",
+    "llama-3.1-8b",
+    "qwen-2.5-7b"
+  ],
+  "results": {
+    "gpt-4o-mini": {
+      "biokgbench_no_kg": {
+        "f1": 3.9990622685855945,
+        "em": 0.0,
+        "hits1": 0.0,
+        "mrr": 0.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 8.273809523809526,
+        "em": 15.0,
+        "hits1": 15.0,
+        "mrr": 15.0
+      },
+      "biokgbench_kg": {
+        "f1": 55.00000000000001,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 75.0,
+        "exec": 80.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 45.0,
+        "em": 50.0,
+        "hits1": 50.0,
+        "mrr": 54.722222222222214,
+        "exec": 100.0
+      }
+    },
+    "gpt-4o": {
+      "biokgbench_no_kg": {
+        "f1": 7.92985842985843,
+        "em": 5.0,
+        "hits1": 5.0,
+        "mrr": 5.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 4.365245261984393,
+        "em": 15.0,
+        "hits1": 15.0,
+        "mrr": 15.0
+      },
+      "biokgbench_kg": {
+        "f1": 55.00000000000001,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 75.0,
+        "exec": 80.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 45.0,
+        "em": 45.0,
+        "hits1": 45.0,
+        "mrr": 48.5,
+        "exec": 100.0
+      }
+    },
+    "gpt-4-turbo": {
+      "biokgbench_no_kg": {
+        "f1": 5.530279503105589,
+        "em": 5.0,
+        "hits1": 5.0,
+        "mrr": 5.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 6.82983682983683,
+        "em": 10.0,
+        "hits1": 10.0,
+        "mrr": 10.0
+      },
+      "biokgbench_kg": {
+        "em": 0,
+        "f1": 0,
+        "hits1": 0,
+        "mrr": 0,
+        "exec": 0
+      },
+      "bioresonkgbench_kg": {
+        "em": 0,
+        "f1": 0,
+        "hits1": 0,
+        "mrr": 0,
+        "exec": 0
+      }
+    },
+    "claude-3-haiku": {
+      "biokgbench_no_kg": {
+        "f1": 10.952380952380954,
+        "em": 5.0,
+        "hits1": 5.0,
+        "mrr": 5.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 13.242424242424239,
+        "em": 20.0,
+        "hits1": 20.0,
+        "mrr": 20.0
+      },
+      "biokgbench_kg": {
+        "f1": 55.00000000000001,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 75.0,
+        "exec": 70.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 45.0,
+        "em": 50.0,
+        "hits1": 50.0,
+        "mrr": 53.49999999999999,
+        "exec": 95.0
+      }
+    },
+    "deepseek-v3": {
+      "biokgbench_no_kg": {
+        "f1": 6.828042328042329,
+        "em": 0.0,
+        "hits1": 0.0,
+        "mrr": 0.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 9.347744360902256,
+        "em": 15.0,
+        "hits1": 15.0,
+        "mrr": 15.0
+      },
+      "biokgbench_kg": {
+        "f1": 55.00000000000001,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 75.0,
+        "exec": 80.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 45.0,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 78.05555555555556,
+        "exec": 70.0
+      }
+    },
+    "llama-3.1-8b": {
+      "biokgbench_no_kg": {
+        "f1": 6.999999999999999,
+        "em": 5.0,
+        "hits1": 5.0,
+        "mrr": 5.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 5.317982456140351,
+        "em": 10.0,
+        "hits1": 10.0,
+        "mrr": 10.0
+      },
+      "biokgbench_kg": {
+        "f1": 40.0,
+        "em": 70.0,
+        "hits1": 70.0,
+        "mrr": 70.0,
+        "exec": 70.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 40.0,
+        "em": 75.0,
+        "hits1": 75.0,
+        "mrr": 75.0,
+        "exec": 80.0
+      }
+    },
+    "qwen-2.5-7b": {
+      "biokgbench_no_kg": {
+        "f1": 8.043233082706767,
+        "em": 5.0,
+        "hits1": 5.0,
+        "mrr": 5.0
+      },
+      "bioresonkgbench_no_kg": {
+        "f1": 8.421717171717171,
+        "em": 10.0,
+        "hits1": 10.0,
+        "mrr": 10.0
+      },
+      "biokgbench_kg": {
+        "f1": 25.0,
+        "em": 55.00000000000001,
+        "hits1": 55.00000000000001,
+        "mrr": 55.00000000000001,
+        "exec": 70.0
+      },
+      "bioresonkgbench_kg": {
+        "f1": 45.0,
+        "em": 70.0,
+        "hits1": 70.0,
+        "mrr": 74.72222222222221,
+        "exec": 95.0
+      }
+    }
+  }
+}

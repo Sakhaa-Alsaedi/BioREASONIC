@@ -1,0 +1,231 @@
+{
+  "timestamp": "20260106_152012",
+  "num_questions": 5,
+  "dataset": "dev",
+  "models": {
+    "claude-3-haiku": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "claude-3-haiku",
+      "total_time_sec": 9.467459678649902
+    },
+    "deepseek-v3": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "deepseek-v3",
+      "total_time_sec": 13.797856330871582
+    },
+    "gpt-4.1": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "gpt-4.1",
+      "total_time_sec": 19.51643681526184
+    },
+    "gpt-4.1-mini": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "gpt-4.1-mini",
+      "total_time_sec": 17.686851024627686
+    },
+    "gpt-4o": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "gpt-4o",
+      "total_time_sec": 5.631572246551514
+    },
+    "gpt-4o-mini": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "gpt-4o-mini",
+      "total_time_sec": 11.937397480010986
+    },
+    "llama-3.1-8b": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "llama-3.1-8b",
+      "total_time_sec": 37.0858039855957
+    },
+    "qwen-2.5-7b": {
+      "total": 5,
+      "answered": 5,
+      "coverage": 1.0,
+      "executability": 1.0,
+      "hits_1": 1.0,
+      "hits_5": 1.0,
+      "hits_10": 1.0,
+      "mrr": 1.0,
+      "f1": 0.06419799934969302,
+      "em": 1.0,
+      "by_type": {
+        "one-hop": {
+          "total": 5,
+          "answered": 5,
+          "coverage": 1.0,
+          "executability": 1.0,
+          "hits_1": 1.0,
+          "hits_5": 1.0,
+          "hits_10": 1.0,
+          "mrr": 1.0,
+          "f1": 0.06419799934969302,
+          "em": 1.0
+        }
+      },
+      "model": "qwen-2.5-7b",
+      "total_time_sec": 7.310822486877441
+    }
+  }
+}

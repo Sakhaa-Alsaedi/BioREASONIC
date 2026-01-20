@@ -1,0 +1,13 @@
+# Local config with API keys - never commit
+config.local.yaml
+
+# Results files
+comparison_results_*.json
+evaluation_results_*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp

@@ -1,0 +1,233 @@
+[
+  {
+    "question": "Which gene has the highest risk for tooth disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1091\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "tooth disease",
+      "disease_id": "DOID:1091"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have high risk for blood coagulation disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1247\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "blood coagulation disease",
+      "disease_id": "DOID:1247"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which disease is most affected by gene EXOC6B?",
+    "cypher": "MATCH (g:Gene {id: \"EXOC6B\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "EXOC6B"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for writing disorder?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:0060047\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "writing disorder",
+      "disease_id": "DOID:0060047"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which SNP has the most significant association with iron deficiency anemia?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:11758\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "iron deficiency anemia",
+      "disease_id": "DOID:11758"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for cardiovascular system disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1287\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "cardiovascular system disease",
+      "disease_id": "DOID:1287"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have strong evidence for affecting follicular lymphoma?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:0050873\"})\n            WHERE r.evidence_score > 0.6\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-STRONG-EVIDENCE-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "follicular lymphoma",
+      "disease_id": "DOID:0050873"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for exfoliation syndrome?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:13641\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "exfoliation syndrome",
+      "disease_id": "DOID:13641"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which disease is most affected by gene PPP1R10?",
+    "cypher": "MATCH (g:Gene {id: \"PPP1R10\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "PPP1R10"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have high risk for abdominal obesity-metabolic syndrome 1?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:14221\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "abdominal obesity-metabolic syndrome 1",
+      "disease_id": "DOID:14221"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have high risk for both hypertrophic cardiomyopathy and Alzheimer's disease?",
+    "cypher": "MATCH (g:Gene)-[r1:INCREASES_RISK_OF]->(d1:Disease {id: \"DOID:11984\"})\n            WHERE r1.risk_score > 0.4\n            MATCH (g)-[r2:INCREASES_RISK_OF]->(d2:Disease {id: \"DOID:10652\"})\n            WHERE r2.risk_score > 0.4\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-REASONING-SHARED-HIGH-RISK",
+    "taxonomy": "R",
+    "type": "multi-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease1": "hypertrophic cardiomyopathy",
+      "disease2": "Alzheimer's disease"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for vaginal disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:121\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "vaginal disease",
+      "disease_id": "DOID:121"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for neurodegenerative disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1289\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "neurodegenerative disease",
+      "disease_id": "DOID:1289"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which SNP has the most significant association with neurodegenerative disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1289\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "neurodegenerative disease",
+      "disease_id": "DOID:1289"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which gene has the highest risk for Fanconi syndrome?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1062\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "Fanconi syndrome",
+      "disease_id": "DOID:1062"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have high risk for both cardiovascular system disease and depressive disorder?",
+    "cypher": "MATCH (g:Gene)-[r1:INCREASES_RISK_OF]->(d1:Disease {id: \"DOID:1287\"})\n            WHERE r1.risk_score > 0.4\n            MATCH (g)-[r2:INCREASES_RISK_OF]->(d2:Disease {id: \"DOID:1596\"})\n            WHERE r2.risk_score > 0.4\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-REASONING-SHARED-HIGH-RISK",
+    "taxonomy": "R",
+    "type": "multi-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease1": "cardiovascular system disease",
+      "disease2": "depressive disorder"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which genes have high risk for Alzheimer's disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:10652\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "Alzheimer's disease",
+      "disease_id": "DOID:10652"
+    },
+    "category": "reasoning"
+  },
+  {
+    "question": "Which disease is most affected by gene DHX16?",
+    "cypher": "MATCH (g:Gene {id: \"DHX16\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "DHX16"
+    },
+    "category": "reasoning"
+  }
+]

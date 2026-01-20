@@ -1,0 +1,40 @@
+# Local Configuration for KGQA System
+# This file is NOT committed to git - add your API keys here
+
+# Neo4j Connection
+neo4j:
+  db_url: "34.31.148.159"
+  db_port: 7687
+  db_user: "neo4j"
+  db_password: "password123"
+
+# LLM API Configuration
+llm:
+  # Choose provider: "openai", "claude", "llama3-70b", "llama3-8b", "mixtral", "qwen-72b", "deepseek", or "none"
+  provider: "openai"
+
+  # OpenAI Configuration
+  openai:
+    api_key: "YOUR_OPENAI_API_KEY_HERE"
+    model: "gpt-4o"
+    temperature: 0.0
+    max_tokens: 1000
+
+  # Claude/Anthropic Configuration
+  claude:
+    api_key: "YOUR_ANTHROPIC_API_KEY_HERE"
+    model: "claude-3-5-sonnet-20241022"
+    temperature: 0.0
+    max_tokens: 1000
+
+  # Together AI Configuration (Llama-3, Mixtral, Qwen, DeepSeek)
+  together:
+    api_key: "YOUR_TOGETHER_API_KEY_HERE"
+    temperature: 0.0
+    max_tokens: 1000
+
+# Evaluation Settings
+evaluation:
+  compare_modes: true
+  save_predictions: true
+  verbose: false

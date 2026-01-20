@@ -1,0 +1,584 @@
+{
+  "timestamp": "20260106_194141",
+  "mode": "KG_ACCESS",
+  "n_samples": 5,
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o",
+    "claude-3-haiku"
+  ],
+  "BioKGBench": {
+    "gpt-4o-mini": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gc",
+            "gsn",
+            "p02774",
+            "p06396"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(x:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(x) RETURN DISTINCT x.name AS answer, x.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "adam19",
+            "q9h013"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gc",
+            "gsn",
+            "p02774",
+            "p06396"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "adam19",
+            "q9h013"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gc",
+            "gsn",
+            "p02774",
+            "p06396"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 1\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "adam19",
+            "q9h013"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993",
+            "q9uqm7",
+            "camk2a"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    }
+  },
+  "BioResonKGBench": {
+    "gpt-4o-mini": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "cardiovascular system disease",
+            "type 2 diabetes mellitus",
+            "infections",
+            "selective iga deficiency disease",
+            "prosthesis-related infections"
+          ],
+          "predicted": [
+            "pneumonia",
+            "DOID:552",
+            "systemic lupus erythematosus",
+            "DOID:9074",
+            "gestational diabetes"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs58913393",
+            "rs60730309",
+            "rs145777783",
+            "rs4888385"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS answer, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs115744229",
+            "rs9295826",
+            "rs34404554",
+            "rs1131500",
+            "rs9404959"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name CONTAINS 'neurodegenerative' RETURN DISTINCT s.id AS answer, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "pulmonary emphysema",
+            "coronary artery disease",
+            "hypertension",
+            "chronic lymphocytic leukemia",
+            "asthma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "DOID:1040",
+            "pulmonary emphysema",
+            "DOID:9675",
+            "hypertension"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "cardiovascular system disease",
+            "type 2 diabetes mellitus",
+            "infections",
+            "selective iga deficiency disease",
+            "prosthesis-related infections"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs58913393",
+            "rs60730309",
+            "rs145777783",
+            "rs4888385"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs9295826",
+            "rs34404554",
+            "rs1131500",
+            "rs9404959",
+            "rs9268577"
+          ],
+          "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name =~ '(?i).*neurodegenerative.*' RETURN DISTINCT s.id AS answer, r.score AS score ORDER BY score DESC LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "pulmonary emphysema",
+            "coronary artery disease",
+            "hypertension",
+            "chronic lymphocytic leukemia",
+            "asthma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "cardiovascular system disease",
+            "type 2 diabetes mellitus",
+            "infections",
+            "selective iga deficiency disease",
+            "prosthesis-related infections"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs12150284",
+            "rs58913393",
+            "rs58913393",
+            "rs60730309"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS id, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs191021171",
+            "rs191021171",
+            "rs565069530",
+            "rs565069530",
+            "rs115177889"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name CONTAINS 'neurodegenerative' RETURN DISTINCT s.id AS id, s.chromosome AS chromosome, s.position AS position ORDER BY s.position DESC L",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "pulmonary emphysema",
+            "coronary artery disease",
+            "hypertension",
+            "chronic lymphocytic leukemia",
+            "asthma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    }
+  }
+}

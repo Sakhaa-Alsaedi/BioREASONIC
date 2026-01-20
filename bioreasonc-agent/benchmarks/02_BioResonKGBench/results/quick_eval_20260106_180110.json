@@ -1,0 +1,222 @@
+{
+  "gpt-4o-mini": [
+    {
+      "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+      "taxonomy": "S",
+      "gold": [
+        "streptococcus pneumoniae",
+        "glomerulonephritis",
+        "gastritis",
+        "thyroid gland disease",
+        "iron metabolism disease"
+      ],
+      "predicted": "The gene HLA-DQA1 is associated with an increased risk of several diseases, including Type 1 diabetes, celiac disease, and multiple sclerosis.",
+      "correct": true
+    },
+    {
+      "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+      "taxonomy": "R",
+      "gold": [
+        "0.632666926305952"
+      ],
+      "predicted": "The risk score for gene CDH13 affecting coronary artery disease is not a fixed value and can vary based on population studies and genetic background. However, CDH13 has been associated with coronary a",
+      "correct": false
+    },
+    {
+      "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+      "taxonomy": "C",
+      "gold": [
+        "1.0"
+      ],
+      "predicted": "As of my last knowledge update in October 2023, I do not have specific information regarding the causal score for SNP rs61816761's effect on hematologic cancer. Causal scores can vary based on the stu",
+      "correct": false
+    },
+    {
+      "question": "What protein does gene ALK translate into?",
+      "taxonomy": "M",
+      "gold": [
+        "alk"
+      ],
+      "predicted": "The ALK gene translates into the anaplastic lymphoma kinase protein.",
+      "correct": true
+    },
+    {
+      "question": "What diseases are associated with increased risk from gene METTL1?",
+      "taxonomy": "S",
+      "gold": [
+        "coronary artery disease",
+        "asthma",
+        "pulmonary emphysema",
+        "hypertension",
+        "chronic lymphocytic leukemia"
+      ],
+      "predicted": "Diseases associated with increased risk from the gene METTL1 include various cancers (such as lung cancer and colorectal cancer), neurodegenerative diseases (like Alzheimer's disease), and certain met",
+      "correct": false
+    }
+  ],
+  "gpt-4o": [
+    {
+      "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+      "taxonomy": "S",
+      "gold": [
+        "streptococcus pneumoniae",
+        "glomerulonephritis",
+        "gastritis",
+        "thyroid gland disease",
+        "iron metabolism disease"
+      ],
+      "predicted": "The gene HLA-DQA1 is associated with an increased risk of several diseases, including celiac disease, type 1 diabetes, multiple sclerosis, rheumatoid arthritis, and systemic lupus erythematosus.",
+      "correct": true
+    },
+    {
+      "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+      "taxonomy": "R",
+      "gold": [
+        "0.632666926305952"
+      ],
+      "predicted": "The risk score for the gene CDH13 affecting coronary artery disease is not a fixed value, as it can vary depending on the specific genetic variant, population studied, and the methodology used to calc",
+      "correct": false
+    },
+    {
+      "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+      "taxonomy": "C",
+      "gold": [
+        "1.0"
+      ],
+      "predicted": "I\u2019m sorry, but I cannot provide a specific causal score for SNP rs61816761's effect on hematologic cancer, as this information would require access to specialized databases or recent studies that eval",
+      "correct": false
+    },
+    {
+      "question": "What protein does gene ALK translate into?",
+      "taxonomy": "M",
+      "gold": [
+        "alk"
+      ],
+      "predicted": "The gene ALK translates into the protein known as anaplastic lymphoma kinase.",
+      "correct": true
+    },
+    {
+      "question": "What diseases are associated with increased risk from gene METTL1?",
+      "taxonomy": "S",
+      "gold": [
+        "coronary artery disease",
+        "asthma",
+        "pulmonary emphysema",
+        "hypertension",
+        "chronic lymphocytic leukemia"
+      ],
+      "predicted": "Diseases associated with an increased risk from the gene METTL1 include various types of cancer, such as glioblastoma, lung cancer, and hepatocellular carcinoma.",
+      "correct": false
+    }
+  ],
+  "claude-3-haiku-20240307": [
+    {
+      "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+      "taxonomy": "S",
+      "gold": [
+        "streptococcus pneumoniae",
+        "glomerulonephritis",
+        "gastritis",
+        "thyroid gland disease",
+        "iron metabolism disease"
+      ],
+      "predicted": "The gene HLA-DQA1 is associated with an increased risk of the following autoimmune diseases: celiac disease, type 1 diabetes, rheumatoid arthritis, multiple sclerosis, Graves' disease, and systemic lu",
+      "correct": true
+    },
+    {
+      "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+      "taxonomy": "R",
+      "gold": [
+        "0.632666926305952"
+      ],
+      "predicted": "The risk score for the gene CDH13 affecting coronary artery disease is 1.13.",
+      "correct": false
+    },
+    {
+      "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+      "taxonomy": "C",
+      "gold": [
+        "1.0"
+      ],
+      "predicted": "Unfortunately, I do not have enough information to provide a definitive causal score for the effect of SNP rs61816761 on hematologic cancer. The causal score would depend on various factors, such as t",
+      "correct": false
+    },
+    {
+      "question": "What protein does gene ALK translate into?",
+      "taxonomy": "M",
+      "gold": [
+        "alk"
+      ],
+      "predicted": "The gene ALK (Anaplastic Lymphoma Receptor Tyrosine Kinase) translates into the Anaplastic Lymphoma Kinase protein.",
+      "correct": true
+    },
+    {
+      "question": "What diseases are associated with increased risk from gene METTL1?",
+      "taxonomy": "S",
+      "gold": [
+        "coronary artery disease",
+        "asthma",
+        "pulmonary emphysema",
+        "hypertension",
+        "chronic lymphocytic leukemia"
+      ],
+      "predicted": "Based on my knowledge of genetics and disease associations, the diseases that have been associated with increased risk from the gene METTL1 include:\n\nAcute myeloid leukemia, myelodysplastic syndrome, ",
+      "correct": false
+    }
+  ],
+  "meta-llama/Llama-3.1-8B-Instruct-Turbo": [
+    {
+      "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+      "taxonomy": "S",
+      "gold": [
+        "streptococcus pneumoniae",
+        "glomerulonephritis",
+        "gastritis",
+        "thyroid gland disease",
+        "iron metabolism disease"
+      ],
+      "predicted": "ERROR: Error code: 404 - {'id': 'oSDdKi1-2kFHot-9b9c1698ff3fb145', 'error': {'message': 'Unable to access model meta-llama/Llama-3.1-8B-Instruct-Turbo. Please visit https://api.together.ai/models to v",
+      "correct": false
+    },
+    {
+      "question": "What is the risk score for gene CDH13 affecting coronary artery disease?",
+      "taxonomy": "R",
+      "gold": [
+        "0.632666926305952"
+      ],
+      "predicted": "ERROR: Error code: 404 - {'id': 'oSDdLSP-2kFHot-9b9c16a65eeaf5cb', 'error': {'message': 'Unable to access model meta-llama/Llama-3.1-8B-Instruct-Turbo. Please visit https://api.together.ai/models to v",
+      "correct": false
+    },
+    {
+      "question": "What is the causal score for SNP rs61816761's effect on hematologic cancer?",
+      "taxonomy": "C",
+      "gold": [
+        "1.0"
+      ],
+      "predicted": "ERROR: Error code: 404 - {'id': 'oSDdM5A-2kFHot-9b9c16b3baa20bc6', 'error': {'message': 'Unable to access model meta-llama/Llama-3.1-8B-Instruct-Turbo. Please visit https://api.together.ai/models to v",
+      "correct": false
+    },
+    {
+      "question": "What protein does gene ALK translate into?",
+      "taxonomy": "M",
+      "gold": [
+        "alk"
+      ],
+      "predicted": "ERROR: Error code: 404 - {'id': 'oSDdMcn-2kFHot-9b9c16c15e9866e5', 'error': {'message': 'Unable to access model meta-llama/Llama-3.1-8B-Instruct-Turbo. Please visit https://api.together.ai/models to v",
+      "correct": false
+    },
+    {
+      "question": "What diseases are associated with increased risk from gene METTL1?",
+      "taxonomy": "S",
+      "gold": [
+        "coronary artery disease",
+        "asthma",
+        "pulmonary emphysema",
+        "hypertension",
+        "chronic lymphocytic leukemia"
+      ],
+      "predicted": "ERROR: Error code: 404 - {'id': 'oSDdN8i-2kFHot-9b9c16cc3a8a1936', 'error': {'message': 'Unable to access model meta-llama/Llama-3.1-8B-Instruct-Turbo. Please visit https://api.together.ai/models to v",
+      "correct": false
+    }
+  ]
+}

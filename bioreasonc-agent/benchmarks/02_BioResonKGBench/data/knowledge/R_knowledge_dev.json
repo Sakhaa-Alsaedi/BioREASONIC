@@ -1,0 +1,386 @@
+[
+  {
+    "question": "Which SNP has the most significant association with pleural disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1532\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "pleural disease",
+      "disease_id": "DOID:1532"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have strong evidence for affecting blood coagulation disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1247\"})\n            WHERE r.evidence_score > 0.6\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-STRONG-EVIDENCE-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "blood coagulation disease",
+      "disease_id": "DOID:1247"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with alcoholic cardiomyopathy?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:12935\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "alcoholic cardiomyopathy",
+      "disease_id": "DOID:12935"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene HFE?",
+    "cypher": "MATCH (g:Gene {id: \"HFE\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "HFE"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with autism spectrum disorder?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0060041\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "autism spectrum disorder",
+      "disease_id": "DOID:0060041"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for alpha 1-antitrypsin deficiency?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:13372\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "alpha 1-antitrypsin deficiency",
+      "disease_id": "DOID:13372"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with rectal disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1285\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "rectal disease",
+      "disease_id": "DOID:1285"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have strong evidence for affecting cancer?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:162\"})\n            WHERE r.evidence_score > 0.6\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-STRONG-EVIDENCE-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "cancer",
+      "disease_id": "DOID:162"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for selective IgA deficiency disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:11701\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "selective IgA deficiency disease",
+      "disease_id": "DOID:11701"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for Fanconi syndrome?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1062\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "Fanconi syndrome",
+      "disease_id": "DOID:1062"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with melanoma?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:1909\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "melanoma",
+      "disease_id": "DOID:1909"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene LPCAT1?",
+    "cypher": "MATCH (g:Gene {id: \"LPCAT1\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "LPCAT1"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with parathyroid gland disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:11201\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "parathyroid gland disease",
+      "disease_id": "DOID:11201"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with lens disease?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:110\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "lens disease",
+      "disease_id": "DOID:110"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for ischemic colitis?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:0060181\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "ischemic colitis",
+      "disease_id": "DOID:0060181"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene PPP1R13L?",
+    "cypher": "MATCH (g:Gene {id: \"PPP1R13L\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "PPP1R13L"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for primary open angle glaucoma?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1070\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "primary open angle glaucoma",
+      "disease_id": "DOID:1070"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have strong evidence for affecting exfoliation syndrome?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:13641\"})\n            WHERE r.evidence_score > 0.6\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-STRONG-EVIDENCE-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "exfoliation syndrome",
+      "disease_id": "DOID:13641"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have high risk for neurodegenerative disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:1289\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "neurodegenerative disease",
+      "disease_id": "DOID:1289"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with congenital adrenal insufficiency?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:0050546\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "congenital adrenal insufficiency",
+      "disease_id": "DOID:0050546"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene BAG6?",
+    "cypher": "MATCH (g:Gene {id: \"BAG6\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "BAG6"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene ACSL6?",
+    "cypher": "MATCH (g:Gene {id: \"ACSL6\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "ACSL6"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have high risk for metabolic dysfunction-associated steatotic liver disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:0080208\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "metabolic dysfunction-associated steatotic liver disease",
+      "disease_id": "DOID:0080208"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have high risk for lens disease?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:110\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "lens disease",
+      "disease_id": "DOID:110"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have high risk for cancer?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:162\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "cancer",
+      "disease_id": "DOID:162"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with alpha 1-antitrypsin deficiency?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:13372\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "alpha 1-antitrypsin deficiency",
+      "disease_id": "DOID:13372"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene has the highest risk for endocrine gland cancer?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:170\"})\n            RETURN g.id AS gene\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-RISK-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "disease": "endocrine gland cancer",
+      "disease_id": "DOID:170"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which disease is most affected by gene IFITM2?",
+    "cypher": "MATCH (g:Gene {id: \"IFITM2\"})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease\n            ORDER BY r.risk_score DESC LIMIT 1",
+    "task_id": "R-TOP-DISEASE-FROM-GENE",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "IFITM2"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which genes have high risk for abdominal obesity-metabolic syndrome 1?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:14221\"})\n            WHERE r.risk_score > 0.5\n            RETURN collect(DISTINCT g.id)[0..5] AS genes",
+    "task_id": "R-HIGH-RISK-GENES",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "abdominal obesity-metabolic syndrome 1",
+      "disease_id": "DOID:14221"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which SNP has the most significant association with dry eye syndrome?",
+    "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {id: \"DOID:10140\"})\n            WHERE r.pvalue IS NOT NULL\n            RETURN s.id AS snp\n            ORDER BY r.pvalue ASC LIMIT 1",
+    "task_id": "R-SIGNIFICANT-SNP",
+    "taxonomy": "R",
+    "type": "one-hop",
+    "answer_key": "snp",
+    "parameters": {
+      "disease": "dry eye syndrome",
+      "disease_id": "DOID:10140"
+    },
+    "category": "knowledge"
+  }
+]

@@ -1,0 +1,1047 @@
+{
+  "timestamp": "20260106_194518",
+  "mode": "KG_ACCESS",
+  "n_samples": 10,
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o",
+    "claude-3-haiku"
+  ],
+  "BioKGBench": {
+    "gpt-4o-mini": {
+      "correct": 6,
+      "total": 10,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gsn",
+            "p02774",
+            "p06396",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(x:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(x) RETURN DISTINCT x.name AS answer, x.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "q9uqm7",
+            "grb2",
+            "camk2a",
+            "p62993"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "I'm curious, which proteins does the protein P63267 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993"
+          ],
+          "predicted": [
+            "GRB2",
+            "P62993",
+            "MYO3B",
+            "Q8WXR4",
+            "MYH6"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P63267'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Do you know what proteins does the protein P36544 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p05067",
+            "app"
+          ],
+          "predicted": [
+            "APP",
+            "P05067",
+            "HTR3E",
+            "A5X5Y0",
+            "CHRNA2"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P36544'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What's the amino acid sequence of A0A0A0MTA2?",
+          "type": "one-hop",
+          "gold": [
+            "lrgaagrlgggllvl"
+          ],
+          "predicted": [
+            "TRBJ2-2P",
+            "A0A0A0MTA2_HUMAN"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A0A0MTA2'}) RETURN DISTINCT p.name AS answer, p.accession AS id LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Can you provide the amino acid sequence of A0A286YF18?",
+          "type": "one-hop",
+          "gold": [
+            "mpglaaegeaegwspspplyeeyrpppldsirlpryvlylllaalvvvavayaivghlikdlahdladwafgpkpdqeaaprelrpsltgedlegldlqlalawqgeedaggggegapsepppppeprrpsiafkdppsrssfwklmat"
+          ],
+          "predicted": [
+            "SMIM44",
+            "A0A286YF18"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A286YF18'}) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Could you tell me the amino acid sequence of A0A2R8Y4M4?",
+          "type": "one-hop",
+          "gold": [
+            "megawalptwkeegreqaagqgeeeecpictepygprerrlallncshglcvgclhrllgsassadlgrvrcplcrqktpvleweicrlqeellqadgpsrqprreapasyhrnpgpwgslehryqlrflagpvggrgclpflpcppclgarlwtlrergpcarrlallsllalellglllvftpllllgllfvlldrsgr"
+          ],
+          "predicted": [
+            "LOC122513141",
+            "A0A2R8Y4M4_HUMAN"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A2R8Y4M4'}) RETURN DISTINCT p.name AS answer, p.accession AS id LIMIT 50",
+          "correct": false,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 6,
+      "total": 10,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gsn",
+            "p02774",
+            "p06396",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 50\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "q9uqm7",
+            "grb2",
+            "camk2a",
+            "p62993"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "I'm curious, which proteins does the protein P63267 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993"
+          ],
+          "predicted": [
+            "GRB2",
+            "P62993",
+            "MYO3B",
+            "Q8WXR4",
+            "MYH6"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P63267'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Do you know what proteins does the protein P36544 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p05067",
+            "app"
+          ],
+          "predicted": [
+            "APP",
+            "P05067",
+            "HTR3E",
+            "A5X5Y0",
+            "CHRNA2"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P36544'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What's the amino acid sequence of A0A0A0MTA2?",
+          "type": "one-hop",
+          "gold": [
+            "lrgaagrlgggllvl"
+          ],
+          "predicted": [
+            "TRBJ2-2P"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A0A0MTA2'}) RETURN DISTINCT p.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Can you provide the amino acid sequence of A0A286YF18?",
+          "type": "one-hop",
+          "gold": [
+            "mpglaaegeaegwspspplyeeyrpppldsirlpryvlylllaalvvvavayaivghlikdlahdladwafgpkpdqeaaprelrpsltgedlegldlqlalawqgeedaggggegapsepppppeprrpsiafkdppsrssfwklmat"
+          ],
+          "predicted": [
+            "SMIM44"
+          ],
+          "cypher": "MATCH (p:Protein {id: $protein_id}) RETURN p.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Could you tell me the amino acid sequence of A0A2R8Y4M4?",
+          "type": "one-hop",
+          "gold": [
+            "megawalptwkeegreqaagqgeeeecpictepygprerrlallncshglcvgclhrllgsassadlgrvrcplcrqktpvleweicrlqeellqadgpsrqprreapasyhrnpgpwgslehryqlrflagpvggrgclpflpcppclgarlwtlrergpcarrlallsllalellglllvftpllllgllfvlldrsgr"
+          ],
+          "predicted": [
+            "LOC122513141"
+          ],
+          "cypher": "MATCH (p:Protein {id: $protein_id}) RETURN DISTINCT p.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 6,
+      "total": 10,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What proteins does the protein P68133 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "gsn",
+            "p02774",
+            "p06396",
+            "gc"
+          ],
+          "predicted": [
+            "GSN",
+            "P06396",
+            "GC",
+            "P02774",
+            "INO80"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P68133'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What is the molecular function of the protein translated from the gene COL21A1?",
+          "type": "multi-hop",
+          "gold": [
+            "extracellular matrix structural constituent conferring tensile strength"
+          ],
+          "predicted": [],
+          "cypher": "MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELS",
+          "correct": false,
+          "error": "{code: Neo.ClientError.Statement.SyntaxError} {message: In a WITH/RETURN with DISTINCT or an aggregation, it is not possible to access variables declared before the WITH/RETURN: score (line 1, column 256 (offset: 255))\n\"MATCH (g:Gene {id: 'COL21A1'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(mf:Molecular_function) WITH mf.name AS answer, mf.id AS id, CASE WHEN r.score IS NOT NULL THEN toFloat(r.score) ELSE 0.5 END AS score RETURN DISTINCT answer, id ORDER BY score DESC LIMIT 1\"\n                                                                                                                                                                                                                                                                ^}"
+        },
+        {
+          "question": "Which biological process are the proteins Q9UKD2 and P62750 both associated with?",
+          "type": "conjunction",
+          "gold": [
+            "ribosomal large subunit assembly"
+          ],
+          "predicted": [
+            "ribosomal large subunit assembly",
+            "GO:0000027"
+          ],
+          "cypher": "MATCH (p1:Protein {id: 'Q9UKD2'})-[:ASSOCIATED_WITH]->(bp:Biological_process) MATCH (p2:Protein {id: 'P62750'})-[:ASSOCIATED_WITH]->(bp) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Could you please specify which proteins the protein Q9NYB9 interacts with?",
+          "type": "one-hop",
+          "gold": [
+            "q9h013",
+            "adam19"
+          ],
+          "predicted": [
+            "ADAM19",
+            "Q9H013",
+            "ARPC2",
+            "O15144",
+            "ARPC5"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'Q9NYB9'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Can you identify proteins that the protein P12814 show interaction with?",
+          "type": "one-hop",
+          "gold": [
+            "q9uqm7",
+            "grb2",
+            "camk2a",
+            "p62993"
+          ],
+          "predicted": [
+            "CAMK2A",
+            "Q9UQM7",
+            "GRB2",
+            "P62993",
+            "FHL1"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P12814'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "I'm curious, which proteins does the protein P63267 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "grb2",
+            "p62993"
+          ],
+          "predicted": [
+            "GRB2",
+            "P62993",
+            "MYO3B",
+            "Q8WXR4",
+            "MYH6"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P63267'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Do you know what proteins does the protein P36544 interact with?",
+          "type": "one-hop",
+          "gold": [
+            "p05067",
+            "app"
+          ],
+          "predicted": [
+            "APP",
+            "P05067",
+            "HTR3E",
+            "A5X5Y0",
+            "CHRNA2"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'P36544'})-[r]-(p2:Protein) WHERE type(r) IN ['ACTS_ON', 'CURATED_INTERACTS_WITH', 'INTERACTS_WITH'] RETURN DISTINCT p2.name AS answer, p2.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What's the amino acid sequence of A0A0A0MTA2?",
+          "type": "one-hop",
+          "gold": [
+            "lrgaagrlgggllvl"
+          ],
+          "predicted": [
+            "TRBJ2-2P"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A0A0MTA2'}) RETURN p.name AS answer, p.accession AS accession LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Can you provide the amino acid sequence of A0A286YF18?",
+          "type": "one-hop",
+          "gold": [
+            "mpglaaegeaegwspspplyeeyrpppldsirlpryvlylllaalvvvavayaivghlikdlahdladwafgpkpdqeaaprelrpsltgedlegldlqlalawqgeedaggggegapsepppppeprrpsiafkdppsrssfwklmat"
+          ],
+          "predicted": [
+            "SMIM44"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A286YF18'}) RETURN p.name AS answer, p.accession AS accession LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Could you tell me the amino acid sequence of A0A2R8Y4M4?",
+          "type": "one-hop",
+          "gold": [
+            "megawalptwkeegreqaagqgeeeecpictepygprerrlallncshglcvgclhrllgsassadlgrvrcplcrqktpvleweicrlqeellqadgpsrqprreapasyhrnpgpwgslehryqlrflagpvggrgclpflpcppclgarlwtlrergpcarrlallsllalellglllvftpllllgllfvlldrsgr"
+          ],
+          "predicted": [
+            "None"
+          ],
+          "cypher": "MATCH (p:Protein {id: 'A0A2R8Y4M4'}) RETURN p.name AS answer, p.accession AS accession, p.sequence AS sequence LIMIT 50",
+          "correct": false,
+          "error": null
+        }
+      ]
+    }
+  },
+  "BioResonKGBench": {
+    "gpt-4o-mini": {
+      "correct": 8,
+      "total": 10,
+      "accuracy": 80.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "muckle-wells syndrome",
+            "skin cancer",
+            "anal carcinoma",
+            "paraneoplastic polyneuropathy",
+            "cutaneous lupus erythematosus"
+          ],
+          "predicted": [
+            "pneumonia",
+            "DOID:552",
+            "systemic lupus erythematosus",
+            "DOID:9074",
+            "gestational diabetes"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "hypertension",
+            "asthma",
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "squamous cell carcinoma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "DOID:1040",
+            "pulmonary emphysema",
+            "DOID:9675",
+            "hypertension"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs58913393",
+            "rs60730309",
+            "rs145777783",
+            "rs4888385"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS answer, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which genes have strong evidence for affecting blood coagulation disease?",
+          "type": "R",
+          "gold": [
+            "atp1b1",
+            "nme7"
+          ],
+          "predicted": [
+            "long intergenic non-protein coding RNA 1681",
+            "LINC01681",
+            "autophagy and beclin 1 regulator 1",
+            "AMBRA1",
+            "centriolar satellite-associated tubulin polyglutamylase complex regulator 1"
+          ],
+          "cypher": "MATCH (g:Gene)-[:INCREASES_RISK_OF]->(d:Disease {name: 'blood coagulation disease'}) RETURN DISTINCT g.name AS answer, g.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs115744229",
+            "rs9295826",
+            "rs34404554",
+            "rs1131500",
+            "rs9404959"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name CONTAINS 'neurodegenerative' RETURN DISTINCT s.id AS answer, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which disease is most strongly affected by SNP rs58528265?",
+          "type": "C",
+          "gold": [
+            "lower respiratory tract disease"
+          ],
+          "predicted": [
+            "asthma",
+            "DOID:2841",
+            "lower respiratory tract disease",
+            "DOID:0050161"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs58528265'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What biological processes involve the protein encoded by gene WIPI2?",
+          "type": "M",
+          "gold": [
+            "cellular response to starvation",
+            "protein localization to phagophore assembly site",
+            "protein lipidation",
+            "glycophagy",
+            "autophagosome assembly"
+          ],
+          "predicted": [
+            "protein lipidation",
+            "GO:0006497",
+            "protein localization to phagophore assembly site",
+            "GO:0034497",
+            "glycophagy"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'WIPI2'})-[:TRANSLATED_INTO]->(p:Protein)-[:ASSOCIATED_WITH]->(bp:Biological_process) RETURN DISTINCT bp.name AS answer, bp.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which gene is linked to SNP rs77538922?",
+          "type": "S",
+          "gold": [
+            "linc01122"
+          ],
+          "predicted": [
+            "long intergenic non-protein coding RNA 1122",
+            "LINC01122"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs77538922'})-[:MAPS_TO]->(g:Gene) RETURN DISTINCT g.name AS answer, g.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which diseases does SNP rs186054850 have a putative causal effect on?",
+          "type": "S",
+          "gold": [
+            "prostate cancer"
+          ],
+          "predicted": [
+            "prostate cancer",
+            "DOID:10283"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs186054850'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer, d.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "gpt-4o": {
+      "correct": 7,
+      "total": 10,
+      "accuracy": 70.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "muckle-wells syndrome",
+            "skin cancer",
+            "anal carcinoma",
+            "paraneoplastic polyneuropathy",
+            "cutaneous lupus erythematosus"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "hypertension",
+            "asthma",
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "squamous cell carcinoma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs58913393",
+            "rs60730309",
+            "rs145777783",
+            "rs4888385"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which genes have strong evidence for affecting blood coagulation disease?",
+          "type": "R",
+          "gold": [
+            "atp1b1",
+            "nme7"
+          ],
+          "predicted": [
+            "long intergenic non-protein coding RNA 1681",
+            "LINC01681",
+            "autophagy and beclin 1 regulator 1",
+            "AMBRA1",
+            "centriolar satellite-associated tubulin polyglutamylase complex regulator 1"
+          ],
+          "cypher": "MATCH (g:Gene)-[:INCREASES_RISK_OF]->(d:Disease {name: 'blood coagulation disease'}) RETURN DISTINCT g.name AS answer, g.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs9295826",
+            "rs34404554",
+            "rs1131500",
+            "rs9404959",
+            "rs9268577"
+          ],
+          "cypher": "MATCH (s:SNP)-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name =~ '(?i).*neurodegenerative.*' RETURN DISTINCT s.id AS answer, r.score AS score ORDER BY score DESC LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which disease is most strongly affected by SNP rs58528265?",
+          "type": "C",
+          "gold": [
+            "lower respiratory tract disease"
+          ],
+          "predicted": [
+            "asthma",
+            "lower respiratory tract disease"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs58528265'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What biological processes involve the protein encoded by gene WIPI2?",
+          "type": "M",
+          "gold": [
+            "cellular response to starvation",
+            "protein localization to phagophore assembly site",
+            "protein lipidation",
+            "glycophagy",
+            "autophagosome assembly"
+          ],
+          "predicted": [
+            "protein lipidation",
+            "protein localization to phagophore assembly site",
+            "glycophagy",
+            "cellular response to starvation",
+            "autophagosome assembly"
+          ],
+          "cypher": "MATCH (g:Gene {id: $gene_id})-[:TRANSLATED_INTO]->(p:Protein)-[:ASSOCIATED_WITH]->(bp:Biological_process) RETURN DISTINCT bp.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which gene is linked to SNP rs77538922?",
+          "type": "S",
+          "gold": [
+            "linc01122"
+          ],
+          "predicted": [
+            "long intergenic non-protein coding RNA 1122"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs77538922'})-[:MAPS_TO]->(g:Gene) RETURN DISTINCT g.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which diseases does SNP rs186054850 have a putative causal effect on?",
+          "type": "S",
+          "gold": [
+            "prostate cancer"
+          ],
+          "predicted": [
+            "prostate cancer"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs186054850'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    },
+    "claude-3-haiku": {
+      "correct": 6,
+      "total": 10,
+      "accuracy": 60.0,
+      "details": [
+        {
+          "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+          "type": "S",
+          "gold": [
+            "muckle-wells syndrome",
+            "skin cancer",
+            "anal carcinoma",
+            "paraneoplastic polyneuropathy",
+            "cutaneous lupus erythematosus"
+          ],
+          "predicted": [
+            "pneumonia",
+            "systemic lupus erythematosus",
+            "gestational diabetes",
+            "inflammatory bowel disease",
+            "osteoporosis"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What diseases are associated with increased risk from gene METTL1?",
+          "type": "S",
+          "gold": [
+            "hypertension",
+            "asthma",
+            "chronic lymphocytic leukemia",
+            "coronary artery disease",
+            "squamous cell carcinoma"
+          ],
+          "predicted": [
+            "chronic lymphocytic leukemia",
+            "pulmonary emphysema",
+            "hypertension",
+            "asthma",
+            "coronary artery disease"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'METTL1'})-[:INCREASES_RISK_OF]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which SNP has the most significant association with pleural disease?",
+          "type": "R",
+          "gold": [
+            "rs115513777"
+          ],
+          "predicted": [
+            "rs12150284",
+            "rs12150284",
+            "rs58913393",
+            "rs58913393",
+            "rs60730309"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease {name: 'pleural disease'}) RETURN DISTINCT s.id AS id, s.chromosome AS chromosome, s.position AS position LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which genes have strong evidence for affecting blood coagulation disease?",
+          "type": "R",
+          "gold": [
+            "atp1b1",
+            "nme7"
+          ],
+          "predicted": [],
+          "cypher": "None",
+          "correct": false,
+          "error": "LLM could not generate query"
+        },
+        {
+          "question": "Which SNP has the strongest causal effect on neurodegenerative disease?",
+          "type": "C",
+          "gold": [
+            "rs61910679"
+          ],
+          "predicted": [
+            "rs191021171",
+            "rs191021171",
+            "rs565069530",
+            "rs565069530",
+            "rs115177889"
+          ],
+          "cypher": "MATCH (s:SNP)-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) WHERE d.name CONTAINS 'neurodegenerative' RETURN DISTINCT s.id AS id, s.chromosome AS chromosome, s.position AS position ORDER BY s.position DESC L",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which disease is most strongly affected by SNP rs58528265?",
+          "type": "C",
+          "gold": [
+            "lower respiratory tract disease"
+          ],
+          "predicted": [
+            "asthma",
+            "lower respiratory tract disease"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs58528265'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What protein does gene ALK translate into?",
+          "type": "M",
+          "gold": [
+            "alk"
+          ],
+          "predicted": [
+            "ALK",
+            "B2MXD9",
+            "ALK",
+            "B2MXE3",
+            "ALK"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'ALK'})-[:TRANSLATED_INTO]->(p:Protein) RETURN DISTINCT p.name AS answer, p.id AS id LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "What biological processes involve the protein encoded by gene WIPI2?",
+          "type": "M",
+          "gold": [
+            "cellular response to starvation",
+            "protein localization to phagophore assembly site",
+            "protein lipidation",
+            "glycophagy",
+            "autophagosome assembly"
+          ],
+          "predicted": [
+            "protein lipidation",
+            "protein localization to phagophore assembly site",
+            "glycophagy",
+            "cellular response to starvation",
+            "autophagosome assembly"
+          ],
+          "cypher": "MATCH (g:Gene {id: 'WIPI2'})-[:TRANSLATED_INTO]->(p:Protein)-[r:ASSOCIATED_WITH]->(bp:Biological_process) RETURN DISTINCT bp.name AS answer, bp.description AS description LIMIT 50",
+          "correct": true,
+          "error": null
+        },
+        {
+          "question": "Which gene is linked to SNP rs77538922?",
+          "type": "S",
+          "gold": [
+            "linc01122"
+          ],
+          "predicted": [
+            "long intergenic non-protein coding RNA 1122"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs77538922'})-[:MAPS_TO]->(g:Gene) RETURN DISTINCT g.name AS answer LIMIT 50",
+          "correct": false,
+          "error": null
+        },
+        {
+          "question": "Which diseases does SNP rs186054850 have a putative causal effect on?",
+          "type": "S",
+          "gold": [
+            "prostate cancer"
+          ],
+          "predicted": [
+            "prostate cancer"
+          ],
+          "cypher": "MATCH (s:SNP {id: 'rs186054850'})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease) RETURN DISTINCT d.name AS answer LIMIT 50",
+          "correct": true,
+          "error": null
+        }
+      ]
+    }
+  }
+}

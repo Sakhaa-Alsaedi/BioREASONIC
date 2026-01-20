@@ -1,0 +1,316 @@
+[
+  {
+    "question": "What diseases are associated with increased risk from gene HLA-DQA1?",
+    "cypher": "MATCH (g:Gene {id: 'HLA-DQA1'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease, d.id AS disease_id, r.risk_score AS risk_score\n            ORDER BY r.risk_score DESC",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "HLA-DQA1",
+      "disease": "Arthritis, Psoriatic",
+      "disease_id": "D015535"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What diseases are associated with increased risk from gene METTL1?",
+    "cypher": "MATCH (g:Gene {id: 'METTL1'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease, d.id AS disease_id, r.risk_score AS risk_score\n            ORDER BY r.risk_score DESC",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "METTL1",
+      "disease": "Emphysema",
+      "disease_id": "D004646"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene is linked to SNP rs77538922?",
+    "cypher": "MATCH (s:SNP {id: 'rs77538922'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs77538922"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does SNP rs186054850 have a putative causal effect on?",
+    "cypher": "MATCH (s:SNP {id: 'rs186054850'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs186054850",
+      "disease": "Prostatic Neoplasms",
+      "disease_id": "D011471"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does SNP rs9404982 have a putative causal effect on?",
+    "cypher": "MATCH (s:SNP {id: 'rs9404982'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs9404982",
+      "disease": "Celiac Disease",
+      "disease_id": "D002446"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Can you identify the gene that SNP rs71515781 is associated with?",
+    "cypher": "MATCH (s:SNP {id: 'rs71515781'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs71515781"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does SNP rs2014590 have a putative causal effect on?",
+    "cypher": "MATCH (s:SNP {id: 'rs2014590'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs2014590",
+      "disease": "Heart Diseases",
+      "disease_id": "D006331"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What diseases are causally linked to SNP rs73739039?",
+    "cypher": "MATCH (s:SNP {id: 'rs73739039'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs73739039",
+      "disease": "Diabetes Mellitus, Type 1",
+      "disease_id": "D003922"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What gene does the SNP rs6010620 map to?",
+    "cypher": "MATCH (s:SNP {id: 'rs6010620'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs6010620"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene is linked to SNP rs78736310?",
+    "cypher": "MATCH (s:SNP {id: 'rs78736310'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs78736310"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does gene SKI increase risk of?",
+    "cypher": "MATCH (g:Gene {id: 'SKI'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease, d.id AS disease_id, r.risk_score AS risk_score\n            ORDER BY r.risk_score DESC",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "SKI",
+      "disease": "Headache Disorders",
+      "disease_id": "D020773"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does gene TAP2 increase risk of?",
+    "cypher": "MATCH (g:Gene {id: 'TAP2'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease, d.id AS disease_id, r.risk_score AS risk_score\n            ORDER BY r.risk_score DESC",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "TAP2",
+      "disease": "Skin Diseases",
+      "disease_id": "D012871"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Can you identify diseases with causal associations to SNP rs28371251?",
+    "cypher": "MATCH (s:SNP {id: 'rs28371251'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs28371251",
+      "disease": "Diabetes Mellitus, Type 1",
+      "disease_id": "D003922"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Can you identify diseases with causal associations to SNP rs3132658?",
+    "cypher": "MATCH (s:SNP {id: 'rs3132658'})-[r:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n            RETURN d.name AS disease, r.causal_score AS causal_score, r.pvalue AS pvalue\n            ORDER BY r.causal_score DESC",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "snp_id": "rs3132658",
+      "disease": "Malabsorption Syndromes",
+      "disease_id": "D008286"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does gene HLA-DMA increase risk of?",
+    "cypher": "MATCH (g:Gene {id: 'HLA-DMA'})-[r:INCREASES_RISK_OF]->(d:Disease)\n            RETURN d.name AS disease, d.id AS disease_id, r.risk_score AS risk_score\n            ORDER BY r.risk_score DESC",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "disease",
+    "parameters": {
+      "gene": "HLA-DMA",
+      "disease": "Arthritis, Reactive",
+      "disease_id": "D016918"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Can you identify genes that contribute to Asthma risk?",
+    "cypher": "MATCH (g:Gene)-[r:INCREASES_RISK_OF]->(d:Disease)\n            WHERE d.name CONTAINS 'Asthma' OR d.id = 'D001249'\n            RETURN g.id AS gene, r.risk_score AS risk_score, r.snp_count AS snp_count\n            ORDER BY r.risk_score DESC\n            LIMIT 20",
+    "task_id": "S-DISEASE-GENES",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "gene": "LTK",
+      "disease": "Asthma",
+      "disease_id": "D001249"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene is linked to SNP rs72696880?",
+    "cypher": "MATCH (s:SNP {id: 'rs72696880'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs72696880"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What gene does the SNP rs7092080 map to?",
+    "cypher": "MATCH (s:SNP {id: 'rs7092080'})-[r:MAPS_TO]->(g:Gene)\n            RETURN g.id AS gene_symbol, g.name AS gene_name, r.link_score AS link_score\n            ORDER BY r.link_score DESC",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene_symbol",
+    "parameters": {
+      "snp_id": "rs7092080"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What genes are associated with increased risk for colitis?",
+    "cypher": "MATCH (g:Gene)-[:INCREASES_RISK_OF]->(d:Disease {id: \"DOID:0060180\"})\n                        RETURN collect(DISTINCT g.id)[0..10] AS genes",
+    "task_id": "S-DISEASE-GENES",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "colitis",
+      "disease_id": "DOID:0060180"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What diseases are associated with gene BRMS1L?",
+    "cypher": "MATCH (g:Gene {id: \"BRMS1L\"})-[:INCREASES_RISK_OF]->(d:Disease)\n                        RETURN collect(DISTINCT d.name)[0..10] AS diseases",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "diseases",
+    "parameters": {
+      "gene": "BRMS1L"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which gene does SNP rs17052068 map to?",
+    "cypher": "MATCH (s:SNP {id: \"rs17052068\"})-[:MAPS_TO]->(g:Gene)\n                        RETURN g.id AS gene",
+    "task_id": "S-SNP-GENE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "gene",
+    "parameters": {
+      "snp": "rs17052068"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "Which diseases does SNP rs11995475 have a putative causal effect on?",
+    "cypher": "MATCH (s:SNP {id: \"rs11995475\"})-[:PUTATIVE_CAUSAL_EFFECT]->(d:Disease)\n                        RETURN collect(DISTINCT d.name)[0..5] AS diseases",
+    "task_id": "S-SNP-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "diseases",
+    "parameters": {
+      "snp": "rs11995475"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What genes are associated with increased risk for Affective Disorders, Psychotic?",
+    "cypher": "MATCH (g:Gene)-[:INCREASES_RISK_OF]->(d:Disease {id: \"D000341\"})\n                        RETURN collect(DISTINCT g.id)[0..10] AS genes",
+    "task_id": "S-DISEASE-GENES",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "genes",
+    "parameters": {
+      "disease": "Affective Disorders, Psychotic",
+      "disease_id": "D000341"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What diseases are associated with gene SPAAR?",
+    "cypher": "MATCH (g:Gene {id: \"SPAAR\"})-[:INCREASES_RISK_OF]->(d:Disease)\n                        RETURN collect(DISTINCT d.name)[0..10] AS diseases",
+    "task_id": "S-GENE-DISEASE",
+    "taxonomy": "S",
+    "type": "one-hop",
+    "answer_key": "diseases",
+    "parameters": {
+      "gene": "SPAAR"
+    },
+    "category": "knowledge"
+  }
+]

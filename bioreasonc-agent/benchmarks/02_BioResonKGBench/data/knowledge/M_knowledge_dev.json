@@ -1,0 +1,362 @@
+[
+  {
+    "question": "What protein does gene ALK translate into?",
+    "cypher": "MATCH (g:Gene {id: \"ALK\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "ALK"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene WIPI2?",
+    "cypher": "MATCH (g:Gene {id: \"WIPI2\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "WIPI2"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene ENTPD6?",
+    "cypher": "MATCH (g:Gene {id: \"ENTPD6\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "ENTPD6"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene TMEM127's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"TMEM127\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "TMEM127"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What protein does gene THRB translate into?",
+    "cypher": "MATCH (g:Gene {id: \"THRB\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "THRB"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene ATG14?",
+    "cypher": "MATCH (g:Gene {id: \"ATG14\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "ATG14"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene SLCO2A1?",
+    "cypher": "MATCH (g:Gene {id: \"SLCO2A1\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "SLCO2A1"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene SLC13A5's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"SLC13A5\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "SLC13A5"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What protein does gene CPD translate into?",
+    "cypher": "MATCH (g:Gene {id: \"CPD\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "CPD"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene TRAF7?",
+    "cypher": "MATCH (g:Gene {id: \"TRAF7\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "TRAF7"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene RGL1?",
+    "cypher": "MATCH (g:Gene {id: \"RGL1\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "RGL1"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene ERBIN's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"ERBIN\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "ERBIN"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What protein does gene CYP4A11 translate into?",
+    "cypher": "MATCH (g:Gene {id: \"CYP4A11\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "CYP4A11"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene DNMT3A?",
+    "cypher": "MATCH (g:Gene {id: \"DNMT3A\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "DNMT3A"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene TNFRSF9?",
+    "cypher": "MATCH (g:Gene {id: \"TNFRSF9\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "TNFRSF9"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene ALK's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"ALK\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "ALK"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What protein does gene SOX5 translate into?",
+    "cypher": "MATCH (g:Gene {id: \"SOX5\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "SOX5"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene SMAD4?",
+    "cypher": "MATCH (g:Gene {id: \"SMAD4\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "SMAD4"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene PTPN6?",
+    "cypher": "MATCH (g:Gene {id: \"PTPN6\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "PTPN6"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene ORAI3's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"ORAI3\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "ORAI3"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene E2F8?",
+    "cypher": "MATCH (g:Gene {id: \"E2F8\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "E2F8"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene SLC22A2?",
+    "cypher": "MATCH (g:Gene {id: \"SLC22A2\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "SLC22A2"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene RANBP17's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"RANBP17\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "RANBP17"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene PSEN1?",
+    "cypher": "MATCH (g:Gene {id: \"PSEN1\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "PSEN1"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene ITGA11?",
+    "cypher": "MATCH (g:Gene {id: \"ITGA11\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "ITGA11"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene RARS1's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"RARS1\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "RARS1"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What biological processes involve the protein encoded by gene RUFY4?",
+    "cypher": "MATCH (g:Gene {id: \"RUFY4\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(bp:Biological_process)\n            RETURN collect(DISTINCT bp.name)[0..5] AS processes",
+    "task_id": "M-GO-PROCESS",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "processes",
+    "parameters": {
+      "gene": "RUFY4"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What pathways involve gene KCNV2?",
+    "cypher": "MATCH (g:Gene {id: \"KCNV2\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ANNOTATED_IN_PATHWAY]->(pw:Pathway)\n            RETURN collect(DISTINCT pw.name)[0..5] AS pathways",
+    "task_id": "M-PATHWAY",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "pathways",
+    "parameters": {
+      "gene": "KCNV2"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "In which tissues is gene UST's protein expressed?",
+    "cypher": "MATCH (g:Gene {id: \"UST\"})-[:TRANSLATED_INTO]->(p:Protein)\n            MATCH (p)-[:ASSOCIATED_WITH]->(t:Tissue)\n            RETURN collect(DISTINCT t.name)[0..5] AS tissues",
+    "task_id": "M-TISSUE",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "tissues",
+    "parameters": {
+      "gene": "UST"
+    },
+    "category": "knowledge"
+  },
+  {
+    "question": "What protein does gene LIPG translate into?",
+    "cypher": "MATCH (g:Gene {id: \"LIPG\"})-[:TRANSLATED_INTO]->(p:Protein)\n            RETURN p.name AS protein",
+    "task_id": "M-PROTEIN",
+    "taxonomy": "M",
+    "type": "one-hop",
+    "answer_key": "protein",
+    "parameters": {
+      "gene": "LIPG"
+    },
+    "category": "knowledge"
+  }
+]

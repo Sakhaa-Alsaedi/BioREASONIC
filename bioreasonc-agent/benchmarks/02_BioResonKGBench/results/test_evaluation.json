@@ -1,0 +1,231 @@
+{
+  "model": "mock/test",
+  "timestamp": "20260106_025915",
+  "metrics": {
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "contains_answer": 0.0
+  },
+  "results": [
+    {
+      "question": "What protein does gene PHC3 translate into?",
+      "category": "knowledge",
+      "taxonomy": "M",
+      "task_id": "M-PROTEIN",
+      "ground_truth": "PHC3",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the evidence level for gene CCDC26 affecti",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "ground_truth": "CCDC26",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Which SNP has the strongest causal effect on Malab",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-TOP-CAUSAL",
+      "ground_truth": "rs2523693",
+      "prediction": "rs12345",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the evidence level for gene GEMIN7-AS1 aff",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-EVIDENCE-LEVEL",
+      "ground_truth": "GEMIN7-AS1",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What genes are risk factors for Coronary Artery Di",
+      "category": "knowledge",
+      "taxonomy": "S",
+      "task_id": "S-DISEASE-GENES",
+      "ground_truth": "ENSG00000274478",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Which pathways are shared by risk genes for both S",
+      "category": "knowledge",
+      "taxonomy": "M",
+      "task_id": "M-SHARED-PATHWAY",
+      "ground_truth": "Skin Diseases, Vascular",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Is there MR evidence for gene ESPL1 causing Prosta",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-MR-VALIDATED",
+      "ground_truth": "ESPL1",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "How statistically significant is the association b",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "ground_truth": "rs2856690",
+      "prediction": "Type 2 Diabetes",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Can you provide the risk score for gene ENSG000002",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-RISK-SCORE",
+      "ground_truth": "ENSG00000285651",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Compare the risk scores of TMEM120A and HLA-DQA1 f",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "ground_truth": "TMEM120A",
+      "prediction": "Unknown",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Can you list the causal SNPs for Malabsorption Syn",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-CAUSAL-SNP",
+      "ground_truth": "rs9267230",
+      "prediction": "rs12345",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Compare the risk scores of CADM3-AS1 and H3C2 for ",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-COMPARE-RISK",
+      "ground_truth": "CADM3-AS1",
+      "prediction": "Unknown",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the top causal SNP for Arthritis, Juvenile",
+      "category": "knowledge",
+      "taxonomy": "C",
+      "task_id": "C-TOP-CAUSAL",
+      "ground_truth": "rs2857141",
+      "prediction": "rs12345",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What diseases are associated with increased risk f",
+      "category": "knowledge",
+      "taxonomy": "S",
+      "task_id": "S-GENE-DISEASE",
+      "ground_truth": "Arthritis, Psoriatic",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What biological pathways are enriched in Renal Ins",
+      "category": "knowledge",
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "ground_truth": "Renal Insufficiency, Chronic",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the p-value for SNP rs165255's effect on C",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-PVALUE",
+      "ground_truth": "rs165255",
+      "prediction": "Type 2 Diabetes",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Which gene has the highest risk score for Essentia",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-TOP-RISK",
+      "ground_truth": "SLCO2A1",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the risk score of gene MICB for Celiac Dis",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-RISK-SCORE",
+      "ground_truth": "MICB",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "Which pathways involve genes that increase risk of",
+      "category": "knowledge",
+      "taxonomy": "M",
+      "task_id": "M-PATHWAY",
+      "ground_truth": "Sweet Syndrome",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    },
+    {
+      "question": "What is the top risk gene for Lung Diseases, Inter",
+      "category": "knowledge",
+      "taxonomy": "R",
+      "task_id": "R-TOP-RISK",
+      "ground_truth": "SYTL2",
+      "prediction": "BRCA1",
+      "exact_match": false,
+      "f1_score": 0.0,
+      "contains_answer": false
+    }
+  ]
+}
