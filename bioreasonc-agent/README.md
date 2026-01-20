@@ -2,12 +2,12 @@
 
 This package allows you to verify the results of the "BioREASONIC: Logic-Enhanced Biomedical Knowledge Graph Question Answering" paper.
 
-## 📦 Contents
+## Contents
 - `Bioreasonic.ipynb`: Main evaluation notebook.
 - `run_kgqa_evaluation.py`: Automated evaluation script.
 - `benchmarks/`: Data for BioKGBench and BioResonKGBench.
 
-## 🔑 Configuration Setup (Required)
+## Configuration Setup (Required)
 Before running, you must add your **LLM API keys**. The Database connection is pre-configured.
 
 1. **LLM Keys:** Edit `benchmarks/01_BioKGBench/config/config.local.yaml` and `benchmarks/02_BioResonKGBench/config/config.local.yaml`.
@@ -17,7 +17,7 @@ Before running, you must add your **LLM API keys**. The Database connection is p
 2. **Database:** (Pre-configured)
    - The configs are already set to connect to the hosted Neo4j instance at `34.31.148.159`. No action needed.
 
-## 🚀 How to Run
+## How to Run
 
 You have two options to run the evaluation:
 
