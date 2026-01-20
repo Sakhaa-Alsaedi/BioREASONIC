@@ -1,0 +1,397 @@
+%% BioREASONIC-Bench: Prompts and Question Examples with Biological Context
+%% This document shows IDEAL examples with proper biological explanations
+
+\section{Question Generation: Ideal Examples with Biological Context}
+
+This document provides exemplary question-answer pairs that demonstrate proper biological reasoning. Each answer explains the \textbf{biological mechanism} connecting the gene to the disease, not just statistical metrics.
+
+%% ============================================================================
+\subsection{Structure-Aware (S) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Ideal Example S-1: SNP-Gene-Disease Mapping}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=S: Structure-Aware Question]
+\textbf{Question:} Is the IL21R-Asthma association supported by multiple independent genetic variants? Explain the biological basis.
+
+\textbf{Ideal Answer:}
+Yes. The IL21R-Asthma association is supported by 136 SNPs (20 unique independent signals).
+
+\textbf{Biological Explanation:}
+IL21R (Interleukin-21 Receptor) is a cytokine receptor expressed on T cells, B cells, and NK cells. It plays a critical role in:
+\begin{itemize}
+    \item \textbf{Th2 immune response regulation}: IL-21 signaling modulates the balance between Th1 and Th2 responses
+    \item \textbf{IgE production}: IL21R activation influences B cell class switching to IgE, which drives allergic inflammation
+    \item \textbf{Airway inflammation}: Dysregulated IL-21 signaling contributes to eosinophilic airway inflammation characteristic of asthma
+\end{itemize}
+
+The multiple independent genetic signals (20 unique variants) suggest that IL21R harbors multiple functional variants affecting immune regulation, strengthening its role as a true asthma susceptibility gene rather than a tagging artifact.
+\end{tcolorbox}
+
+\subsubsection{Ideal Example S-2: Multi-hop Graph Traversal}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=S: Graph Traversal with Biological Path]
+\textbf{Question:} Trace the biological path from variant rs1799884 to Type 2 Diabetes.
+
+\textbf{Ideal Answer:}
+
+\textbf{Graph Traversal:}
+\begin{verbatim}
+rs1799884 (Variant)
+    |
+    | [located in promoter region]
+    v
+GCK (Glucokinase gene)
+    |
+    | [encodes]
+    v
+Glucokinase enzyme (hexokinase IV)
+    |
+    | [functions as glucose sensor in]
+    v
+Pancreatic beta cells
+    |
+    | [regulates]
+    v
+Insulin secretion threshold
+    |
+    | [when impaired, leads to]
+    v
+Elevated fasting glucose → Type 2 Diabetes
+\end{verbatim}
+
+\textbf{Biological Mechanism:}
+GCK acts as the pancreatic glucose sensor by catalyzing the rate-limiting step of glucose phosphorylation (glucose $\rightarrow$ glucose-6-phosphate). The variant rs1799884 in the GCK promoter reduces transcriptional activity, leading to:
+\begin{enumerate}
+    \item Decreased glucokinase expression in beta cells
+    \item Higher glucose threshold required to trigger insulin release
+    \item Chronic mild hyperglycemia (MODY2 phenotype in severe cases)
+    \item Progressive beta cell dysfunction contributing to T2D
+\end{enumerate}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Causal-Aware (C) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Ideal Example C-1: Association vs. Causation}
+
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C: Causal Reasoning with Biological Context]
+\textbf{Question:} Based on GWAS evidence alone, can we conclude that TCF7L2 causes Type 2 Diabetes?
+
+\textbf{Ideal Answer:}
+\textbf{No, we cannot conclude causation from GWAS alone.}
+
+\textbf{Step 1 - What GWAS Shows:}
+GWAS identifies that TCF7L2 variants (lead SNP rs7903146, OR=1.37) are statistically \textit{associated} with T2D risk.
+
+\textbf{Step 2 - Why Association $\neq$ Causation:}
+\begin{itemize}
+    \item \textbf{Confounding}: Population stratification or correlated environmental factors could explain the association
+    \item \textbf{Linkage Disequilibrium}: rs7903146 may tag another causal variant nearby
+    \item \textbf{Reverse causation}: Metabolic changes in T2D could theoretically affect TCF7L2 regulation (though unlikely for germline variants)
+\end{itemize}
+
+\textbf{Step 3 - Biological Plausibility (supportive but not conclusive):}
+TCF7L2 encodes a transcription factor in the Wnt signaling pathway that regulates:
+\begin{itemize}
+    \item Beta cell proliferation and survival
+    \item Incretin hormone (GLP-1) signaling
+    \item Hepatic gluconeogenesis
+\end{itemize}
+While biologically plausible, plausibility alone does not prove causation.
+
+\textbf{Step 4 - Evidence Required for Causal Claim:}
+\begin{itemize}
+    \item Mendelian Randomization showing consistent causal direction
+    \item Functional studies (TCF7L2 knockdown impairs insulin secretion)
+    \item MODY cases with TCF7L2 mutations (not yet identified)
+\end{itemize}
+
+\textbf{Correct Statement:} ``TCF7L2 variants are \textit{associated with} increased T2D risk'' (NOT ``TCF7L2 \textit{causes} T2D'')
+\end{tcolorbox}
+
+\subsubsection{Ideal Example C-2: Mendelian Randomization Interpretation}
+
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C: MR Evidence with Biological Interpretation]
+\textbf{Question:} Does Mendelian Randomization evidence support a causal role for PCSK9 in coronary artery disease (CAD)?
+
+\textbf{Ideal Answer:}
+\textbf{Yes, MR strongly supports PCSK9 as a causal factor for CAD.}
+
+\textbf{Step 1 - MR Methodology:}
+MR uses genetic variants as instrumental variables. PCSK9 loss-of-function variants (e.g., rs11591147) serve as lifelong ``natural experiments'' of reduced PCSK9 activity.
+
+\textbf{Step 2 - MR Evidence:}
+\begin{itemize}
+    \item MR score: 0.92 (strong causal support)
+    \item Consistent across multiple MR methods (IVW, MR-Egger, weighted median)
+    \item No evidence of horizontal pleiotropy (Egger intercept p $>$ 0.05)
+\end{itemize}
+
+\textbf{Step 3 - Biological Mechanism Explaining Causality:}
+\begin{enumerate}
+    \item PCSK9 binds to LDL receptors on hepatocytes
+    \item PCSK9-LDLr complex is internalized and degraded
+    \item Reduced LDL receptor recycling $\rightarrow$ decreased LDL clearance
+    \item Elevated circulating LDL-cholesterol
+    \item LDL accumulation in arterial walls $\rightarrow$ atherosclerosis $\rightarrow$ CAD
+\end{enumerate}
+
+\textbf{Step 4 - Therapeutic Validation (strongest causal support):}
+PCSK9 inhibitors (evolocumab, alirocumab) in randomized trials:
+\begin{itemize}
+    \item Reduce LDL-C by 50-60\%
+    \item Reduce cardiovascular events by 15-20\%
+    \item This intervention evidence confirms the causal pathway
+\end{itemize}
+
+\textbf{Conclusion:} PCSK9 has robust causal evidence linking it to CAD through the LDL-cholesterol pathway, validated by both MR and drug intervention trials.
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Risk-Aware (R) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Ideal Example R-1: Risk Factor Assessment}
+
+\begin{tcolorbox}[colback=orange!5,colframe=orange!40!black,title=R: Risk Assessment with Biological Interpretation]
+\textbf{Question:} Should APOE be considered a genetic risk factor for Alzheimer's disease? Explain the biological basis.
+
+\textbf{Ideal Answer:}
+\textbf{Yes, APOE is the strongest genetic risk factor for late-onset Alzheimer's disease.}
+
+\textbf{Statistical Evidence:}
+\begin{itemize}
+    \item APOE $\varepsilon$4 allele: OR = 3.2 (heterozygotes), OR = 14.9 (homozygotes)
+    \item Genome-wide significance: p $<$ 10$^{-300}$
+    \item Risk score: 0.95 (very strong)
+    \item Replicated across all populations studied
+\end{itemize}
+
+\textbf{Biological Mechanism - Why APOE Increases AD Risk:}
+
+\textbf{1. Amyloid-$\beta$ Clearance:}
+\begin{itemize}
+    \item APOE is the primary cholesterol transporter in the brain
+    \item APOE4 isoform has reduced efficiency in clearing A$\beta$ from brain parenchyma
+    \item Results in increased amyloid plaque deposition
+\end{itemize}
+
+\textbf{2. Tau Pathology:}
+\begin{itemize}
+    \item APOE4 enhances tau phosphorylation and tangle formation
+    \item Independent of amyloid, APOE4 accelerates tau spread
+\end{itemize}
+
+\textbf{3. Neuroinflammation:}
+\begin{itemize}
+    \item APOE4 promotes pro-inflammatory microglial activation
+    \item Impaired synaptic pruning and neuronal support
+\end{itemize}
+
+\textbf{4. Blood-Brain Barrier Integrity:}
+\begin{itemize}
+    \item APOE4 associated with increased BBB permeability
+    \item Allows peripheral immune infiltration
+\end{itemize}
+
+\textbf{Clinical Implication:}
+APOE genotyping has predictive value for AD risk stratification. APOE4 carriers may benefit from earlier intervention and lifestyle modifications. However, APOE4 is neither necessary nor sufficient for AD---it modifies risk within a multifactorial disease context.
+\end{tcolorbox}
+
+\subsubsection{Ideal Example R-2: Odds Ratio Interpretation}
+
+\begin{tcolorbox}[colback=orange!5,colframe=orange!40!black,title=R: OR Interpretation with Clinical Context]
+\textbf{Question:} What does an odds ratio of 1.45 for GCK variants in Type 2 Diabetes mean clinically?
+
+\textbf{Ideal Answer:}
+
+\textbf{Statistical Interpretation:}
+OR = 1.45 means carriers of the GCK risk allele have 45\% higher odds of developing T2D compared to non-carriers.
+
+\textbf{Clinical Context:}
+\begin{itemize}
+    \item \textbf{Effect Size Classification}: Moderate effect for a common variant (most GWAS variants have OR 1.1-1.3)
+    \item \textbf{Population Attributable Risk}: Given allele frequency $\sim$30\%, GCK contributes $\sim$12\% of population T2D risk
+    \item \textbf{Individual Risk}: If baseline lifetime T2D risk is 30\%, a GCK risk allele carrier has $\sim$37\% risk
+\end{itemize}
+
+\textbf{Biological Explanation for Effect Size:}
+GCK encodes glucokinase, the pancreatic glucose sensor. The moderate OR reflects:
+\begin{enumerate}
+    \item Partial loss of glucose sensing (not complete knockout)
+    \item Compensatory mechanisms (other hexokinases, insulin sensitivity)
+    \item Gene-environment interaction (effect stronger with obesity/poor diet)
+\end{enumerate}
+
+\textbf{Comparison to Other T2D Genes:}
+\begin{itemize}
+    \item TCF7L2 rs7903146: OR = 1.37 (strongest common variant effect)
+    \item GCK: OR = 1.45 (among strongest)
+    \item Most T2D GWAS hits: OR = 1.05-1.15
+\end{itemize}
+
+\textbf{Important Caveat:}
+OR = 1.45 reflects \textit{relative risk increase}, not absolute risk. A 45\% increase from a 1\% baseline risk is trivial (1\% $\rightarrow$ 1.45\%), while from 30\% is meaningful (30\% $\rightarrow$ 37\%).
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Mechanism-Aware (M) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Ideal Example M-1: Pathway Analysis}
+
+\begin{tcolorbox}[colback=purple!5,colframe=purple!40!black,title=M: Mechanism with GO/PPI Biological Context]
+\textbf{Question:} Based on PPI networks and GO annotations, what is the mechanistic basis for HLA-DRB1's role in Rheumatoid Arthritis?
+
+\textbf{Ideal Answer:}
+
+\textbf{GO Functional Score: 0.85 (Strong pathway relevance)}
+
+\textbf{Relevant GO Terms:}
+\begin{itemize}
+    \item GO:0002504 - Antigen processing and presentation via MHC class II
+    \item GO:0019886 - Antigen processing, exogenous antigen via MHC-II
+    \item GO:0050852 - T cell receptor signaling pathway
+    \item GO:0002250 - Adaptive immune response
+\end{itemize}
+
+\textbf{PPI Network Analysis:}
+HLA-DRB1 interacts with:
+\begin{itemize}
+    \item CD4 (T helper cell co-receptor) - Direct binding
+    \item CIITA (MHC class II transactivator) - Transcriptional regulation
+    \item CD74 (Invariant chain) - Peptide loading complex
+    \item PTPN22 (Another RA risk gene) - T cell activation modulation
+\end{itemize}
+
+\textbf{Mechanistic Pathway to Rheumatoid Arthritis:}
+
+\begin{verbatim}
+HLA-DRB1*04:01 (shared epitope)
+        |
+        | [presents citrullinated peptides]
+        v
+Autoreactive CD4+ T cell activation
+        |
+        | [provides help to B cells]
+        v
+Anti-citrullinated protein antibodies (ACPA)
+        |
+        | [form immune complexes]
+        v
+Synovial inflammation
+        |
+        | [recruits macrophages, releases cytokines]
+        v
+Pannus formation → Cartilage/bone destruction → RA
+\end{verbatim}
+
+\textbf{The ``Shared Epitope'' Hypothesis:}
+Specific HLA-DRB1 alleles (DRB1*04:01, *04:04, *01:01) share a conserved amino acid sequence (positions 70-74: QKRAA/QRRAA) that:
+\begin{enumerate}
+    \item Preferentially binds citrullinated self-peptides
+    \item Presents these peptides to autoreactive T cells
+    \item Breaks self-tolerance, initiating autoimmunity
+\end{enumerate}
+
+\textbf{Conclusion:}
+HLA-DRB1's mechanistic role in RA is well-established through antigen presentation of citrullinated peptides, supported by PPI interactions with the T cell activation machinery and GO enrichment in adaptive immunity pathways.
+\end{tcolorbox}
+
+\subsubsection{Ideal Example M-2: Functional Connection Assessment}
+
+\begin{tcolorbox}[colback=purple!5,colframe=purple!40!black,title=M: Functional Connection with Pathway Explanation]
+\textbf{Question:} Is SLC30A8 functionally connected to Type 2 Diabetes based on PPI networks and GO terms?
+
+\textbf{Ideal Answer:}
+\textbf{Yes, SLC30A8 has strong functional connection to T2D (GO score: 0.78)}
+
+\textbf{Gene Function:}
+SLC30A8 encodes ZnT8, a zinc transporter specifically expressed in pancreatic beta cells.
+
+\textbf{Relevant GO Terms:}
+\begin{itemize}
+    \item GO:0006882 - Cellular zinc ion homeostasis
+    \item GO:0030073 - Insulin secretion
+    \item GO:0005385 - Zinc ion transmembrane transporter activity
+    \item GO:0005783 - Endoplasmic reticulum (insulin processing)
+\end{itemize}
+
+\textbf{Mechanistic Connection to T2D:}
+\begin{enumerate}
+    \item \textbf{Zinc in Insulin Crystallization:}
+    \begin{itemize}
+        \item Insulin is stored as zinc-insulin hexamers in secretory granules
+        \item ZnT8 transports Zn$^{2+}$ into granules for proper insulin packaging
+    \end{itemize}
+
+    \item \textbf{Insulin Secretion:}
+    \begin{itemize}
+        \item Adequate zinc is required for insulin biosynthesis and processing
+        \item ZnT8 dysfunction impairs glucose-stimulated insulin secretion
+    \end{itemize}
+
+    \item \textbf{Beta Cell Health:}
+    \begin{itemize}
+        \item Zinc has antioxidant properties protecting beta cells
+        \item ZnT8 autoantibodies are T1D biomarkers (immune relevance)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{PPI Partners:}
+\begin{itemize}
+    \item INS (Insulin) - Direct functional link
+    \item IAPP (Islet amyloid polypeptide) - Co-secreted with insulin
+    \item PCSK1 (Prohormone convertase) - Insulin processing
+\end{itemize}
+
+\textbf{Paradoxical Finding:}
+Interestingly, SLC30A8 loss-of-function variants are \textit{protective} against T2D (OR = 0.65), suggesting that reduced ZnT8 activity may have compensatory benefits---an active area of drug development research.
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Key Principles for Biological Answers}
+%% ============================================================================
+
+\begin{enumerate}
+    \item \textbf{Explain the Gene's Function}: What does the gene encode? What is its molecular/cellular role?
+
+    \item \textbf{Connect to Disease Pathophysiology}: How does gene dysfunction lead to disease phenotype?
+
+    \item \textbf{Describe the Pathway}: Provide a step-by-step mechanistic pathway from gene $\rightarrow$ disease.
+
+    \item \textbf{Interpret Statistics Biologically}: Explain why effect sizes are what they are based on biology.
+
+    \item \textbf{Acknowledge Complexity}: Note compensatory mechanisms, gene-environment interactions, and limitations.
+
+    \item \textbf{Clinical Relevance}: Where applicable, mention therapeutic implications.
+\end{enumerate}
+
+%% ============================================================================
+\subsection{Comparison: Generic vs. Biological Answers}
+%% ============================================================================
+
+\begin{table}[h]
+\centering
+\caption{Generic vs. Biological Answer Quality}
+\begin{tabular}{p{6cm}p{6cm}}
+\toprule
+\textbf{Generic Answer (Poor)} & \textbf{Biological Answer (Good)} \\
+\midrule
+``Yes. The association is supported by 136 SNPs (20 unique).'' &
+``Yes. IL21R encodes the IL-21 receptor, a key regulator of Th2 immune responses. The 136 SNPs (20 independent signals) affect IL-21 signaling, which modulates IgE production and eosinophilic inflammation in asthmatic airways.'' \\
+\midrule
+``HLA-DRB5 is a protein\_coding gene with known functions.'' &
+``HLA-DRB5 encodes an MHC class II molecule that presents antigens to CD4+ T cells. Its role in asthma involves presentation of allergen-derived peptides, activating Th2 responses that drive allergic airway inflammation.'' \\
+\midrule
+``MR score of 1.00 supports a causal relationship.'' &
+``MR score of 1.00 supports causation. Genetically-determined variation in PCSK9 affects LDL receptor degradation, causing lifelong differences in LDL-C levels. This natural experiment mirrors PCSK9 inhibitor trials, confirming the LDL-CAD causal pathway.'' \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ============================================================================
+%% END OF BIOLOGICAL EXAMPLES DOCUMENT
+%% ============================================================================

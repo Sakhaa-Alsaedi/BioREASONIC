@@ -1,0 +1,411 @@
+%% BioREASONIC-Bench: Prompts and Question Examples
+%% Comprehensive documentation of generation prompts and best examples for each taxonomy
+
+\section{Question Generation Prompts and Examples}
+
+This document provides the complete set of generation prompts and representative examples for each taxonomy in BioREASONIC-Bench. Each taxonomy is presented with: (1) the generation prompt template, (2) answer templates, and (3) high-quality generated examples across different answer formats.
+
+%% ============================================================================
+\subsection{Structure-Aware (S) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Generation Prompt Templates}
+
+\paragraph{S-SNP-COUNT Template:}
+Evaluates understanding of genetic variant support for gene-disease associations.
+
+\begin{verbatim}
+PROMPT: "Evaluate the robustness of the {gene}-{disease} association
+        based on supporting genetic variants."
+
+ANSWER TEMPLATE (Reasoning):
+Step 1: Count supporting variants - {snp_count} total SNPs,
+        {unique_snps} unique.
+Step 2: Assess independence - Multiple independent signals suggest
+        true association.
+Step 3: Consider LD structure - Considering LD structure, {unique_snps}
+        unique variants from {snp_count} total SNPs suggest multiple
+        causal variants.
+Step 4: Evaluate effect sizes - Effect sizes are typical for complex
+        trait associations.
+Step 5: Check replication - {replication_status}.
+Conclusion: The {gene}-{disease} association is {robustness} based on
+            {snp_count} supporting SNPs with {unique_snps} unique variants.
+\end{verbatim}
+
+\subsubsection{Generated Examples}
+
+\paragraph{Example S-1: Yes/No Format}
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=S-SNP-COUNT (Yes/No)]
+\textbf{Question:} Is the IL21R-Asthma association supported by multiple independent genetic variants?
+
+\textbf{Answer:} Yes. The association is supported by 136 SNPs (20 unique).
+
+\textbf{Evidence:}
+\begin{itemize}
+    \item Gene: IL21R (ENSG00000103522)
+    \item Disease: Asthma
+    \item SNP Count: 136 total, 20 unique
+    \item Evidence Level: Very Strong (MR-validated)
+    \item Risk Score: 0.71
+\end{itemize}
+\end{tcolorbox}
+
+\paragraph{Example S-2: Reasoning Format}
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=S-SNP-COUNT (Reasoning)]
+\textbf{Question:} Evaluate the robustness of the DHRS7C-Diabetes Mellitus, Type 2 association based on supporting genetic variants.
+
+\textbf{Answer:}
+\begin{verbatim}
+Step 1: Count supporting variants - 30 total SNPs, 30 unique.
+Step 2: Assess independence - Multiple independent signals suggest
+        true association.
+Step 3: Consider LD structure - Considering LD structure, 30 unique
+        variants from 30 total SNPs suggest multiple causal variants.
+Step 4: Evaluate effect sizes - Effect sizes are typical for complex
+        trait associations.
+Step 5: Check replication - Partially replicated.
+Conclusion: The DHRS7C-Diabetes Mellitus, Type 2 association is
+            moderately robust based on 30 supporting SNPs with
+            30 unique variants.
+\end{verbatim}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Causal-Aware (C) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Generation Prompt Templates}
+
+\paragraph{C-CAUSAL-VS-ASSOC Template:}
+The \textbf{core} template for distinguishing association from causation.
+
+\begin{verbatim}
+PROMPT: "Is the relationship between {gene} and {disease} causal or
+        associative based on GWAS evidence?"
+
+ANSWER TEMPLATE (CoT):
+The relationship is ASSOCIATIVE, not causal.
+
+**Step 1 - Evidence Type:**
+GWAS provides statistical association (OR={or_value}, p={p_value}).
+
+**Step 2 - Causal Limitation:**
+GWAS identifies correlation but CANNOT prove causation due to:
+- Potential confounding variables
+- Possible reverse causation
+- Linkage disequilibrium with true causal variant
+
+**Step 3 - Required Evidence for Causality:**
+- Mendelian Randomization (MR) analysis
+- Functional studies showing biological mechanism
+- Intervention trials
+
+**Step 4 - Conclusion:**
+Based on GWAS alone, we can only say {gene} is ASSOCIATED with
+{disease}, not that it CAUSES {disease}.
+\end{verbatim}
+
+\paragraph{C-MR-EVIDENCE Template:}
+Evaluates interpretation of Mendelian Randomization evidence.
+
+\begin{verbatim}
+PROMPT: "Based on Mendelian Randomization analysis, can we infer that
+        {gene} causally affects {disease}? Explain your reasoning."
+
+ANSWER TEMPLATE (CoT):
+Step 1: Understand MR methodology - MR uses genetic variants as
+        natural experiments to test causation.
+Step 2: Examine MR score - {gene} has an MR score of {mr_score}.
+Step 3: Interpret the score - [Strong/Moderate/Insufficient] MR support
+        provides causal evidence through natural genetic randomization.
+Step 4: Consider MR assumptions - Relevance, independence,
+        exclusion restriction.
+Step 5: Assess potential violations - [Assessment].
+Conclusion: [supports/does not support] a causal relationship.
+\end{verbatim}
+
+\paragraph{C-CAUSAL-STRENGTH Template:}
+Distinguishes association from causation with evidence evaluation.
+
+\begin{verbatim}
+PROMPT: "Evaluate whether the evidence supports a causal role for {gene}
+        in {disease}. Distinguish between association and causation."
+
+ANSWER TEMPLATE (CoT):
+Step 1: Define association vs causation - Association shows correlation;
+        causation requires evidence the gene directly affects disease risk.
+Step 2: Review associative evidence - {snp_count} GWAS SNPs,
+        risk score {risk_score}.
+Step 3: Examine causal evidence - Causal confidence: {causal_score},
+        MR score: {mr_score}.
+Step 4: Apply causal criteria - [Assessment of criteria].
+Step 5: Consider confounding - MR design reduces confounding.
+Conclusion: Evidence [supports/does not support] a causal role.
+\end{verbatim}
+
+\subsubsection{Generated Examples}
+
+\paragraph{Example C-1: Yes/No Format}
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C-MR-EVIDENCE (Yes/No)]
+\textbf{Question:} Does HLA-DRB5 have Mendelian Randomization evidence supporting a causal role in Anti-Asthmatic Agents?
+
+\textbf{Answer:} Yes. MR score of 1.00 supports a causal relationship.
+
+\textbf{Evidence:}
+\begin{itemize}
+    \item Gene: HLA-DRB5
+    \item MR Score: 1.00 (Strong causal support)
+    \item Evidence Level: Very Strong
+    \item Has MR Support: True
+\end{itemize}
+\end{tcolorbox}
+
+\paragraph{Example C-2: Multiple Choice Format}
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C-MR-EVIDENCE (MCQ)]
+\textbf{Question:} What does the Mendelian Randomization evidence suggest about HLA-DRB5's relationship with Anti-Asthmatic Agents?
+
+\textbf{Options:}
+\begin{itemize}
+    \item[A)] Strong causal evidence (MR supports causation) \checkmark
+    \item[B)] Moderate causal evidence (MR suggestive)
+    \item[C)] Association only (no MR support for causation)
+    \item[D)] No evidence of relationship
+\end{itemize}
+
+\textbf{Correct Answer:} A
+\end{tcolorbox}
+
+\paragraph{Example C-3: Reasoning Format (Best Example)}
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C-CAUSAL-STRENGTH (Reasoning)]
+\textbf{Question:} Evaluate whether the evidence supports a causal role for DHRS7C in Diabetes Mellitus, Type 2. Distinguish between association and causation.
+
+\textbf{Answer:}
+\begin{verbatim}
+Step 1: Define association vs causation - Association shows correlation;
+        causation requires evidence the gene directly affects disease risk.
+
+Step 2: Review associative evidence - 30 GWAS SNPs, risk score 0.54.
+
+Step 3: Examine causal evidence - Causal confidence: 0.02,
+        MR score: 1.00.
+
+Step 4: Apply causal criteria - Limited support for causal criteria.
+
+Step 5: Consider confounding - MR design reduces confounding.
+
+Conclusion: Evidence supports a causal role. The evidence supports
+            causation.
+\end{verbatim}
+
+\textbf{Ground Truth Evidence:}
+\begin{itemize}
+    \item GWAS Support: 30 SNPs (moderate)
+    \item MR Score: 1.00 (strong)
+    \item Causal Confidence: 0.02
+    \item Evidence Level: Moderate
+\end{itemize}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Risk-Aware (R) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Generation Prompt Templates}
+
+\paragraph{R-RISK-FACTOR Template:}
+\begin{verbatim}
+PROMPT: "Based on the available genetic evidence, should {gene} be
+        considered a risk factor for {disease}? Explain your reasoning."
+
+ANSWER TEMPLATE (CoT):
+Step 1: Examine the GWAS evidence - {gene} has {snp_count} associated
+        SNPs with {disease}.
+Step 2: Assess evidence strength - The risk weight score is {risk_score},
+        classified as {evidence_level}.
+Step 3: Evaluate supporting data - {evidence_description}.
+Step 4: Consider biological plausibility - {gene} is a {gene_type} gene
+        with known functions.
+Conclusion: [Yes/No], {gene} [should/should not] be considered a
+            [significant] risk factor for {disease}.
+\end{verbatim}
+
+\paragraph{R-RISK-LEVEL Template:}
+\begin{verbatim}
+PROMPT: "Evaluate the strength of evidence for {gene} as a risk factor
+        for {disease}. What does the evidence tell us?"
+
+ANSWER TEMPLATE (CoT):
+Step 1: Check the risk weight score - {risk_score} indicates
+        {evidence_level} evidence.
+Step 2: Examine GWAS support - {snp_count} SNPs support this association.
+Step 3: Consider causal confidence - The causal confidence score
+        is {causal_score}.
+Step 4: Assess MR evidence - MR score is {mr_score}, indicating
+        {mr_interpretation}.
+Conclusion: The overall evidence is {evidence_level}.
+\end{verbatim}
+
+\subsubsection{Generated Examples}
+
+\paragraph{Example R-1: Yes/No Format}
+\begin{tcolorbox}[colback=orange!5,colframe=orange!40!black,title=R-RISK-FACTOR (Yes/No)]
+\textbf{Question:} Is IL21R a genetic risk factor for Asthma?
+
+\textbf{Answer:} Yes. IL21R is a risk factor for Asthma with very strong (MR-validated) evidence (risk score: 0.71).
+
+\textbf{Evidence:}
+\begin{itemize}
+    \item Gene: IL21R
+    \item Disease: Asthma
+    \item Risk Weight Score: 0.71
+    \item Evidence Level: Very Strong (MR-validated)
+    \item SNP Count: 136
+\end{itemize}
+\end{tcolorbox}
+
+\paragraph{Example R-2: Reasoning Format (Best Example)}
+\begin{tcolorbox}[colback=orange!5,colframe=orange!40!black,title=R-RISK-FACTOR (Reasoning)]
+\textbf{Question:} Based on the available genetic evidence, should DHRS7C be considered a risk factor for Diabetes Mellitus, Type 2? Explain your reasoning.
+
+\textbf{Answer:}
+\begin{verbatim}
+Step 1: Examine the GWAS evidence - DHRS7C has 30 associated SNPs
+        with Diabetes Mellitus, Type 2.
+
+Step 2: Assess evidence strength - The risk weight score is 0.54,
+        classified as moderate.
+
+Step 3: Evaluate supporting data - moderate GWAS support (30 SNPs);
+        strong Mendelian Randomization evidence.
+
+Step 4: Consider biological plausibility - DHRS7C is a protein_coding
+        gene with known functions.
+
+Conclusion: DHRS7C may be a risk factor for Diabetes Mellitus, Type 2,
+            but more evidence is needed.
+\end{verbatim}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Mechanism-Aware (M) Taxonomy}
+%% ============================================================================
+
+\subsubsection{Generation Prompt Templates}
+
+\paragraph{M-PATHWAY Template (Biological Mechanism):}
+\begin{verbatim}
+PROMPT: "Based on protein-protein interaction networks and GO annotations,
+        what is the mechanistic basis for {gene}'s role in {disease}?"
+
+ANSWER TEMPLATE (CoT):
+Step 1: Examine PPI network - {gene} participates in disease-relevant
+        protein interaction networks (GO score: {go_score}).
+Step 2: Analyze GO enrichment - Key GO terms include biological process,
+        cellular component, and molecular function terms relevant
+        to disease.
+Step 3: Assess functional relevance - GO functional score: {go_score}.
+Step 4: Connect to disease mechanisms - The gene's PPI network shows
+        [strong/moderate/weak] overlap with disease pathways.
+Step 5: Consider pathway crosstalk - Cross-pathway interactions may
+        contribute to disease phenotype.
+Conclusion: The pathway analysis [supports/does not support] a
+            mechanistic role for {gene} in {disease}.
+\end{verbatim}
+
+\paragraph{M-MECHANISM Template:}
+\begin{verbatim}
+PROMPT: "Does the PPI network and GO annotation of {gene} support its
+        role in {disease} pathogenesis?"
+
+ANSWER TEMPLATE (Yes/No):
+Yes/No. GO functional score of {go_score} [supports/does not support]
+mechanistic involvement.
+\end{verbatim}
+
+\subsubsection{Generated Examples}
+
+\paragraph{Example M-1: Yes/No Format}
+\begin{tcolorbox}[colback=purple!5,colframe=purple!40!black,title=M-PATHWAY (Yes/No)]
+\textbf{Question:} Is HLA-DRB5 functionally connected to Anti-Asthmatic Agents based on PPI networks and GO term enrichment?
+
+\textbf{Answer:} Yes. PPI/GO functional score of 0.60 indicates functional connection.
+
+\textbf{Evidence:}
+\begin{itemize}
+    \item Gene: HLA-DRB5
+    \item GO Functional Score: 0.60
+    \item Has Pathway Support: True
+    \item Evidence Level: Very Strong
+\end{itemize}
+\end{tcolorbox}
+
+\paragraph{Example M-2: Reasoning Format (Best Example)}
+\begin{tcolorbox}[colback=purple!5,colframe=purple!40!black,title=M-PATHWAY (Reasoning)]
+\textbf{Question:} Based on protein-protein interaction networks and GO annotations, what is the mechanistic basis for HLA-DRB5's role in Anti-Asthmatic Agents?
+
+\textbf{Answer:}
+\begin{verbatim}
+Step 1: Examine PPI network - HLA-DRB5 participates in disease-relevant
+        protein interaction networks (GO score: 0.60).
+
+Step 2: Analyze GO enrichment - Key GO terms include biological process,
+        cellular component, and molecular function terms relevant
+        to disease.
+
+Step 3: Assess functional relevance - GO functional score: 0.60.
+
+Step 4: Connect to disease mechanisms - The gene's PPI network shows
+        strong overlap with disease pathways.
+
+Step 5: Consider pathway crosstalk - Cross-pathway interactions may
+        contribute to disease phenotype.
+
+Conclusion: The pathway analysis supports a mechanistic role for
+            HLA-DRB5 in Anti-Asthmatic Agents.
+\end{verbatim}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{Summary of Answer Templates by Format}
+%% ============================================================================
+
+\begin{table}[h]
+\centering
+\caption{Answer Format Templates Across Taxonomies}
+\begin{tabular}{p{2cm}p{3cm}p{8cm}}
+\toprule
+\textbf{Format} & \textbf{Structure} & \textbf{Example Pattern} \\
+\midrule
+Yes/No & Direct answer + evidence & ``Yes. [Evidence statement with scores].'' \\
+\midrule
+MCQ & 4 options (A-D) & Options range from strongest to weakest evidence interpretation \\
+\midrule
+Short Answer & 1-2 sentences & Concise statement with key metrics \\
+\midrule
+Long Answer & 3-5 sentences & Detailed explanation with multiple evidence types \\
+\midrule
+Reasoning (CoT) & 4-5 steps + conclusion & Step-by-step reasoning with explicit evaluation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ============================================================================
+\subsection{Key Generation Principles}
+%% ============================================================================
+
+\begin{enumerate}
+    \item \textbf{Causal Language Discipline}: C taxonomy questions enforce strict distinction between ``associated with'' (GWAS) and ``causes'' (MR-validated).
+
+    \item \textbf{Evidence Grounding}: All answers include specific scores (MR score, risk score, GO score) from the knowledge graph.
+
+    \item \textbf{Step-by-Step Reasoning}: Reasoning format answers follow a structured 4-5 step CoT template.
+
+    \item \textbf{Uncertainty Quantification}: Conclusions reflect evidence strength (``very strong'', ``moderate'', ``weak'').
+
+    \item \textbf{Reproducibility}: Each question links to source data with gene IDs, disease IDs, and evidence descriptions.
+\end{enumerate}
+
+%% ============================================================================
+%% END OF PROMPTS AND EXAMPLES DOCUMENT
+%% ============================================================================

@@ -1,0 +1,194 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+\title{BioREASONC-Bench: Formal Score Definitions}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{GRASS: Genetic Risk Aggregate Score}
+
+The Weighted Gene Risk Score (WGRS) aggregates SNP-level risk contributions with gene length normalization and GWAS disease association weighting.
+
+\subsection{SNP-Level Risk Score}
+
+For each SNP $i$, the risk contribution is computed as a weighted sum of five components:
+
+\begin{equation}
+\text{SNP\_Risk}_i = w_{\text{clin}} \cdot S_{\text{ClinVar}} + w_{\text{impact}} \cdot S_{\text{Impact}} + w_{\text{freq}} \cdot S_{\text{MAF}} + w_{\text{causal}} \cdot S_{\text{Causal}} + w_{\text{gwas}} \cdot S_{\text{GWAS}}
+\end{equation}
+
+where the default weights are:
+\begin{align}
+w_{\text{clin}} &= 0.25 \quad \text{(Clinical significance from ClinVar)} \\
+w_{\text{impact}} &= 0.20 \quad \text{(Functional impact from VEP)} \\
+w_{\text{freq}} &= 0.15 \quad \text{(Minor allele frequency)} \\
+w_{\text{causal}} &= 0.20 \quad \text{(Fine-mapping PIPs from CAUSALdb)} \\
+w_{\text{gwas}} &= 0.20 \quad \text{(GWAS effect size and significance)}
+\end{align}
+
+\subsubsection{Component Scores}
+
+\textbf{ClinVar Score} ($S_{\text{ClinVar}}$):
+\begin{equation}
+S_{\text{ClinVar}} =
+\begin{cases}
+1.0 & \text{Pathogenic} \\
+0.8 & \text{Likely Pathogenic} \\
+0.3 & \text{Uncertain Significance (VUS)} \\
+0.1 & \text{Likely Benign} \\
+0.0 & \text{Benign}
+\end{cases}
+\end{equation}
+
+\textbf{Functional Impact Score} ($S_{\text{Impact}}$):
+\begin{equation}
+S_{\text{Impact}} =
+\begin{cases}
+1.0 & \text{HIGH} \\
+0.6 & \text{MODERATE} \\
+0.3 & \text{LOW} \\
+0.1 & \text{MODIFIER}
+\end{cases}
+\end{equation}
+
+\textbf{MAF Score} ($S_{\text{MAF}}$):
+\begin{equation}
+S_{\text{MAF}} = 1 - \min(\text{MAF}, 0.5)
+\end{equation}
+
+\textbf{Causal Score} ($S_{\text{Causal}}$):
+\begin{equation}
+S_{\text{Causal}} = \max(\text{PIP}_{\text{ABF}}, \text{PIP}_{\text{FINEMAP}}, \text{PIP}_{\text{SuSiE}}, \text{PIP}_{\text{PAINTOR}}, \text{PIP}_{\text{CAVIARBF}}, \text{PIP}_{\text{PolyFun}})
+\end{equation}
+
+\textbf{GWAS Score} ($S_{\text{GWAS}}$):
+\begin{equation}
+S_{\text{GWAS}} = \sqrt{S_{\text{effect}} \cdot S_{\text{sig}}}
+\end{equation}
+where:
+\begin{align}
+S_{\text{effect}} &= \min\left(\frac{|\beta|}{\beta_{\max}}, 1.0\right) \\
+S_{\text{sig}} &= \min\left(\frac{-\log_{10}(p)}{10}, 1.0\right)
+\end{align}
+
+\subsection{Gene-Level Score}
+
+For gene $g$ with length $L_g$ (in base pairs):
+
+\begin{equation}
+\text{Gene\_Score}_g = \frac{\sum_{i \in g} \text{SNP\_Risk}_i}{L_g / 1000}
+\end{equation}
+
+\subsection{Weighted Gene Risk Score (WGRS)}
+
+The final WGRS incorporates GWAS disease association:
+
+\begin{equation}
+\boxed{\text{WGRS}_g = \text{Gene\_Score}_g \times (1 + \lambda \cdot \text{GWAS\_Score}_g)}
+\end{equation}
+
+where $\lambda = 5.0$ is the GWAS weight multiplier.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{CARES: Causal-Aware Reasoning Evaluation Score}
+
+CARES evaluates LLM biomedical reasoning across four taxonomy categories with hallucination penalty and calibration error adjustment.
+
+\subsection{Reasoning Categories}
+
+\begin{itemize}
+    \item \textbf{S} -- Structure-aware: Understanding molecular/clinical structure
+    \item \textbf{C} -- Causal-aware: Recognizing causal relationships
+    \item \textbf{R} -- Risk-aware: Evaluating risk assessment
+    \item \textbf{M} -- Semantic-aware: Semantic knowledge understanding
+\end{itemize}
+
+\subsection{Score Scale}
+
+For each question $i$, the score $s_i \in \{0, 1, 2, 3, 4, 5\}$:
+\begin{equation}
+s_i =
+\begin{cases}
+5 & \text{Fully correct, semantically equivalent} \\
+4 & \text{Mostly correct, minor imprecisions} \\
+3 & \text{Partially correct, missing $>$20\% of key details} \\
+2 & \text{Safe abstention with expressed uncertainty} \\
+1 & \text{Partial hallucination, mixed correct/incorrect} \\
+0 & \text{Complete hallucination, confidently incorrect}
+\end{cases}
+\end{equation}
+
+\subsection{Category Score}
+
+For category $k \in \{S, C, R, M\}$ with question set $Q_k$:
+
+\begin{equation}
+\text{CARES}_k = \frac{1}{|Q_k|} \sum_{i \in Q_k} \frac{s_i}{5}
+\end{equation}
+
+\subsection{Hallucination Rate}
+
+A response is classified as a hallucination if $s_i \leq 1$ and confidence $c_i > 0.7$:
+
+\begin{equation}
+\text{HR}_k = \frac{|\{q_i \in Q_k : s_i \leq 1 \land c_i > 0.7\}|}{|Q_k|}
+\end{equation}
+
+\subsection{Hallucination Penalty}
+
+The penalty function with domain-calibrated $\alpha$:
+
+\begin{equation}
+\Phi(\text{HR}) = e^{-\alpha \cdot \text{HR}}
+\end{equation}
+
+Domain-specific $\alpha$ values (where $\alpha = -\ln(0.5) / \text{HR}_{\max}$):
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Domain} & $\alpha$ & $\text{HR}_{\max}$ \\
+\midrule
+Drug Interaction & 10.0 & 7\% \\
+Clinical Decision & 6.9 & 10\% \\
+Literature Summary & 4.6 & 15\% \\
+Research Exploration & 3.5 & 20\% \\
+Default & 3.5 & 20\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Expected Calibration Error}
+
+ECE measures the alignment between model confidence and actual accuracy:
+
+\begin{equation}
+\text{ECE} = \sum_{b=1}^{B} \frac{|B_b|}{N} \cdot |\text{acc}_b - \text{conf}_b|
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $B$ = number of bins (default 10)
+    \item $B_b$ = set of predictions in bin $b$
+    \item $\text{acc}_b$ = average accuracy in bin $b$
+    \item $\text{conf}_b$ = average confidence in bin $b$
+\end{itemize}
+
+\subsection{Final CARES Score}
+
+The overall CARES score combines weighted category scores with hallucination and calibration adjustments:
+
+\begin{equation}
+\boxed{\text{CARES} = \left[\sum_{k} \tilde{w}_k \cdot \text{CARES}_k\right] \times \sqrt{\Phi(\text{HR}) \times (1 - \text{ECE})}}
+\end{equation}
+
+where $\tilde{w}_k$ are the normalized category weights (default: $\tilde{w}_k = 0.25$ for all $k$).
+
+\end{document}

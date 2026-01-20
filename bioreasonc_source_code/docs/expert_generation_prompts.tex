@@ -1,0 +1,283 @@
+%% BioREASONIC-Bench: Prompts for Generating Expert-Style Answers
+%% These prompts produce natural, biologically-informed explanations
+
+\section{Expert Answer Generation Prompts}
+
+This document provides the prompts needed to generate expert-style answers that include proper biological explanations, not mechanical step-by-step templates.
+
+%% ============================================================================
+\subsection{System Prompt for Expert Answer Generation}
+%% ============================================================================
+
+\begin{tcolorbox}[colback=gray!10,colframe=gray!50!black,title=System Prompt]
+\begin{verbatim}
+You are an expert biomedical geneticist with deep knowledge of:
+- GWAS methodology and interpretation
+- Mendelian Randomization and causal inference
+- Molecular biology and disease pathophysiology
+- Clinical genetics and precision medicine
+
+When answering questions about gene-disease associations:
+
+1. EXPLAIN THE BIOLOGY: Don't just cite numbers. Explain what the gene
+   encodes, its molecular function, and how dysfunction leads to disease.
+
+2. USE NATURAL LANGUAGE: Write as an expert explaining to a colleague,
+   not as a template being filled in. Avoid "Step 1:", "Step 2:" formats.
+
+3. PROVIDE CONTEXT: Put statistics in perspective. Compare effect sizes
+   to typical GWAS findings. Explain what odds ratios mean clinically.
+
+4. CONNECT EVIDENCE TO MECHANISM: Link statistical findings (GWAS, MR)
+   to biological pathways that explain WHY the association exists.
+
+5. ACKNOWLEDGE NUANCE: Note limitations, alternative explanations, and
+   areas of uncertainty. Use appropriate hedging language.
+
+6. BE OBJECTIVE: State conclusions based on evidence without personal
+   opinion framing like "I think" or "My interpretation."
+\end{verbatim}
+\end{tcolorbox}
+
+%% ============================================================================
+\subsection{S (Structure) Taxonomy Prompt}
+%% ============================================================================
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=S-Taxonomy Expert Prompt]
+\begin{verbatim}
+PROMPT:
+You are explaining the genetic architecture of a gene-disease association.
+
+Gene: {gene}
+Disease: {disease}
+SNP count: {snp_count}
+Unique independent signals: {unique_snps}
+Evidence level: {evidence_level}
+
+Question: Is the {gene}-{disease} association supported by multiple
+independent genetic variants?
+
+Instructions:
+1. Answer yes/no with the SNP statistics
+2. Explain what "independent signals" means biologically (LD, fine-mapping)
+3. Describe what {gene} encodes and its biological function
+4. Explain HOW {gene} dysfunction contributes to {disease} pathophysiology
+5. Interpret what multiple independent signals suggest about the
+   gene's causal role
+6. Write in natural expert prose, not numbered steps
+\end{verbatim}
+\end{tcolorbox}
+
+\textbf{Example Output:}
+\begin{quote}
+Yes, and the genetic architecture strongly supports IL21R as a true asthma susceptibility gene.
+
+The association is backed by 136 SNPs, of which 20 represent independent signals after accounting for linkage disequilibrium. This distinction matters: a single causal variant can produce many associated SNPs through LD, but 20 independent signals suggest multiple functional variants within or near IL21R affecting asthma risk.
+
+From a biological standpoint, this makes sense. IL21R encodes the receptor for interleukin-21, a cytokine that orchestrates immune responses. In asthma:
+- IL-21 signaling drives B cell differentiation and IgE class switching
+- It modulates the Th1/Th2 balance (asthma is Th2-driven)
+- IL-21 affects regulatory T cells that suppress excessive immune responses
+
+The presence of multiple independent signals suggests several variants—affecting expression, splicing, or protein function—each contribute to asthma susceptibility through this immunological pathway.
+\end{quote}
+
+%% ============================================================================
+\subsection{C (Causal) Taxonomy Prompt}
+%% ============================================================================
+
+\begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=C-Taxonomy Expert Prompt]
+\begin{verbatim}
+PROMPT:
+You are explaining causal inference in genetic epidemiology.
+
+Gene: {gene}
+Disease: {disease}
+GWAS OR: {or_value}
+GWAS p-value: {p_value}
+MR score: {mr_score}
+Has MR support: {has_mr_support}
+
+Question: Based on GWAS evidence alone, can we conclude that {gene}
+causes {disease}?
+
+Instructions:
+1. Clearly state NO - GWAS shows association, not causation
+2. Explain WHY association ≠ causation (confounding, LD, reverse causation)
+3. Describe what {gene} actually does biologically
+4. Explain the biological pathway: {gene} → protein → function → {disease}
+5. Describe what additional evidence (MR, functional studies) would be
+   needed and why
+6. If MR evidence exists, explain what it adds to the causal argument
+7. Provide the CORRECT language: "associated with" not "causes"
+8. Write as a natural explanation, not mechanical steps
+\end{verbatim}
+\end{tcolorbox}
+
+\textbf{Example Output:}
+\begin{quote}
+No—and this distinction is crucial for interpreting genetic studies correctly.
+
+GWAS tells us that people carrying TCF7L2 variants (particularly rs7903146) have higher T2D rates. The association is robust: OR of 1.37, replicated across populations. But association is not causation.
+
+Consider the alternatives:
+
+\textbf{Confounding:} Perhaps TCF7L2 variants are more common in populations with dietary patterns that independently increase T2D risk.
+
+\textbf{Linkage disequilibrium:} rs7903146 might tag the true causal variant nearby. TCF7L2 spans over 200kb.
+
+\textbf{Reverse causation:} Less likely for germline variants, but metabolic changes could theoretically affect TCF7L2 regulation.
+
+TCF7L2 is actually well-supported causally. It encodes a transcription factor in Wnt signaling that regulates beta cell proliferation and GLP-1 responses. Functional studies show the risk allele reduces insulin secretion. MR analyses support causation.
+
+But here's the key point: we need that additional evidence beyond GWAS. The GWAS alone establishes association, not causation. Correct statement: "TCF7L2 variants are associated with increased T2D risk."
+\end{quote}
+
+%% ============================================================================
+\subsection{R (Risk) Taxonomy Prompt}
+%% ============================================================================
+
+\begin{tcolorbox}[colback=orange!5,colframe=orange!40!black,title=R-Taxonomy Expert Prompt]
+\begin{verbatim}
+PROMPT:
+You are explaining genetic risk factor assessment.
+
+Gene: {gene}
+Disease: {disease}
+Risk score: {risk_score}
+Evidence level: {evidence_level}
+SNP count: {snp_count}
+OR: {or_value} (if available)
+MR score: {mr_score}
+
+Question: Should {gene} be considered a genetic risk factor for {disease}?
+
+Instructions:
+1. State the conclusion (yes/no) with evidence strength
+2. Provide the statistical evidence (OR, SNPs, risk score)
+3. PUT NUMBERS IN CONTEXT: Compare to typical GWAS effect sizes
+4. Explain WHAT {gene} encodes and its molecular function
+5. Describe the BIOLOGICAL MECHANISM linking {gene} to {disease}
+6. Explain what the effect size means for individual risk
+7. Note clinical implications if relevant
+8. Write as natural expert explanation
+\end{verbatim}
+\end{tcolorbox}
+
+\textbf{Example Output:}
+\begin{quote}
+APOE isn't just a risk factor for Alzheimer's—it's the most important genetic risk factor by a considerable margin.
+
+The numbers are striking. Carrying one APOE ε4 allele roughly triples Alzheimer's risk; two copies increases it 12-fold. No other common variant comes close. For context, most GWAS hits have ORs between 1.1-1.3.
+
+Why such a large effect? APOE is the brain's primary cholesterol transporter, intimately involved in multiple Alzheimer's pathways:
+
+\textbf{Amyloid clearance:} The ε4 isoform is less efficient at clearing Aβ from brain tissue. Aβ accumulates, forms plaques, triggers neurodegeneration.
+
+\textbf{Tau pathology:} APOE4 promotes tau phosphorylation and tangle spread, independent of amyloid.
+
+\textbf{Neuroinflammation:} APOE4 shifts microglia toward pro-inflammatory states.
+
+Clinically, APOE genotyping is used for risk stratification. However, APOE4 is neither necessary nor sufficient for Alzheimer's—many carriers never develop dementia. It's a powerful risk modifier within a multifactorial disease.
+\end{quote}
+
+%% ============================================================================
+\subsection{M (Mechanism) Taxonomy Prompt}
+%% ============================================================================
+
+\begin{tcolorbox}[colback=purple!5,colframe=purple!40!black,title=M-Taxonomy Expert Prompt]
+\begin{verbatim}
+PROMPT:
+You are explaining the biological mechanism connecting a gene to disease.
+
+Gene: {gene}
+Disease: {disease}
+GO functional score: {go_score}
+Has pathway support: {has_pathway_support}
+PPI partners: {ppi_partners} (if available)
+
+Question: What is the mechanistic basis for {gene}'s role in {disease}?
+
+Instructions:
+1. Start with WHAT the gene encodes (protein name, function)
+2. Describe relevant GO terms and what they mean biologically
+3. Explain the PPI network context (what proteins it interacts with)
+4. MOST IMPORTANT: Describe the step-by-step biological pathway:
+   Gene → Protein → Molecular function → Cellular effect →
+   Tissue/organ impact → Disease phenotype
+5. Connect pathway to disease pathophysiology
+6. Note if the mechanism is well-established or hypothetical
+7. Mention clinical/therapeutic implications if relevant
+8. Write as cohesive biological narrative, not bullet points
+\end{verbatim}
+\end{tcolorbox}
+
+\textbf{Example Output:}
+\begin{quote}
+HLA-DRB1 is central to rheumatoid arthritis pathogenesis, and we understand the mechanism in considerable detail—a rarity in complex disease genetics.
+
+HLA-DRB1 encodes part of the MHC class II complex, presenting peptide fragments to CD4+ T cells. RA-associated alleles (*04:01, *04:04, *01:01) share a common amino acid sequence at positions 70-74: the "shared epitope."
+
+Here's how this drives RA:
+
+In RA, the immune system attacks joints. The current model involves citrullination—arginine residues converted to citrulline by PAD enzymes during inflammation.
+
+The shared epitope preferentially binds citrullinated peptides. When citrullinated self-proteins (fibrinogen, vimentin, collagen) are presented by HLA-DR molecules carrying the shared epitope, they activate T cells that escaped tolerance.
+
+These autoreactive T cells then:
+1. Help B cells produce anti-citrullinated protein antibodies (ACPAs)
+2. ACPAs form immune complexes in the synovium
+3. Immune complexes activate complement, recruit macrophages
+4. Chronic inflammation leads to pannus formation—invasive tissue destroying cartilage and bone
+
+The PPI network reflects this: HLA-DRB1 interacts with CD4 (T cell co-receptor), CIITA (MHC II master regulator), and CD74 (peptide loading). Another RA risk gene, PTPN22, also modulates T cell activation—the genetic architecture converges on the same pathway.
+\end{quote}
+
+%% ============================================================================
+\subsection{Key Differences: Current vs. Expert Prompts}
+%% ============================================================================
+
+\begin{table}[h]
+\centering
+\caption{Current Mechanical Prompts vs. Expert Prompts}
+\begin{tabular}{p{6cm}p{6cm}}
+\toprule
+\textbf{Current Prompt (Mechanical)} & \textbf{Expert Prompt (Biological)} \\
+\midrule
+``Generate a step-by-step answer'' &
+``Write as an expert explaining to a colleague'' \\
+\midrule
+``Step 1: Count variants. Step 2: Assess independence...'' &
+``Explain what independent signals mean biologically, then describe the gene's function and pathway to disease'' \\
+\midrule
+``{gene} is a protein\_coding gene with known functions'' &
+``Describe what {gene} encodes, its molecular function, and how dysfunction leads to {disease}'' \\
+\midrule
+``MR score = {mr\_score}'' &
+``Explain what MR methodology does, interpret the score, and connect to biological mechanism'' \\
+\midrule
+No biological context required &
+MUST include: Gene → Protein → Function → Disease pathway \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ============================================================================
+\subsection{Required Knowledge Base for Expert Answers}
+%% ============================================================================
+
+To generate expert answers, the system needs access to:
+
+\begin{enumerate}
+    \item \textbf{Gene Function Database}: What each gene encodes, molecular function
+    \item \textbf{Pathway Information}: GO terms, KEGG pathways, Reactome
+    \item \textbf{Disease Pathophysiology}: How diseases develop at molecular/cellular level
+    \item \textbf{PPI Networks}: Protein interaction partners
+    \item \textbf{Literature Context}: Key findings, drug targets, clinical relevance
+\end{enumerate}
+
+Without this biological knowledge, answers remain mechanical number-reporting rather than expert explanations.
+
+%% ============================================================================
+%% END OF EXPERT GENERATION PROMPTS
+%% ============================================================================
