@@ -226,7 +226,7 @@ python -m bioreasonc.benchmark.run \
 
 ---
 
-## 🔬 Experiments
+## Experiments
 
 ### Single-Agent vs Multi-Agent Performance
 
@@ -246,7 +246,7 @@ Our single-agent architecture achieves:
 
 ---
 
-## 🧬 Case Study: AD-T2D Biomarkers
+## Case Study: AD-T2D Biomarkers
 
 BioREASONIC identified novel candidate genes for Alzheimer's Disease (AD) and Type 2 Diabetes (T2D) comorbidity:
 
@@ -263,81 +263,31 @@ BioREASONIC identified novel candidate genes for Alzheimer's Disease (AD) and Ty
 
 ### Cross-Organ Disease Mapping
 
-<p align="center">
-  <img src="assets/figures/cross_organ_disease_mapping.png" alt="Cross-Organ Disease Mapping" width="90%"/>
-</p>
 
 > **Figure 2:** Cross-Organ Disease Mapping derived from shared AD-T2D risk genes. The 41 GRASS-prioritized risk genes indicate that AD and T2D represent two interconnected manifestations of a broader metabolic-inflammatory syndrome, driven by lipid dysregulation (APOE cluster), insulin-resistance pathways (TCF7L2, PPARG), immune dysfunction (HLA region), and impaired cellular quality-control mechanisms (CDKN2B, TP53INP1).
 
 ---
 
-## 🌐 BioREASONIC Explainer
+## BioREASONIC Explainer
 
-<p align="center">
-  <img src="assets/logos/bioreasonc_explainer_logo.png" alt="BioREASONIC Explainer" width="250"/>
-</p>
 
 Access our interactive web tool for causal-risk graph exploration:
 
 **🔗 [https://bioreasonicexplainer.kaust.edu.sa](https://bioreasonicexplainer.kaust.edu.sa)**
 
 Features:
-- 💬 Conversational Mode for natural language queries
-- 📈 Risk Omics-Enrichment Mode for pathway analysis
-- 🕸️ Interactive network visualization
-- 📊 Downloadable enrichment tables and graphs
+- Conversational Mode for natural language queries
+- Risk Omics-Enrichment Mode for pathway analysis
+- Interactive network visualization
+- Downloadable enrichment tables and graphs
 
 ---
 
-## 📚 Citation
-
-If you use BioREASONIC in your research, please cite our paper:
-
-```bibtex
-@article{alsaedi2026bioreasonc,
-  title     = {BioREASONIC: A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning},
-  author    = {Alsaedi, Sakhaa and Saif, Mohammed and Gojobori, Takashi and Gao, Xin},
-  journal   = {Bioinformatics},
-  year      = {2026},
-  publisher = {Oxford University Press},
-  doi       = {10.1093/bioinformatics/XXXXX}
-}
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-```bash
-# Fork the repository
-# Create your feature branch
-git checkout -b feature/AmazingFeature
-
-# Commit your changes
-git commit -m 'Add some AmazingFeature'
-
-# Push to the branch
-git push origin feature/AmazingFeature
-
-# Open a Pull Request
-```
-
----
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 🙏 Acknowledgments
-
-- Dr. Andrea Devlin for scientific discussions
-- Dr. Malak Alsaedi for medical insights on risk variants
-- King Abdullah University of Science and Technology (KAUST) for support
-
 ---
 
 ## 📧 Contact
@@ -350,12 +300,4 @@ Thuwal, Saudi Arabia
 
 ---
 
-<div align="center">
 
-<img src="assets/logos/bioreasonc_agent_icon.png" alt="BioREASONIC" width="80"/>
-
-**⭐ Star us on GitHub if you find this useful!**
-
-Made with ❤️ at KAUST
-
-</div>
