@@ -1,0 +1,350 @@
+category,term,description,p_value,fdr,genes,gene_count
+PMID,PMID:34935119,(2022) Genomics and Functional Genomics of Alzheimers Disease.,3.15e-17,1.62e-10,"IDUA,NECTIN2,APOE,APH1B,JAZF1,HLA-DRB1,ALPK2,TREM2,PICALM,HLA-DRA,SHARPIN,PLCG2,HESX1",13
+Function,GO:0032395,MHC class II receptor activity,3.15e-13,1.55e-09,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+NetworkNeighborAL,CL:16357,MHC II,1.16e-12,5.32e-09,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:30617256,(2019) Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimers disease risk.,2.51e-15,6.46e-09,"APOE,APH1B,HLA-DQA1,HLA-DRB1,ALPK2,TREM2,HLA-DQB1,HLA-DRA,HESX1",9
+COMPARTMENTS,GOCC:0042613,MHC class II protein complex,3.39e-12,7.79e-09,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+Component,GO:0042613,MHC class II protein complex,6.28e-12,1.29e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+Component,GO:0045334,Clathrin-coated endocytic vesicle,2.02e-11,2.06e-08,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",8
+InterPro,IPR014745,"MHC class II, alpha/beta chain, N-terminal",3.39e-12,2.43e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+COMPARTMENTS,GOCC:0045334,Clathrin-coated endocytic vesicle,2.39e-11,2.67e-08,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",8
+Component,GO:0071556,Integral component of lumenal side of endoplasmic reticulum membrane,5.56e-11,2.84e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+COMPARTMENTS,GOCC:0071556,Integral component of lumenal side of endoplasmic reticulum membrane,5.56e-11,3.2e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:25670335,(2015) Association of Alzheimers disease GWAS loci with MRI markers of brain aging.,2.31e-14,3.97e-08,"NECTIN2,APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM",8
+InterPro,IPR003597,Immunoglobulin C1-set,1.26e-11,4.52e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+PMID,PMID:22558147,(2012) Lack of association of type 2 diabetes susceptibility genotypes and body weight on the development of islet autoimmunity and type 1 diabetes.,3.93e-14,5.05e-08,"KCNQ1,MTNR1B,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,IGF2BP2",7
+Process,GO:0002503,Peptide antigen assembly with MHC class II protein complex,3.39e-12,5.31e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+Component,GO:0030669,Clathrin-coated endocytic vesicle membrane,2.51e-10,7.35e-08,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+COMPARTMENTS,GOCC:0030669,Clathrin-coated endocytic vesicle membrane,2.51e-10,8.26e-08,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+DISEASES,DOID:986,Alopecia areata,1.92e-11,8.81e-08,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+Function,GO:0023026,MHC class II protein complex binding,5.56e-11,1.37e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+Keyword,KW-0491,MHC II,2.07e-10,1.39e-07,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+Process,GO:0019886,Antigen processing and presentation of exogenous peptide antigen via MHC class II,9.91e-11,3.11e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+RCTM,HSA-202433,Generation of second messenger molecules,1.41e-10,3.23e-07,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2,PLCG2",6
+PMID,PMID:31593075,(2019) Association of rosacea with inflammatory bowel disease: A MOOSE-compliant meta-analysis.,3.15e-13,3.24e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+COMPARTMENTS,GOCC:0012507,ER to Golgi transport vesicle membrane,1.36e-09,3.92e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:33005726,(2020) Exploring the genetic relationship between hearing impairment and Alzheimers disease.,5.03e-13,4.18e-07,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",6
+PMID,PMID:35589863,(2022) Genome-wide association of polygenic risk extremes for Alzheimers disease in the UK Biobank.,4.88e-13,4.18e-07,"APOE,HLA-DRB1,ALPK2,TREM2,PICALM,SHARPIN,PLCG2,HESX1",8
+SMART,SM00407,Immunoglobulin C-Type,5.62e-10,4.61e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:37833700,(2023) c-Diadem: a constrained dual-input deep learning model to identify novel biomarkers in Alzheimers disease.,7.5e-13,4.82e-07,"NECTIN2,APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM",7
+DISEASES,DOID:9351,Diabetes mellitus,2.78e-10,6.39e-07,"KCNQ1,APOE,MTNR1B,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,IGF2BP2",8
+RCTM,HSA-202430,Translocation of ZAP-70 to Immunological synapse,6.76e-10,7.72e-07,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+COMPARTMENTS,GOCC:0030139,Endocytic vesicle,4.27e-09,8.92e-07,"APOE,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",9
+PMID,PMID:22291608,(2012) High-density SNP mapping of the HLA region identifies multiple independent susceptibility loci associated with selective IgA deficiency.,1.7e-12,9.7e-07,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+InterPro,IPR003006,"Immunoglobulin/major histocompatibility complex, conserved site",4.25e-10,1.02e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+InterPro,IPR011162,MHC classes I/II-like antigen recognition protein,4.89e-10,1.02e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:30820047,"(2019) Genetic meta-analysis of diagnosed Alzheimers disease identifies new risk loci and implicates Abeta, tau, immunity and lipid processing.",2.24e-12,1.03e-06,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM,PLCG2",8
+PMID,PMID:30122875,(2018) Host genetic factors affecting hepatitis B infection outcomes: Insights from genome-wide association studies.,2.98e-12,1.03e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+PMID,PMID:31687268,(2019) Recent advances in the genetics of frontotemporal dementia.,2e-12,1.03e-06,"GRN,APOE,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",8
+PMID,PMID:33152005,(2020) The association of clinical phenotypes to known ADFTD genetic risk loci and their inter-relationship.,2.98e-12,1.03e-06,"GRN,APOE,APH1B,HLA-DRB1,TREM2,PICALM,PLCG2",7
+PMID,PMID:32694572,(2020) Genetic architecture of complex traits and disease risk predictors.,2.06e-12,1.03e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+PMID,PMID:34122517,(2021) Haplotype Shuffling and Dimorphic Transposable Elements in the Human Extended Major Histocompatibility Complex Class II Region.,2.98e-12,1.03e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+PMID,PMID:30245614,(2018) Shared Biological Pathways Between Alzheimers Disease and Ischemic Stroke.,2.48e-12,1.03e-06,"NECTIN2,APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM",7
+PMID,PMID:35718998,(2022) Identification of potential gene markers in gestational diabetes mellitus.,2.42e-12,1.03e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:35606148,(2022) Association of APOE-Independent Alzheimer Disease Polygenic Risk Score With Brain Amyloid Deposition in Asymptomatic Older Adults.,3.39e-12,1.03e-06,"APOE,APPL1,IL17RD,TREM2,PLCG2,HESX1",6
+PMID,PMID:35982059,(2022) Cross-tissue analysis of blood and brain epigenome-wide association studies in Alzheimers disease.,3.15e-12,1.03e-06,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA",8
+RCTM,HSA-202427,Phosphorylation of CD3 and TCR zeta chains,1.41e-09,1.07e-06,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+RCTM,HSA-389948,PD-1 signaling,1.75e-09,1.07e-06,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+PMID,PMID:32245788,(2020) Detecting Shared Genetic Architecture Among Multiple Phenotypes by Hierarchical Clustering of Gene-Level Association Statistics.,4.21e-12,1.08e-06,"NECTIN2,APOE,HLA-DQA1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",7
+Component,GO:0012507,ER to Golgi transport vesicle membrane,4.37e-09,1.12e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:37303984,(2023) The Role of Cosmetology in an Effective Treatment of Rosacea: A Narrative Review.,4.65e-12,1.14e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:23326239,(2013) A genome-wide integrative genomic study localizes genetic factors influencing antibodies against Epstein-Barr virus nuclear antigen 1 (EBNA-1).,4.65e-12,1.14e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:34992629,(2021) The Effect of Alzheimers Disease-Associated Genetic Variants on Longevity.,5.87e-12,1.31e-06,"APOE,APH1B,CDKN2B,TREM2,PICALM,SHARPIN,PLCG2",7
+PMID,PMID:30050001,(2018) High-Throughput Approaches onto Uncover (Epi)Genomic Architecture of Type 2 Diabetes.,6.53e-12,1.35e-06,"KCNQ1,MTNR1B,CCND2,CDKN2B,JAZF1,HLA-DQA1,HLA-DQA2,IGF2BP2,GIPR",9
+PMID,PMID:33815092,(2021) Genetic Variability in Molecular Pathways Implicated in Alzheimers Disease: A Comprehensive Review.,6.72e-12,1.35e-06,"NECTIN2,APOE,APH1B,ATP8B4,HLA-DRB1,ALPK2,TREM2,PICALM,PLCG2,HESX1",10
+PMID,PMID:34976012,(2021) Fine-Mapping of the Major Histocompatibility Complex Region Linked to Leprosy in Northern China.,6.28e-12,1.35e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:23303446,(2013) Association of generalized vitiligo with MHC class II loci in patients from the Indian subcontinent.,8.36e-12,1.59e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:34956315,(2021) Genomics and Prognosis Analysis of N(6)-Methyladenosine Regulators in Lung Adenocarcinoma.,9.73e-12,1.79e-06,"IGF2BP3,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2,IGF2BP2",8
+PMID,PMID:28566273,(2017) An Expanded Genome-Wide Association Study of Type 2 Diabetes in Europeans.,1.09e-11,1.93e-06,"KCNQ1,APOE,CCND2,HLA-DQA1,HLA-DQA2,IGF2BP2,GIPR",7
+PMID,PMID:22170232,(2012) Amino acid position 11 of HLA-DRbeta1 is a major determinant of chromosome 6p association with ulcerative colitis.,1.1e-11,1.93e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:10527398,(1999) HLA-DMB gene and HLA-DRA promoter region polymorphisms in Australian multiple sclerosis patients.,1.56e-11,2.36e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:30886970,"(2018) A case report of REM sleep behavior disorder, Behcets disease, Sjogrens syndrome and cognitive dysfunction.",1.56e-11,2.36e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:38167405,(2024) The HLA-DRB1*09:01-DQB1*03:03 haplotype is associated with the risk for late-onset Alzheimers disease in APOE [Formula: see text]4-negative Japanese adults.,1.43e-11,2.36e-06,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQB1,PICALM",6
+PMID,PMID:36253972,(2022) Frontotemporal degeneration genetic risk loci and transcription regulation as a possible mechanistic link to disease risk.,1.43e-11,2.36e-06,"GRN,APOE,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:37407551,(2023) A human leukocyte antigen imputation study uncovers possible genetic interplay between gut inflammatory processes and autism spectrum disorders.,1.43e-11,2.36e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:34484204,(2021) Haplotype-Specific Expression Analysis of MHC Class II Genes in Healthy Individuals and Rheumatoid Arthritis Patients.,1.43e-11,2.36e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:37131074,(2023) Step by step: towards a better understanding of the genetic architecture of Alzheimers disease.,1.83e-11,2.54e-06,"IDUA,APOE,ATP8B4,TREM2,PICALM,PLCG2",6
+PMID,PMID:37691926,(2023) Simultaneous detection of DNA variation and methylation at HLA class II locus and immune gene promoters using targeted SureSelect Methyl-Sequencing.,1.83e-11,2.54e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:38152696,(2023) CXCL14 as a potential marker for immunotherapy response prediction in renal cell carcinoma.,1.83e-11,2.54e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:33853652,(2021) Emerging genetic complexity and rare genetic variants in neurodegenerative brain diseases.,1.99e-11,2.56e-06,"APOE,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,BTNL2,PLCG2",9
+PMID,PMID:34732252,(2021) Dysregulated expression levels of APH1B in peripheral blood are associated with brain atrophy and amyloid-beta deposition in Alzheimers disease.,2.19e-11,2.75e-06,"APOE,APH1B,HLA-DQA1,SNRPD2,HLA-DRB1,HLA-DQA2,HLA-DRA",7
+PMID,PMID:37923823,(2023) HLA allele-calling using multi-ancestry whole-exome sequencing from the UK Biobank identifies 129 novel associations in 11 autoimmune diseases.,2.32e-11,2.85e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:35601672,"(2021) Diabetes, cigarette smoking and transcription factor 7-like 2 (Tcf7L2) in the UK Biobank cohort.",2.32e-11,2.85e-06,"KCNQ1,MTNR1B,CDKN2B,JAZF1,IGF2BP2,GIPR",6
+PMID,PMID:35991123,(2022) m6A-Related lncRNA Signature Is Involved in Immunosuppression and Predicts the Patient Prognosis of the Age-Associated Ovarian Cancer.,2.5e-11,2.93e-06,"IGF2BP3,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2,IGF2BP2",7
+PMID,PMID:19143815,(2009) MHC fine mapping of human type 1 diabetes using the T1DGC data.,2.67e-11,3.05e-06,"HLA-DQA1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",5
+PMID,PMID:22972380,(2013) Investigation of genetic risk factors for chronic adult diseases for association with preterm birth.,2.67e-11,3.05e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:33319170,(2020) Dynamic Neuroimmune Profile during Mid-life Aging in the Female Brain and Implications for Alzheimer Risk.,2.85e-11,3.12e-06,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA",7
+PMID,PMID:35317523,(2022) Promoting role of pentraxin-3 in esophageal squamous cell carcinoma.,2.93e-11,3.14e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:31602270,(2019) Diagnostic and prognostic biomarkers of Human Leukocyte Antigen complex for hepatitis B virus-related hepatocellular carcinoma.,2.93e-11,3.14e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:21085570,(2010) Genetic evidence implicates the immune system and cholesterol metabolism in the aetiology of Alzheimers disease.,2.93e-11,3.14e-06,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,PICALM,HLA-DRA",6
+PMID,PMID:19122664,(2009) Ulcerative colitis-risk loci on chromosomes 1p36 and 12q15 found by genome-wide association study.,2.93e-11,3.14e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+Component,GO:0005768,Endosome,1.61e-08,3.33e-06,"GRN,KCNQ1,APOE,APH1B,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",14
+Component,GO:0030135,Coated vesicle,1.73e-08,3.33e-06,"IDUA,APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",9
+PMID,PMID:35406570,(2022) Second MAFA Variant Causing a Phosphorylation Defect in the Transactivation Domain and Familial Insulinomatosis.,3.4e-11,3.36e-06,"KCNQ1,NEUROG3,MTNR1B,CDKN2B,JAZF1,APPL1,IGF2BP2,CDKN1C,GIPR",9
+PMID,PMID:36577842,"(2023) Golgi apparatus, endoplasmic reticulum and mitochondrial function implicated in Alzheimers disease through polygenic risk and RNA sequencing.",3.65e-11,3.54e-06,"APOE,APH1B,HLA-DRB1,TREM2,PICALM,PLCG2",6
+PMID,PMID:27899424,(2017) Genetic architecture of sporadic frontotemporal dementia and overlap with Alzheimers and Parkinsons diseases.,3.65e-11,3.54e-06,"GRN,NECTIN2,APOE,HLA-DRB1,HLA-DQA2,HLA-DRA",6
+PMID,PMID:26919393,(2016) Alzheimers Disease Risk Polymorphisms Regulate Gene Expression in the ZCWPW1 and the CELF1 Loci.,4.14e-11,3.88e-06,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM",7
+PMID,PMID:30146738,(2018) Targeted capture sequencing identifies novel genetic variations in Chinese patients with idiopathic inflammatory myopathies.,4.33e-11,3.98e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DQB2",5
+PMID,PMID:36092798,(2022) Exploring the role of non-coding RNAs as potential candidate biomarkers in the cross-talk between diabetes mellitus and Alzheimers disease.,4.52e-11,3.98e-06,"KCNQ1,NECTIN2,APOE,HLA-DQA1,HLA-DRB1,BTNL2",6
+PMID,PMID:26272072,(2016) An Immunochip-based interaction study of contrasting interaction effects with smoking in ACPA-positive versus ACPA-negative rheumatoid arthritis.,4.33e-11,3.98e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DRA,BTNL2",5
+PMID,PMID:20122230,(2010) An automated framework for understanding structural variations in the binding grooves of MHC class II molecules.,4.33e-11,3.98e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+COMPARTMENTS,GOCC:0030133,Transport vesicle,2.52e-08,4.15e-06,"APH1B,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",8
+Function,GO:0042605,Peptide antigen binding,3.9e-09,4.8e-06,"HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+NetworkNeighborAL,CL:16224,"Mixed, incl. MHC classes I/II-like antigen recognition protein, and Regulation of natural killer cell mediated immunity",4.59e-09,5.24e-06,"NECTIN2,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+PMID,PMID:20017995,(2009) A principal-components-based clustering method to identify multiple variants associated with rheumatoid arthritis and arthritis-related autoantibodies.,6.72e-11,5.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DRA,HLA-DQB2",5
+PMID,PMID:36338768,(2022) Phosphogluconate dehydrogenase is a predictive biomarker for immunotherapy in hepatocellular carcinoma.,6.78e-11,5.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:36357561,(2022) Immune and spermatogenesis-related loci are involved in the development of extreme patterns of male infertility.,6.78e-11,5.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:33713768,"(2021) Genome-wide association study of asthma, total IgE, and lung function in a cohort of Peruvian children.",6.78e-11,5.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:33758920,(2021) RNA2HLA: HLA-based quality control of RNA-seq datasets.,6.72e-11,5.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:29358691,(2018) Re-analysis of public genetic data reveals a rare X-chromosomal variant associated with type 2 diabetes.,6.78e-11,5.77e-06,"NEUROG3,CCND2,HLA-DQA1,HLA-DQA2,IGF2BP2,GIPR",6
+PMID,PMID:30046115,(2018) Enhancer histone-QTLs are enriched on autoimmune risk haplotypes and influence gene expression within chromatin networks.,7.41e-11,5.78e-06,"JAZF1,CARMIL1,HLA-DRB1,HLA-DQA2,HLA-DQB1,BTNL2,PLCG2",7
+Component,GO:0030139,Endocytic vesicle,3.86e-08,6.08e-06,"APOE,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",9
+PMID,PMID:38002954,(2023) Genome-Wide Association Analysis across Endophenotypes in Alzheimers Disease: Main Effects and Disease Stage-Specific Interactions.,8.22e-11,6.31e-06,"NECTIN2,APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1",6
+PMID,PMID:33097708,(2020) Gene expression and functional deficits underlie TREM2-knockout microglia responses in human models of Alzheimers disease.,8.28e-11,6.31e-06,"APOE,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,PLCG2",7
+PMID,PMID:38022588,(2023) Integrated analysis of single-cell RNA-seq and bulk RNA-seq reveals RNA N6-methyladenosine modification associated with prognosis and drug resistance in acute myeloid leukemia.,1.03e-10,7.51e-06,"IGF2BP3,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2,IGF2BP2",7
+PMID,PMID:35685330,(2022) Principles of Virtual Crossmatch Testing for Kidney Transplantation.,1.01e-10,7.51e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:29287219,(2018) Comprehensive investigating of cytokine and receptor related genes variants in patients with chronic hepatitis B virus infection.,1.01e-10,7.51e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DQB2",5
+PMID,PMID:24884790,(2014) Inference of high resolution HLA types using genome-wide RNA or DNA sequencing reads.,1.01e-10,7.51e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DQB2",5
+PMID,PMID:23341919,(2013) Functional relevance for associations between genetic variants and systemic lupus erythematosus.,1.01e-10,7.51e-06,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+PMID,PMID:33926499,(2021) Protective genes and pathways in Alzheimers disease: moving towards precision interventions.,1.19e-10,8.25e-06,"GRN,APOE,ATP8B4,TREM2,PICALM,PLCG2",6
+PMID,PMID:33716638,(2020) Parkinsons Disease: Can Targeting Inflammation Be an Effective Neuroprotective Strategy?,1.19e-10,8.25e-06,"HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA",6
+PMID,PMID:28076899,(2017) Genome-Wide Association Analysis Reveals Genetic Heterogeneity of Sjoegrens Syndrome According to Ancestry.,1.19e-10,8.25e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:31296227,(2019) Integrative genomic and transcriptomic analysis of genetic markers in Dupuytrens disease.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DQB2",5
+PMID,PMID:30655385,(2019) Genetic Contribution to the Divergence in Type 1 Diabetes Risk Between Children From the General Population and Children From Affected Families.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA,BTNL2",5
+PMID,PMID:32540955,(2020) Ultralow-input single-tube linked-read library method enables short-read second-generation sequencing systems to routinely generate highly accurate and economical long-range sequencing information.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:31540313,(2019) HLA-DQB1 and HLA-DRB1 Variants Confer Susceptibility to Latent Autoimmune Diabetes in Adults: Relative Predispositional Effects among Allele Groups.,1.46e-10,9.77e-06,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+PMID,PMID:35349604,(2022) Computational mining of MHC class II epitopes for the development of universal immunogenic proteins.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:31873298,(2020) Identifying cross-disease components of genetic risk across hospital data in the UK Biobank.,1.46e-10,9.77e-06,"APOE,CDKN2B,HLA-DQA1,HLA-DRB1,HLA-DQA2",5
+PMID,PMID:38143769,(2023) PANDORA v2.0: Benchmarking peptide-MHC II models and software improvements.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:34462158,(2022) HLA repertoire of 115 UAE nationals infected with SARS-CoV-2.,1.46e-10,9.77e-06,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+COMPARTMENTS,GOCC:0032588,trans-Golgi network membrane,7.84e-08,1e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+PMID,PMID:19455305,(2009) No association of multiple type 2 diabetes loci with type 1 diabetes.,1.68e-10,1.01e-05,"KCNQ1,CDKN2B,JAZF1,HLA-DRB1,HLA-DQB1,IGF2BP2",6
+PMID,PMID:30448613,(2019) Translating Alzheimers disease-associated polymorphisms into functional candidates: a survey of IGAP genes and SNPs.,1.71e-10,1.02e-05,"APOE,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",7
+PMID,PMID:21421807,"(2011) Effects of 34 risk loci for type 2 diabetes or hyperglycemia on lipoprotein subclasses and their composition in 6,580 nondiabetic Finnish men.",1.98e-10,1.17e-05,"KCNQ1,MTNR1B,CDKN2B,JAZF1,IGF2BP2,GIPR",6
+PMID,PMID:22952805,(2012) Genome-wide association study of African and European Americans implicates multiple shared and ethnic specific loci in sarcoidosis susceptibility.,1.98e-10,1.17e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",6
+PMID,PMID:26139577,(2016) Transplant immuno-diagnostics: crossmatch and antigen detection.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:30223463,(2018) Individualized Transcriptional Resolution of Complicated Malaria in a Colombian Study.,2.07e-10,1.2e-05,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+PMID,PMID:30600606,(2019) Association of human leukocyte antigens-DQB2DPA1DPB1 polymorphism and pulmonary tuberculosis in the Chinese Uygur population.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DQB2",5
+PMID,PMID:36109823,(2022) A review of brain imaging biomarker genomics in Alzheimers disease: implementation and perspectives.,2.08e-10,1.2e-05,"APOE,APH1B,ALPK2,TREM2,PICALM,PLCG2,HESX1",7
+PMID,PMID:35769990,(2022) Human Leukocyte Antigen Fine-Mapping and Correlation Analysis of Han and Minority Leprosy Patients in Southern China.,2.07e-10,1.2e-05,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1",5
+PMID,PMID:24640693,(2013) [Clinical and genetic characteristics of long-livers in Moscow region].,2.07e-10,1.2e-05,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1",5
+PMID,PMID:36111848,(2023) An Extremes of Phenotype Approach Confirms Significant Genetic Heterogeneity in Patients with Ulcerative Colitis.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+PMID,PMID:24598797,(2014) MHC associations with clinical and autoantibody manifestations in European SLE.,2.07e-10,1.2e-05,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2",5
+PMID,PMID:22110171,(2011) Emerging applications of metabolomic and genomic profiling in diabetic clinical medicine.,2.29e-10,1.2e-05,"KCNQ1,MTNR1B,JAZF1,HLA-DQA1,HLA-DRB1,HLA-DQB1,IGF2BP2",7
+PMID,PMID:21413052,(2011) Electrostatic modifications of the human leukocyte antigen-DR P9 peptide-binding pocket and susceptibility to primary sclerosing cholangitis.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DRA,BTNL2",5
+PMID,PMID:36675312,(2023) Association between HLA DNA Variants and Long-Term Response to Anti-TNF Drugs in a Spanish Pediatric Inflammatory Bowel Disease Cohort.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA,BTNL2",5
+PMID,PMID:26151496,(2015) Genetic determinants of antithyroid drug-induced agranulocytosis by human leukocyte antigen genotyping and genome-wide association study.,2.07e-10,1.2e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+Component,GO:0005802,trans-Golgi network,9.22e-08,1.26e-05,"GRN,ATP8B4,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",8
+Component,GO:0032588,trans-Golgi network membrane,1.16e-07,1.49e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+HPO,EFO:0004342,Waist circumference,1.31e-09,1.6e-05,"QPCTL,KCNQ1,IDUA,ZC3H4,IGF2BP3,CCND2,JAZF1,HLA-DQA1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR",15
+Function,GO:0042277,Peptide binding,2.09e-08,2.06e-05,"APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2,GIPR",9
+Function,GO:0140375,Immune receptor activity,2.62e-08,2.15e-05,"IL17RD,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+COMPARTMENTS,GOCC:0005802,trans-Golgi network,1.9e-07,2.19e-05,"GRN,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+HPO,EFO:0004302,Anthropometric measurement,4.4e-09,2.68e-05,"QPCTL,KCNQ1,IDUA,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,JADE2,JAZF1,IL17RD,CARMIL1,HLA-DQA1,SNRPD2,HLA-DRB1,ALPK2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR,EML2,NPAS1,PLCG2",27
+Component,GO:0030133,Transport vesicle,2.69e-07,2.9e-05,"KCNQ1,APH1B,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",9
+DISEASES,DOID:10608,Celiac disease,3.16e-08,2.91e-05,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1",4
+HPO,EFO:0008002,Physical activity measurement,2.17e-08,3.24e-05,"KCNQ1,APOE,ZC3H4,JAZF1,HLA-DQB1,HLA-DRA,GIPR",7
+HPO,EFO:0004343,Waist-hip ratio,1.2e-08,3.24e-05,"QPCTL,KCNQ1,APOE,JAZF1,IL17RD,CARMIL1,HLA-DQA1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR",14
+HPO,EFO:0004468,Glucose measurement,1.03e-08,3.24e-05,"QPCTL,KCNQ1,NECTIN2,APOE,MTNR1B,CCND2,JAZF1,CARMIL1,TSPAN15,IGF2BP2,GIPR",11
+HPO,EFO:0004509,Hemoglobin measurement,1.75e-08,3.24e-05,"KCNQ1,NECTIN2,APOE,ZC3H4,MTNR1B,CCND2,JAZF1,CARMIL1,HLA-DQA1,TOX2,TSPAN15,SHARPIN,BTNL2,IGF2BP2,GIPR",15
+HPO,EFO:0004586,Complete blood cell count,9.36e-09,3.24e-05,"KCNQ1,NECTIN2,APOE,ZC3H4,IGF2BP3,CCND2,JADE2,JAZF1,ATP8B4,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,ALPK2,TSPAN15,HLA-DQB1,PICALM,HLA-DRA,SHARPIN,BTNL2,IGF2BP2,PLCG2",22
+HPO,EFO:0009268,Family history of Alzheimer’s disease,1.06e-08,3.24e-05,"NECTIN2,APOE,APH1B,ALPK2,TREM2,PICALM",6
+HPO,EFO:0004541,HbA1c measurement,7.97e-09,3.24e-05,"KCNQ1,NECTIN2,APOE,MTNR1B,CCND2,JAZF1,CARMIL1,TSPAN15,IGF2BP2",9
+COMPARTMENTS,GOCC:0005794,Golgi apparatus,3.86e-07,3.75e-05,"QPCTL,GRN,APOE,ATP8B4,IL17RD,CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",12
+COMPARTMENTS,GOCC:0005886,Plasma membrane,4.85e-07,4.47e-05,"GRN,KCNQ1,NECTIN2,APOE,MTNR1B,APH1B,ATP8B4,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,BTNL2,HLA-DQB2,GIPR,PLCG2",22
+HPO,EFO:0004324,Body weights and measures,6.15e-08,6.47e-05,"QPCTL,KCNQ1,IDUA,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,JADE2,JAZF1,IL17RD,CARMIL1,HLA-DQA1,ALPK2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR,EML2,NPAS1,PLCG2",25
+HPO,EFO:0007788,BMI-adjusted waist-hip ratio,5.83e-08,6.47e-05,"KCNQ1,APOE,JAZF1,IL17RD,CARMIL1,HLA-DQA1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2",12
+DISEASES,DOID:2978,Carbohydrate metabolic disorder,1.03e-07,7.9e-05,"KCNQ1,APOE,MTNR1B,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,IGF2BP2",8
+InterPro,IPR007110,Immunoglobulin-like domain,5.73e-08,8.24e-05,"NECTIN2,HLA-DQA1,HLA-DRB1,ALPK2,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",10
+InterPro,IPR036179,Immunoglobulin-like domain superfamily,7.06e-08,8.45e-05,"NECTIN2,HLA-DQA1,HLA-DRB1,ALPK2,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",10
+COMPARTMENTS,GOCC:0005768,Endosome,1.21e-06,0.0001,"GRN,KCNQ1,APOE,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,PICALM,HLA-DRA",10
+Component,GO:0000139,Golgi membrane,1.1e-06,0.00011,"QPCTL,APH1B,IL17RD,CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",10
+COMPARTMENTS,GOCC:0098797,Plasma membrane protein complex,1.4e-06,0.00011,"KCNQ1,APOE,APH1B,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",10
+Process,GO:0002696,Positive regulation of leukocyte activation,1.12e-07,0.00013,"NECTIN2,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",9
+Process,GO:0050865,Regulation of cell activation,1.02e-07,0.00013,"GRN,NECTIN2,APOE,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",11
+HPO,EFO:1002011,Adult onset asthma,1.44e-07,0.00013,"APOE,JAZF1,HLA-DQA1,HLA-DRB1,HLA-DQB1",5
+Component,GO:0010008,Endosome membrane,1.83e-06,0.00016,"APH1B,APPL1,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",9
+HPO,EFO:0007987,Granulocyte count,2.53e-07,0.00021,"NECTIN2,APOE,IGF2BP3,JADE2,JAZF1,ATP8B4,HLA-DQA1,TOX2,HLA-DRB1,ALPK2,TSPAN15,HLA-DQB1,HLA-DRA,SHARPIN",14
+Process,GO:0048523,Negative regulation of cellular process,2.09e-07,0.00022,"GRN,KCNQ1,NEUROG3,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,CDKN2B,JAZF1,APPL1,IL17RD,CARMIL1,HLA-DRB1,ALPK2,TREM2,TSPAN15,PICALM,BTNL2,IGF2BP2,CDKN1C,GIPR,EML2,NPAS1,PLCG2,HESX1",26
+HPO,EFO:0004512,Bone measurement,3.54e-07,0.00025,"KCNQ1,IDUA,NECTIN2,APOE,ZC3H4,IGF2BP3,CCND2,JAZF1,CARMIL1,HLA-DQA1,HLA-DRB1,ALPK2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR",18
+HPO,EFO:0005093,Hip circumference,3.52e-07,0.00025,"KCNQ1,ZC3H4,IGF2BP3,JAZF1,HLA-DQA1,ALPK2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,GIPR",12
+HPO,EFO:0004308,Leukocyte count,4.2e-07,0.00026,"NECTIN2,APOE,IGF2BP3,CCND2,JADE2,JAZF1,ATP8B4,HLA-DQA1,TOX2,HLA-DRB1,ALPK2,TSPAN15,HLA-DQB1,HLA-DRA,SHARPIN,BTNL2,PLCG2",17
+InterPro,IPR013783,Immunoglobulin-like fold,2.94e-07,0.0003,"IDUA,NECTIN2,HLA-DQA1,HLA-DRB1,ALPK2,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",11
+Component,GO:0098797,Plasma membrane protein complex,3.69e-06,0.0003,"KCNQ1,APH1B,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",9
+WikiPathways,WP4217,Ebola virus infection in host,3.92e-07,0.00031,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+SMART,SM00920,"Class II histocompatibility antigen, alpha domain",7.46e-07,0.00031,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+HPO,EFO:0004503,Hematological measurement,5.55e-07,0.00032,"KCNQ1,IDUA,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,JADE2,JAZF1,ATP8B4,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,ALPK2,TSPAN15,HLA-DQB1,PICALM,HLA-DRA,SHARPIN,BTNL2,IGF2BP2,GIPR,PLCG2",25
+HPO,EFO:0004570,Bilirubin measurement,5.97e-07,0.00033,"NECTIN2,APOE,CCND2,JAZF1,CARMIL1,SLC22A18",6
+Component,GO:0030659,Cytoplasmic vesicle membrane,4.93e-06,0.00038,"KCNQ1,APOE,APH1B,ATP8B4,APPL1,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",12
+Component,GO:0005794,Golgi apparatus,4.77e-06,0.00038,"QPCTL,GRN,APOE,APH1B,ATP8B4,IL17RD,CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",14
+Component,GO:0097708,Intracellular vesicle,5.81e-06,0.00042,"GRN,KCNQ1,IDUA,APOE,APH1B,ATP8B4,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2,PLCG2",17
+DISEASES,DOID:8881,Rosacea,7.46e-07,0.00043,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+HPO,EFO:0004747,Protein measurement,8.64e-07,0.00044,"QPCTL,GRN,KCNQ1,IDUA,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,JADE2,JAZF1,ATP8B4,IL17RD,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,TREM2,TSPAN15,HLA-DQB1,SLC22A18,HLA-DRA,SHARPIN,BTNL2,IGF2BP2,GIPR,PLCG2",28
+Process,GO:0002694,Regulation of leukocyte activation,4.51e-07,0.00044,"GRN,NECTIN2,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",10
+Process,GO:0048519,Negative regulation of biological process,4.88e-07,0.00045,"GRN,KCNQ1,NEUROG3,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,CDKN2B,JAZF1,APPL1,IL17RD,CARMIL1,HLA-DRB1,ALPK2,TREM2,TSPAN15,PICALM,SHARPIN,BTNL2,IGF2BP2,CDKN1C,GIPR,EML2,NPAS1,PLCG2,HESX1",27
+HPO,EFO:0009924,Drugs used in diabetes use measurement,9.92e-07,0.00048,"KCNQ1,CCND2,JAZF1,IGF2BP2",4
+SMART,SM00921,"Class II histocompatibility antigen, beta domain",1.94e-06,0.00053,"HLA-DRB1,HLA-DQB1,HLA-DQB2",3
+DISEASES,DOID:10976,Membranous glomerulonephritis,1.06e-06,0.00054,"HLA-DQA1,HLA-DRB1,HLA-DQA2",3
+RCTM,HSA-877300,Interferon gamma signaling,1.71e-06,0.00056,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+RCTM,HSA-202424,Downstream TCR signaling,1.9e-06,0.00056,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+COMPARTMENTS,GOCC:0000139,Golgi membrane,7.47e-06,0.00057,"CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+WikiPathways,WP2328,Allograft rejection,1.54e-06,0.0006,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA",5
+COMPARTMENTS,GOCC:0012505,Endomembrane system,8.19e-06,0.00061,"QPCTL,GRN,KCNQ1,APOE,CCND2,APH1B,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,HLA-DQB2",19
+COMPARTMENTS,GOCC:0031410,Cytoplasmic vesicle,8.69e-06,0.00063,"GRN,KCNQ1,APOE,APH1B,ATP8B4,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",14
+InterPro,IPR001003,"MHC class II, alpha chain, N-terminal",7.46e-07,0.00067,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+DISEASES,DOID:11714,Gestational diabetes,1.94e-06,0.00089,"KCNQ1,MTNR1B,IGF2BP2",3
+Process,GO:0050870,Positive regulation of T cell activation,1.1e-06,0.00096,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+HPO,EFO:0004307,Glucose tolerance test,2.06e-06,0.00096,"KCNQ1,MTNR1B,IGF2BP2,GIPR",4
+Process,GO:0050776,Regulation of immune response,1.18e-06,0.00097,"GRN,NECTIN2,APOE,APPL1,HLA-DRB1,TREM2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",11
+HPO,EFO:0007937,Blood protein measurement,2.57e-06,0.0011,"QPCTL,GRN,IDUA,NECTIN2,APOE,CCND2,JAZF1,ATP8B4,IL17RD,CARMIL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,BTNL2,PLCG2",15
+HPO,EFO:0006514,Alzheimers disease biomarker measurement,2.5e-06,0.0011,"KCNQ1,NECTIN2,APOE,ZC3H4,APH1B,ALPK2,TREM2,PICALM",8
+HPO,EFO:0004555,Glycoprotein measurement,2.59e-06,0.0011,"KCNQ1,NECTIN2,APOE,MTNR1B,CCND2,JADE2,JAZF1,CARMIL1,TSPAN15,HLA-DRA,IGF2BP2",11
+COMPARTMENTS,GOCC:0031982,Vesicle,1.82e-05,0.0012,"GRN,KCNQ1,APOE,APH1B,ATP8B4,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2,PLCG2",15
+COMPARTMENTS,GOCC:0030659,Cytoplasmic vesicle membrane,1.87e-05,0.0012,"APOE,ATP8B4,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",9
+Component,GO:0098588,Bounding membrane of organelle,1.82e-05,0.0012,"QPCTL,GRN,APOE,APH1B,ATP8B4,APPL1,IL17RD,CHST15,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",15
+DISEASES,DOID:8986,Narcolepsy,3.21e-06,0.0012,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+HPO,EFO:0000408,Disease,3.55e-06,0.0014,"KCNQ1,NECTIN2,APOE,JAZF1,APPL1,HLA-DQA1,TOX2,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,PLCG2",13
+Component,GO:0005764,Lysosome,2.39e-05,0.0015,"GRN,KCNQ1,IDUA,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",9
+HPO,EFO:0006848,Mental or behavioural disorder biomarker,3.72e-06,0.0015,"KCNQ1,NECTIN2,APOE,ZC3H4,APH1B,ATP8B4,CARMIL1,HLA-DRB1,ALPK2,TREM2,PICALM,BTNL2,HLA-DQB2,PLCG2",14
+Keyword,KW-0458,Lysosome,4.66e-06,0.0016,"GRN,IDUA,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+Component,GO:0031410,Cytoplasmic vesicle,2.66e-05,0.0016,"GRN,KCNQ1,IDUA,APOE,APH1B,ATP8B4,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",16
+InterPro,IPR000353,"MHC class II, beta chain, N-terminal",1.94e-06,0.0016,"HLA-DRB1,HLA-DQB1,HLA-DQB2",3
+Component,GO:0005765,Lysosomal membrane,2.83e-05,0.0017,"GRN,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",7
+HPO,EFO:0000684,Respiratory system disease,4.48e-06,0.0017,"APOE,JAZF1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1",6
+RCTM,HSA-2132295,MHC class II antigen presentation,7.16e-06,0.0018,"HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",5
+Component,GO:0005770,Late endosome,3.53e-05,0.002,"GRN,KCNQ1,HLA-DRB1,TSPAN15,HLA-DRA,HLA-DQB2",6
+DISEASES,DOID:612,Primary immunodeficiency disease,6.38e-06,0.0021,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",8
+HPO,EFO:0004908,Testosterone measurement,5.91e-06,0.0022,"QPCTL,ZC3H4,CCND2,JADE2,JAZF1,HLA-DQA1,SNRPD2,SLC22A18",8
+Process,GO:0048518,Positive regulation of biological process,3.13e-06,0.0023,"GRN,KCNQ1,NEUROG3,NECTIN2,APOE,MTNR1B,IGF2BP3,CCND2,APH1B,CDKN2B,JADE2,APPL1,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,IGF2BP2,CDKN1C,GIPR,PLCG2",28
+HPO,EFO:0004556,Antibody measurement,6.41e-06,0.0023,"IGF2BP3,HLA-DQA1,HLA-DRB1,HLA-DQB1,BTNL2,HLA-DQB2,PLCG2",7
+HPO,EFO:0005105,Lipid or lipoprotein measurement,7.3e-06,0.0024,"QPCTL,NECTIN2,APOE,ZC3H4,CCND2,JADE2,JAZF1,CARMIL1,HLA-DQA1,SNRPD2,TSPAN15,HLA-DQB1,SLC22A18,HLA-DRA,BTNL2,GIPR,PLCG2",17
+HPO,EFO:0004340,Body mass index,8.59e-06,0.0028,"QPCTL,KCNQ1,NECTIN2,ZC3H4,MTNR1B,CCND2,JADE2,JAZF1,IGF2BP2,GIPR,EML2,NPAS1",12
+Keyword,KW-0333,Golgi apparatus,1.29e-05,0.0029,"QPCTL,ATP8B4,IL17RD,CHST15,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",10
+Component,GO:0031982,Vesicle,5.82e-05,0.0031,"GRN,KCNQ1,IDUA,NECTIN2,APOE,APH1B,JADE2,ATP8B4,APPL1,CARMIL1,HLA-DQA1,SNRPD2,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2,PLCG2",20
+Process,GO:0002824,Positive regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains,4.4e-06,0.0031,"NECTIN2,HLA-DRB1,TREM2,HLA-DRA,HLA-DQB2",5
+HPO,EFO:0009932,HMG CoA reductase inhibitor use measurement,1.02e-05,0.0032,"NECTIN2,APOE,CCND2,IGF2BP2",4
+DISEASES,DOID:2914,Immune system disease,1.09e-05,0.0033,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",9
+HPO,EFO:0004730,Hormone measurement,1.12e-05,0.0034,"QPCTL,KCNQ1,ZC3H4,MTNR1B,CCND2,JADE2,JAZF1,CARMIL1,HLA-DQA1,SNRPD2,SLC22A18,IGF2BP2,GIPR",13
+DISEASES,DOID:37,Skin disease,1.28e-05,0.0037,"APOE,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",8
+Process,GO:0002682,Regulation of immune system process,5.87e-06,0.0037,"GRN,NECTIN2,APOE,APPL1,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",13
+HPO,EFO:0004764,Adipose tissue measurement,1.27e-05,0.0038,"QPCTL,NECTIN2,ZC3H4,CARMIL1,SNRPD2,GIPR",6
+Component,GO:0005886,Plasma membrane,7.89e-05,0.0039,"GRN,KCNQ1,NECTIN2,APOE,MTNR1B,APH1B,ATP8B4,APPL1,IL17RD,CARMIL1,HLA-DQA1,HLA-DRB1,ALPK2,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,BTNL2,HLA-DQB2,GIPR,PLCG2",24
+Keyword,KW-0967,Endosome,2.46e-05,0.0041,"KCNQ1,APPL1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",8
+COMPARTMENTS,GOCC:0043229,Intracellular organelle,7.47e-05,0.0043,"QPCTL,GRN,KCNQ1,NEUROG3,IDUA,APOE,ZC3H4,IGF2BP3,CCND2,APH1B,CDKN2B,JADE2,JAZF1,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,SNRPD2,TOX2,HLA-DRB1,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,HLA-DQB2,IGF2BP2,CDKN1C,EML2,PLCG2,HESX1",33
+COMPARTMENTS,GOCC:0005770,Late endosome,8.2e-05,0.0046,"GRN,KCNQ1,APPL1,HLA-DRB1,HLA-DRA",5
+Process,GO:0045785,Positive regulation of cell adhesion,7.99e-06,0.0046,"CARMIL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",8
+Function,GO:0044877,Protein-containing complex binding,8.87e-06,0.0049,"APOE,APPL1,CARMIL1,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,SHARPIN,HLA-DQB2,CDKN1C",12
+HPO,EFO:0004529,Lipid measurement,1.74e-05,0.0051,"QPCTL,NECTIN2,APOE,ZC3H4,CCND2,JADE2,JAZF1,CARMIL1,HLA-DQA1,SNRPD2,TSPAN15,HLA-DQB1,SLC22A18,HLA-DRA,GIPR,PLCG2",16
+COMPARTMENTS,GOCC:0098796,Membrane protein complex,9.58e-05,0.0052,"KCNQ1,APOE,APH1B,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,HLA-DQB2",11
+Process,GO:0050778,Positive regulation of immune response,1.02e-05,0.0057,"NECTIN2,HLA-DRB1,TREM2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",8
+DISEASES,DOID:28,Endocrine system disease,2.11e-05,0.0057,"NEUROG3,APOE,IL17RD,HLA-DQA1,HLA-DRB1,HLA-DQB1,HESX1",7
+Component,GO:0044354,Macropinosome,0.00012,0.006,"APPL1,CARMIL1",2
+COMPARTMENTS,GOCC:0110165,Cellular anatomical entity,0.00011,0.006,"QPCTL,GRN,KCNQ1,NEUROG3,IDUA,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,APH1B,CDKN2B,JADE2,JAZF1,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,SNRPD2,TOX2,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,IGF2BP2,CDKN1C,GIPR,EML2,PLCG2,HESX1",40
+Process,GO:0002831,Regulation of response to biotic stimulus,1.14e-05,0.0061,"GRN,NECTIN2,APOE,APPL1,HLA-DRB1,TREM2,PLCG2",7
+RCTM,HSA-1280218,Adaptive Immune System,2.71e-05,0.0062,"NECTIN2,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",9
+Process,GO:0045088,Regulation of innate immune response,1.21e-05,0.0063,"GRN,NECTIN2,APOE,APPL1,TREM2,PLCG2",6
+DISEASES,DOID:655,Inherited metabolic disorder,2.48e-05,0.0063,"GRN,KCNQ1,IDUA,APOE,MTNR1B,APPL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,IGF2BP2",10
+Process,GO:0002705,Positive regulation of leukocyte mediated immunity,1.27e-05,0.0063,"NECTIN2,HLA-DRB1,TREM2,HLA-DRA,PLCG2",5
+Process,GO:0002684,Positive regulation of immune system process,1.23e-05,0.0063,"NECTIN2,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,PLCG2",10
+Process,GO:0002281,Macrophage activation involved in immune response,1.34e-05,0.0063,"GRN,TREM2,PLCG2",3
+HPO,EFO:0007010,Drug use measurement,2.28e-05,0.0063,"KCNQ1,NECTIN2,APOE,CCND2,JAZF1,HLA-DQA1,IGF2BP2",7
+COMPARTMENTS,GOCC:0044354,Macropinosome,0.00012,0.0064,"APPL1,CARMIL1",2
+COMPARTMENTS,GOCC:0016020,Membrane,0.00013,0.0067,"GRN,KCNQ1,NECTIN2,APOE,MTNR1B,CCND2,APH1B,ATP8B4,APPL1,CARMIL1,CHST15,HLA-DQA1,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,BTNL2,HLA-DQB2,GIPR,PLCG2",24
+Process,GO:0002697,Regulation of immune effector process,1.65e-05,0.0072,"GRN,NECTIN2,APPL1,HLA-DRB1,TREM2,HLA-DRA,PLCG2",7
+Process,GO:0050728,Negative regulation of inflammatory response,1.71e-05,0.0073,"GRN,APOE,HLA-DRB1,TREM2,SHARPIN",5
+HPO,EFO:0007034,Seropositivity measurement,2.83e-05,0.0077,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+HPO,EFO:0008039,BMI-adjusted hip circumference,2.82e-05,0.0077,"KCNQ1,IGF2BP3,JAZF1,HLA-DQA1,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2",9
+HPO,EFO:0005278,Cardiovascular disease biomarker measurement,3.19e-05,0.0083,"KCNQ1,NECTIN2,APOE,ZC3H4,MTNR1B,CCND2,JAZF1,ATP8B4,CARMIL1,HLA-DQA1,SLC22A18,HLA-DRA,BTNL2,GIPR,PLCG2",15
+COMPARTMENTS,GOCC:0098588,Bounding membrane of organelle,0.00018,0.0087,"GRN,APOE,ATP8B4,APPL1,CHST15,HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",11
+DISEASES,DOID:9744,Type 1 diabetes mellitus,3.86e-05,0.0089,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+DISEASES,DOID:676,Juvenile rheumatoid arthritis,3.86e-05,0.0089,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+RCTM,HSA-428359,Insulin-like Growth Factor-2 mRNA Binding Proteins (IGF2BPs/IMPs/VICKZs) bind RNA,4.4e-05,0.0091,"IGF2BP3,IGF2BP2",2
+HPO,EFO:0004530,Triglyceride measurement,3.63e-05,0.0092,"NECTIN2,APOE,ZC3H4,CCND2,JAZF1,HLA-DQA1,TSPAN15,HLA-DQB1,HLA-DRA",9
+Process,GO:0051239,Regulation of multicellular organismal process,2.26e-05,0.0093,"GRN,KCNQ1,APOE,MTNR1B,IGF2BP3,CDKN2B,JADE2,APPL1,IL17RD,HLA-DRB1,ALPK2,TREM2,HLA-DRA,BTNL2,IGF2BP2,PLCG2,HESX1",17
+Process,GO:0048522,Positive regulation of cellular process,2.47e-05,0.0099,"GRN,KCNQ1,NEUROG3,NECTIN2,APOE,MTNR1B,CCND2,CDKN2B,JADE2,APPL1,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,CDKN1C,GIPR,PLCG2",25
+HPO,HP:0002652,Skeletal dysplasia,3.96e-05,0.0099,"IDUA,IL17RD,TREM2,CDKN1C,HESX1",5
+Process,GO:0002469,Myeloid dendritic cell antigen processing and presentation,2.64e-05,0.0104,"HLA-DRB1,HLA-DRA",2
+Process,GO:0002491,Antigen processing and presentation of endogenous peptide antigen via MHC class II,2.64e-05,0.0104,"HLA-DRB1,HLA-DRA",2
+HPO,EFO:0009382,Metabolically healthy obesity,4.4e-05,0.0107,"KCNQ1,TOX2",2
+Component,GO:0005769,Early endosome,0.00024,0.0107,"KCNQ1,APOE,APPL1,PICALM,HLA-DRA,HLA-DQB2",6
+HPO,EFO:0006846,Autoimmune disease biomarker,4.87e-05,0.0114,"KCNQ1,NECTIN2,ATP8B4,CARMIL1,PICALM,HLA-DRA,BTNL2,PLCG2",8
+HPO,EFO:0004611,Low density lipoprotein cholesterol measurement,4.76e-05,0.0114,"NECTIN2,APOE,ZC3H4,CCND2,JAZF1,HLA-DQA1,HLA-DRA,GIPR",8
+KEGG,hsa05416,Viral myocarditis,0.00025,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05321,Inflammatory bowel disease,0.00031,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05320,Autoimmune thyroid disease,0.00017,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05310,Asthma,3.49e-05,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05166,Human T-cell leukemia virus 1 infection,8.96e-05,0.0117,"CCND2,CDKN2B,HLA-DQA1,HLA-DQA2,HLA-DRA",5
+KEGG,hsa05330,Allograft rejection,6.62e-05,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04940,Type I diabetes mellitus,9.02e-05,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04672,Intestinal immune network for IgA production,0.00013,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04612,Antigen processing and presentation,0.00039,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04514,Cell adhesion molecules,0.00023,0.0117,"NECTIN2,HLA-DQA1,HLA-DQA2,HLA-DRA",4
+KEGG,hsa05169,Epstein-Barr virus infection,5.93e-05,0.0117,"CCND2,HLA-DQA1,HLA-DQA2,HLA-DRA,PLCG2",5
+KEGG,hsa05332,Graft-versus-host disease,7.76e-05,0.0117,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+COMPARTMENTS,GOCC:0016021,Integral component of membrane,0.00025,0.0118,"KCNQ1,APH1B,CHST15,HLA-DQA1,HLA-DRB1,TREM2,HLA-DQA2,HLA-DQB1,SLC22A18,HLA-DRA,HLA-DQB2",11
+KEGG,hsa05140,Leishmaniasis,0.00048,0.0125,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+DISEASES,DOID:4,Disease,6.37e-05,0.0127,"GRN,KCNQ1,NEUROG3,IDUA,APOE,MTNR1B,CDKN2B,JAZF1,APPL1,IL17RD,HLA-DQA1,SNRPD2,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,BTNL2,HLA-DQB2,IGF2BP2,CDKN1C,PLCG2,HESX1",26
+Component,GO:0098552,Side of membrane,0.0003,0.0129,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,BTNL2,HLA-DQB2",7
+NetworkNeighborAL,CL:6904,"Defective binding of RB1 mutants to E2F1,(E2F2, E2F3), and Cyclin-dependent protein serine/threonine kinase inhibitor activity",1.76e-05,0.0134,"CCND2,CDKN2B,CDKN1C",3
+COMPARTMENTS,GOCC:0005765,Lysosomal membrane,0.00029,0.0134,"GRN,HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA",5
+HPO,EFO:0008376,Mosquito bite measurement,6.22e-05,0.0143,"KCNQ1,HLA-DQA1,HLA-DQA2,HLA-DRA,HLA-DQB2",5
+Process,GO:0001916,Positive regulation of T cell mediated cytotoxicity,3.86e-05,0.0144,"NECTIN2,HLA-DRB1,HLA-DRA",3
+Process,GO:0050794,Regulation of cellular process,4.08e-05,0.0149,"GRN,KCNQ1,NEUROG3,NECTIN2,APOE,ZC3H4,MTNR1B,IGF2BP3,CCND2,APH1B,CDKN2B,JADE2,JAZF1,APPL1,IL17RD,CARMIL1,HLA-DQA1,TOX2,HLA-DRB1,ALPK2,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,PICALM,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,IGF2BP2,CDKN1C,GIPR,EML2,NPAS1,PLCG2,HESX1",36
+HPO,EFO:0007790,Epstein Barr virus nuclear antigen 1 IgG measurement,6.59e-05,0.0149,"HLA-DQA1,BTNL2",2
+Function,GO:0005488,Binding,3.18e-05,0.0157,"QPCTL,GRN,KCNQ1,NEUROG3,IDUA,NECTIN2,APOE,ZC3H4,IGF2BP3,CCND2,CDKN2B,JADE2,JAZF1,ATP8B4,APPL1,CARMIL1,CHST15,HLA-DQA1,SNRPD2,TOX2,HLA-DRB1,ALPK2,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,IGF2BP2,CDKN1C,GIPR,EML2,NPAS1,PLCG2,HESX1",39
+HPO,EFO:0004565,Serum IgG measurement,8.39e-05,0.0183,"IGF2BP3,HLA-DQA1,BTNL2,HLA-DQB2,PLCG2",5
+HPO,EFO:0004574,Total cholesterol measurement,8.43e-05,0.0183,"NECTIN2,APOE,ZC3H4,CCND2,SLC22A18,HLA-DRA,GIPR",7
+Process,GO:0031347,Regulation of defense response,5.55e-05,0.0189,"GRN,NECTIN2,APOE,APPL1,HLA-DRB1,TREM2,SHARPIN,PLCG2",8
+HPO,EFO:0006806,Paragraph delayed recall measurement,9.22e-05,0.0194,"NECTIN2,ATP8B4",2
+KEGG,hsa05150,Staphylococcus aureus infection,0.0009,0.0195,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05323,Rheumatoid arthritis,0.00081,0.0195,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04658,Th1 and Th2 cell differentiation,0.00087,0.0195,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa04640,Hematopoietic cell lineage,0.001,0.0201,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+KEGG,hsa05322,Systemic lupus erythematosus,0.0011,0.0214,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+HPO,EFO:0006797,Neurofibrillary tangles measurement,0.0001,0.0215,"NECTIN2,APOE,HLA-DRB1",3
+Process,GO:0150077,Regulation of neuroinflammatory response,6.62e-05,0.0216,"GRN,TREM2,PLCG2",3
+Process,GO:0045807,Positive regulation of endocytosis,6.72e-05,0.0216,"APOE,APPL1,TREM2,PLCG2",4
+DISEASES,DOID:0060851,Pemphigus vulgaris,0.00012,0.0217,"HLA-DQA1,HLA-DRB1",2
+HPO,HP:0000158,Macroglossia,0.00011,0.0224,"IDUA,APOE,CDKN1C,HESX1",4
+Component,GO:0009986,Cell surface,0.00054,0.0228,"KCNQ1,NECTIN2,HLA-DRB1,TSPAN15,PICALM,HLA-DRA,BTNL2,HLA-DQB2",8
+HPO,EFO:0004615,Apolipoprotein B measurement,0.00012,0.0233,"NECTIN2,APOE,CCND2,HLA-DQA1,HLA-DRA,GIPR",6
+KEGG,hsa04659,Th17 cell differentiation,0.0013,0.0235,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+DISEASES,DOID:0060005,Autoimmune disease of endocrine system,0.00014,0.0238,"HLA-DQA1,HLA-DRB1,HLA-DQB1",3
+Process,GO:0050852,T cell receptor signaling pathway,7.79e-05,0.024,"HLA-DRB1,HLA-DQB1,BTNL2,PLCG2",4
+Keyword,KW-1003,Cell membrane,0.00022,0.0241,"KCNQ1,NECTIN2,MTNR1B,ATP8B4,IL17RD,CARMIL1,HLA-DRB1,ALPK2,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,HLA-DQB2,GIPR",17
+KEGG,hsa05145,Toxoplasmosis,0.0015,0.0249,"HLA-DQA1,HLA-DQA2,HLA-DRA",3
+DISEASES,DOID:12894,Sjogrens syndrome,0.00016,0.025,"HLA-DQA1,HLA-DRB1",2
+DISEASES,DOID:2986,IgA glomerulonephritis,0.00016,0.025,"HLA-DQA1,HLA-DQA2",2
+Process,GO:0048584,Positive regulation of response to stimulus,8.48e-05,0.0256,"GRN,NECTIN2,APOE,CDKN2B,HLA-DRB1,TREM2,HLA-DQB1,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,CDKN1C,GIPR,PLCG2",14
+Process,GO:0030100,Regulation of endocytosis,8.77e-05,0.0259,"APOE,APPL1,TREM2,PICALM,PLCG2",5
+Process,GO:0002282,Microglial cell activation involved in immune response,9.22e-05,0.0268,"GRN,TREM2",2
+Process,GO:0048585,Negative regulation of response to stimulus,9.91e-05,0.0275,"GRN,APOE,MTNR1B,APPL1,IL17RD,HLA-DRB1,ALPK2,TREM2,TSPAN15,SHARPIN,BTNL2,GIPR",12
+HPO,EFO:0011008,Sex hormone measurement,0.00014,0.0285,"QPCTL,ZC3H4,CCND2,JADE2,JAZF1,HLA-DQA1,SNRPD2,SLC22A18,IGF2BP2",9
+HPO,EFO:0004842,Eosinophil count,0.00015,0.0285,"NECTIN2,APOE,TOX2,HLA-DRB1,ALPK2,HLA-DQB1,HLA-DRA,SHARPIN",8
+RCTM,HSA-69231,Cyclin D associated events in G1,0.00016,0.0288,"CCND2,CDKN2B,CDKN1C",3
+HPO,EFO:0004732,Lipoprotein measurement,0.00015,0.0291,"NECTIN2,APOE,ZC3H4,CCND2,JAZF1,HLA-DQA1,HLA-DQB1,SLC22A18,HLA-DRA,BTNL2,GIPR",11
+Component,GO:0012505,Endomembrane system,0.00072,0.0295,"QPCTL,GRN,KCNQ1,APOE,CCND2,APH1B,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,HLA-DQB2",20
+COMPARTMENTS,GOCC:0010008,Endosome membrane,0.00069,0.0296,"APPL1,HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA",5
+Process,GO:0002250,Adaptive immune response,0.00011,0.031,"HLA-DQA1,HLA-DRB1,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",6
+Process,GO:0032831,"Positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation",0.00012,0.0323,"HLA-DRB1,HLA-DRA",2
+Process,GO:2000348,Regulation of CD40 signaling pathway,0.00012,0.0323,"TREM2,SHARPIN",2
+Process,GO:0002708,Positive regulation of lymphocyte mediated immunity,0.00012,0.0323,"NECTIN2,HLA-DRB1,TREM2,HLA-DRA",4
+COMPARTMENTS,GOCC:0043227,Membrane-bounded organelle,0.0008,0.0337,"QPCTL,GRN,KCNQ1,NEUROG3,IDUA,APOE,ZC3H4,CCND2,APH1B,CDKN2B,JADE2,JAZF1,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,SNRPD2,TOX2,HLA-DRB1,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,HLA-DQB2,CDKN1C,PLCG2,HESX1",30
+Process,GO:0050727,Regulation of inflammatory response,0.00014,0.034,"GRN,APOE,HLA-DRB1,TREM2,SHARPIN,PLCG2",6
+Component,GO:0031090,Organelle membrane,0.00085,0.0343,"QPCTL,GRN,KCNQ1,APOE,CCND2,APH1B,ATP8B4,APPL1,IL17RD,CHST15,HLA-DQA1,HLA-DRB1,TSPAN15,HLA-DQA2,HLA-DQB1,HLA-DRA,HLA-DQB2",17
+DISEASES,DOID:12236,Primary biliary cholangitis,0.00024,0.0345,"HLA-DQA1,HLA-DRB1",2
+HPO,EFO:0004458,C-reactive protein measurement,0.00019,0.0349,"NECTIN2,APOE,IGF2BP3,JAZF1,CARMIL1,TREM2",6
+COMPARTMENTS,GOCC:0043231,Intracellular membrane-bounded organelle,0.00086,0.0352,"QPCTL,GRN,KCNQ1,NEUROG3,IDUA,APOE,ZC3H4,CCND2,CDKN2B,JADE2,JAZF1,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,SNRPD2,TOX2,HLA-DRB1,HLA-DQA2,HLA-DQB1,SLC22A18,HLA-DRA,HLA-DQB2,CDKN1C,PLCG2,HESX1",28
+KEGG,hsa04110,Cell cycle,0.0023,0.0363,"CCND2,CDKN2B,CDKN1C",3
+Process,GO:0048731,System development,0.00015,0.0365,"GRN,KCNQ1,NEUROG3,APOE,MTNR1B,IGF2BP3,CDKN2B,JADE2,HLA-DRB1,ALPK2,TREM2,PICALM,SHARPIN,HLA-DQB2,IGF2BP2,GIPR,NPAS1,PLCG2,HESX1",19
+COMPARTMENTS,GOCC:0005737,Cytoplasm,0.00092,0.0367,"QPCTL,GRN,KCNQ1,IDUA,APOE,ZC3H4,IGF2BP3,CCND2,APH1B,CDKN2B,ATP8B4,APPL1,IL17RD,CARMIL1,CHST15,HLA-DQA1,SNRPD2,HLA-DRB1,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,HLA-DRA,SHARPIN,HLA-DQB2,IGF2BP2,CDKN1C,PLCG2",28
+HPO,EFO:0004872,Inflammatory biomarker measurement,0.00021,0.0384,"NECTIN2,APOE,IGF2BP3,JAZF1,ATP8B4,CARMIL1,TREM2,SLC22A18,SHARPIN,BTNL2",10
+COMPARTMENTS,GOCC:0031902,Late endosome membrane,0.001,0.039,"APPL1,HLA-DRB1,HLA-DRA",3
+DISEASES,DOID:7,Disease of anatomical entity,0.00029,0.0406,"GRN,KCNQ1,NEUROG3,IDUA,APOE,CDKN2B,JAZF1,IL17RD,HLA-DQA1,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,HLA-DRA,BTNL2,HLA-DQB2,CDKN1C,PLCG2,HESX1",21
+HPO,EFO:0006832,Disposition index measurement,0.00024,0.0437,"KCNQ1,MTNR1B",2
+HPO,EFO:0008000,Peak insulin response measurement,0.00024,0.0437,"MTNR1B,IGF2BP2",2
+HPO,HP:0000118,Phenotypic abnormality,0.00025,0.0438,"GRN,KCNQ1,NEUROG3,IDUA,NECTIN2,APOE,CCND2,APH1B,JAZF1,APPL1,IL17RD,HLA-DQA1,HLA-DRB1,TREM2,TSPAN15,HLA-DQA2,HLA-DQB1,SLC22A18,PICALM,CDKN1C,PLCG2,HESX1",22
+Process,GO:0048583,Regulation of response to stimulus,0.00019,0.0444,"GRN,NECTIN2,APOE,MTNR1B,CDKN2B,APPL1,IL17RD,HLA-DRB1,ALPK2,TREM2,TSPAN15,HLA-DQB1,HLA-DRA,SHARPIN,BTNL2,HLA-DQB2,CDKN1C,GIPR,PLCG2",19
+Process,GO:0050708,Regulation of protein secretion,0.0002,0.0454,"APOE,MTNR1B,HLA-DRB1,TREM2,GIPR",5
+Process,GO:1900223,Positive regulation of amyloid-beta clearance,0.0002,0.0454,"APOE,TREM2",2
+COMPARTMENTS,GOCC:0005764,Lysosome,0.0012,0.0462,"GRN,IDUA,HLA-DQA1,HLA-DRB1,HLA-DQB1,HLA-DRA",6
