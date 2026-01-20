@@ -31,26 +31,22 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🎯 **GRASS** | Genetic Risk Aggregation Scoring System for quantifying gene-level risk |
-| 🔬 **Causal-Risk KG** | 1M+ nodes across 13 entity types and 20M+ relationships |
-| 🤖 **Single-Agent Architecture** | 3-20× more efficient than multi-agent systems |
-| 📊 **CARES Metric** | Causal-Aware Reasoning Evaluation Score for LLM assessment |
-| 🧪 **BioREASONIC-Bench** | Multi-aware reasoning benchmark (S-R-C-M taxonomy) |
-| 🌐 **Web Interface** | Interactive BioREASONIC Explainer for causal-risk analysis |
+| **GRASS** | Genetic Risk Aggregation Scoring System for quantifying gene-level risk |
+| **Causal-Risk KG** | 1M+ nodes across 13 entity types and 20M+ relationships |
+| **Single-Agent Architecture** | 3-20× more efficient than multi-agent systems |
+| **CARES Metric** | Causal-Aware Reasoning Evaluation Score for LLM assessment |
+| **BioREASONIC-Bench** | Multi-aware reasoning benchmark (S-R-C-M taxonomy) |
+| **Web Interface** | Interactive BioREASONIC Explainer for causal-risk analysis |
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Causal-Risk Knowledge Graph Schema
-
-<p align="center">
-  <img src="assets/figures/ckg_schema.png" alt="Knowledge Graph Schema" width="70%"/>
-</p>
 
 The graph comprises **1,006,535 nodes** across 13 entity types:
 - 521,419 Causal SNPs
@@ -63,7 +59,7 @@ And **20,398,953 relationships** across 13 relationship categories.
 ---
 
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -104,7 +100,7 @@ docker-compose up -d
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Basic Usage
 
@@ -187,11 +183,6 @@ Our benchmark evaluates LLMs across four complementary reasoning taxonomies:
 
 ### Benchmark Generation Pipeline
 
-<p align="center">
-  <img src="assets/figures/benchmark_pipeline.png" alt="Benchmark Generation Pipeline" width="85%"/>
-</p>
-
-> **Figure 3:** BioREASONIC-Bench generation pipeline with feedback-aware regeneration, LLM validation, and CARES scoring across the S-R-C-M taxonomy dimensions.
 
 ### Running the Benchmark
 
@@ -210,10 +201,6 @@ python -m bioreasonc.benchmark.run \
 ```
 
 ### Benchmark Results
-
-<p align="center">
-  <img src="assets/figures/cares_radar.png" alt="CARES Taxonomy Comparison" width="60%"/>
-</p>
 
 **Table 1:** Average accuracy (%) across prompting strategies
 
@@ -237,13 +224,6 @@ python -m bioreasonc.benchmark.run \
 | DeepSeek-v3 | **94.21%** | 64.74% |
 | Llama-3.1-8B | **80.00%** | 46.32% |
 
-### Efficiency Comparison
-
-Our single-agent architecture achieves:
-- **3-20× lower latency**
-- **4× fewer LLM calls**
-- **30-50% reduced token consumption**
-
 ---
 
 ## Case Study: AD-T2D Biomarkers
@@ -260,26 +240,6 @@ BioREASONIC identified novel candidate genes for Alzheimer's Disease (AD) and Ty
 | 6 | JAZF1 | Shared | 🟡 Moderate |
 | 7 | GIPR | Shared | 🟡 Moderate |
 | 8 | TP53INP1 | Shared | 🟢 Low |
-
-### Cross-Organ Disease Mapping
-
-
-> **Figure 2:** Cross-Organ Disease Mapping derived from shared AD-T2D risk genes. The 41 GRASS-prioritized risk genes indicate that AD and T2D represent two interconnected manifestations of a broader metabolic-inflammatory syndrome, driven by lipid dysregulation (APOE cluster), insulin-resistance pathways (TCF7L2, PPARG), immune dysfunction (HLA region), and impaired cellular quality-control mechanisms (CDKN2B, TP53INP1).
-
----
-
-## BioREASONIC Explainer
-
-
-Access our interactive web tool for causal-risk graph exploration:
-
-**🔗 [https://bioreasonicexplainer.kaust.edu.sa](https://bioreasonicexplainer.kaust.edu.sa)**
-
-Features:
-- Conversational Mode for natural language queries
-- Risk Omics-Enrichment Mode for pathway analysis
-- Interactive network visualization
-- Downloadable enrichment tables and graphs
 
 ---
 
