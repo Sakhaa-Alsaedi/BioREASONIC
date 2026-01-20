@@ -44,13 +44,13 @@ Use this option if you want to inspect the code, view inline visualizations, or 
    - Display visualizations (Radar Plots, Heatmaps).
    - Save detailed results to a CSV file.
 
-## 📊 Output
+## Output
 Both methods produce:
 1. **CSV File:** `detailed_results_<dataset>_<timestamp>.csv` containing 30+ metrics (EM, BLEU, ROUGE, Latency, etc.) per sample.
 2. **Visualizations:** PNG files for radar charts, heatmaps, and impact analysis.
 3. **Logs:** Execution progress and verification logs.
 
-## 🔧 Requirements
+## Requirements
 - Python 3.10+
 - Dependencies: `pip install -r requirements.txt`
 - Neo4j Instance (configured in `benchmarks/config/config.local.yaml`)
