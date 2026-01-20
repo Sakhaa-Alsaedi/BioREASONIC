@@ -1,0 +1,51 @@
+ensembl_id,biotype,description,chromosome,start,end,strand,source,gene_name,uniprot_ids,omim_ids,hgnc_id,entrez_id
+ENSG00000234906,protein_coding,apolipoprotein C-II [Source:HGNC Symbol;Acc:609],19,45449243,45452822,1,Ensembl_GRCh37,APOC2,APOC2,608083,609,344
+ENSG00000130208,protein_coding,apolipoprotein C-I [Source:HGNC Symbol;Acc:607],19,45417504,45422606,1,Ensembl_GRCh37,APOC1,APOC1,107710,607,341
+ENSG00000104853,protein_coding,cleft lip and palate associated transmembrane protein 1 [Source:HGNC Symbol;Acc:2087],19,45457842,45496599,1,Ensembl_GRCh37,CLPTM1,CLPTM1,604783,2087,1209
+ENSG00000267114,protein_coding,Uncharacterized protein  [Source:UniProtKB/TrEMBL;Acc:K7EM12],19,45453301,45457264,-1,Ensembl_GRCh37,CTB-129P6.11,,,,
+ENSG00000130202,protein_coding,poliovirus receptor-related 2 (herpesvirus entry mediator B) [Source:HGNC Symbol;Acc:9707],19,45349432,45392485,1,Ensembl_GRCh37,PVRL2,PVRL2,600798,9707,5819
+ENSG00000267467,protein_coding,apolipoprotein C-IV [Source:HGNC Symbol;Acc:611],19,45445495,45452820,1,Ensembl_GRCh37,APOC4,APOC4,600745,611,346
+ENSG00000224916,protein_coding,APOC4-APOC2 readthrough (NMD candidate) [Source:HGNC Symbol;Acc:44426],19,45445495,45452822,1,Ensembl_GRCh37,APOC4-APOC2,"APOC4,APOC2","608083,600745",44426,344
+ENSG00000130204,protein_coding,translocase of outer mitochondrial membrane 40 homolog (yeast) [Source:HGNC Symbol;Acc:18001],19,45393826,45406946,1,Ensembl_GRCh37,TOMM40,TOMM40,608061,18001,10452
+ENSG00000130203,protein_coding,apolipoprotein E [Source:HGNC Symbol;Acc:613],19,45409011,45412650,1,Ensembl_GRCh37,APOE,APOE,107741,613,348
+ENSG00000187244,protein_coding,basal cell adhesion molecule (Lutheran blood group) [Source:HGNC Symbol;Acc:6722],19,45312328,45324673,1,Ensembl_GRCh37,BCAM,BCAM,612773,6722,4059
+ENSG00000069399,protein_coding,B-cell CLL/lymphoma 3 [Source:HGNC Symbol;Acc:998],19,45250962,45263301,1,Ensembl_GRCh37,BCL3,BCL3,109560,998,602
+ENSG00000142273,protein_coding,"Cbl proto-oncogene C, E3 ubiquitin protein ligase [Source:HGNC Symbol;Acc:15961]",19,45281126,45303891,1,Ensembl_GRCh37,CBLC,CBLC,608453,15961,23624
+ENSG00000095970,protein_coding,triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:17761],6,41126244,41130924,-1,Ensembl_GRCh37,TREM2,TREM2,605086,17761,54209
+ENSG00000161911,protein_coding,triggering receptor expressed on myeloid cells-like 1 [Source:HGNC Symbol;Acc:20434],6,41117080,41122075,-1,Ensembl_GRCh37,TREML1,TREML1,609714,20434,340205
+ENSG00000112195,protein_coding,triggering receptor expressed on myeloid cells-like 2 [Source:HGNC Symbol;Acc:21092],6,41158015,41168932,-1,Ensembl_GRCh37,TREML2,TREML2,609715,21092,79865
+ENSG00000186684,protein_coding,"cytochrome P450, family 27, subfamily C, polypeptide 1 [Source:HGNC Symbol;Acc:33480]",2,127941696,127977654,-1,Ensembl_GRCh37,CYP27C1,CYP27C1,,33480,339761
+ENSG00000136717,protein_coding,bridging integrator 1 [Source:HGNC Symbol;Acc:1052],2,127805603,127864931,-1,Ensembl_GRCh37,BIN1,BIN1,601248,1052,274
+ENSG00000198796,protein_coding,alpha-kinase 2 [Source:HGNC Symbol;Acc:20565],18,56148479,56296189,-1,Ensembl_GRCh37,ALPK2,ALPK2,,20565,115701
+ENSG00000235173,protein_coding,"family with sequence similarity 203, member A [Source:HGNC Symbol;Acc:24161]",8,145192672,145195746,1,Ensembl_GRCh37,FAM203A,"C8ORF30A,FAM203A",,24161,51236
+ENSG00000178896,protein_coding,exosome component 4 [Source:HGNC Symbol;Acc:18189],8,145133529,145135550,1,Ensembl_GRCh37,EXOSC4,EXOSC4,606491,18189,54512
+ENSG00000197858,protein_coding,glycosylphosphatidylinositol anchor attachment 1 [Source:HGNC Symbol;Acc:4446],8,145137493,145141119,1,Ensembl_GRCh37,GPAA1,GPAA1,603048,4446,8733
+ENSG00000179698,protein_coding,KIAA1875 [Source:HGNC Symbol;Acc:26959],8,145162629,145173218,1,Ensembl_GRCh37,KIAA1875,KIAA1875,,26959,
+ENSG00000179632,protein_coding,MAF1 homolog (S. cerevisiae) [Source:HGNC Symbol;Acc:24966],8,145159402,145162514,1,Ensembl_GRCh37,MAF1,MAF1,610210,24966,84232
+ENSG00000179832,protein_coding,maestro heat-like repeat family member 1 [Source:HGNC Symbol;Acc:26958],8,145202919,145316843,1,Ensembl_GRCh37,MROH1,MROH1,,26958,377711
+ENSG00000179091,protein_coding,cytochrome c-1 [Source:HGNC Symbol;Acc:2579],8,145149930,145152428,1,Ensembl_GRCh37,CYC1,CYC1,123980,2579,1537
+ENSG00000178814,protein_coding,5-oxoprolinase (ATP-hydrolysing) [Source:HGNC Symbol;Acc:8149],8,145106167,145118735,-1,Ensembl_GRCh37,OPLAH,OPLAH,614243,8149,26873
+ENSG00000179526,protein_coding,SHANK-associated RH domain interactor [Source:HGNC Symbol;Acc:25321],8,145153536,145163027,-1,Ensembl_GRCh37,SHARPIN,SHARPIN,611885,25321,81858
+ENSG00000197943,protein_coding,"phospholipase C, gamma 2 (phosphatidylinositol-specific) [Source:HGNC Symbol;Acc:9066]",16,81772702,81991899,1,Ensembl_GRCh37,PLCG2,PLCG2,600220,9066,5336
+ENSG00000073921,protein_coding,phosphatidylinositol binding clathrin assembly protein [Source:HGNC Symbol;Acc:15514],11,85668727,85780924,-1,Ensembl_GRCh37,PICALM,PICALM,603025,15514,8301
+ENSG00000104043,protein_coding,"ATPase, class I, type 8B, member 4 [Source:HGNC Symbol;Acc:13536]",15,50150435,50475014,-1,Ensembl_GRCh37,ATP8B4,ATP8B4,609123,13536,79895
+ENSG00000127418,protein_coding,fibroblast growth factor receptor-like 1 [Source:HGNC Symbol;Acc:3693],4,1003724,1020685,1,Ensembl_GRCh37,FGFRL1,FGFRL1,605830,3693,53834
+ENSG00000127419,protein_coding,transmembrane protein 175 [Source:HGNC Symbol;Acc:28709],4,926175,952444,1,Ensembl_GRCh37,TMEM175,"MGC4618,TMEM175",,28709,84286
+ENSG00000145214,protein_coding,"diacylglycerol kinase, theta 110kDa [Source:HGNC Symbol;Acc:2856]",4,952675,980683,-1,Ensembl_GRCh37,DGKQ,DGKQ,601207,2856,1609
+ENSG00000127415,protein_coding,"iduronidase, alpha-L- [Source:HGNC Symbol;Acc:5391]",4,980785,998316,1,Ensembl_GRCh37,IDUA,IDUA,252800,5391,3425
+ENSG00000145217,protein_coding,"solute carrier family 26 (anion exchanger), member 1 [Source:HGNC Symbol;Acc:10993]",4,972861,987228,-1,Ensembl_GRCh37,SLC26A1,SLC26A1,610130,10993,10861
+ENSG00000138613,protein_coding,APH1B gamma secretase subunit [Source:HGNC Symbol;Acc:24080],15,63568217,63601325,1,Ensembl_GRCh37,APH1B,"APH1B,APH-1B",607630,24080,83464
+ENSG00000074410,protein_coding,carbonic anhydrase XII [Source:HGNC Symbol;Acc:1371],15,63613577,63674360,-1,Ensembl_GRCh37,CA12,CA12,603263,1371,771
+ENSG00000166128,protein_coding,"RAB8B, member RAS oncogene family [Source:HGNC Symbol;Acc:30273]",15,63481668,63559981,1,Ensembl_GRCh37,RAB8B,RAB8B,613532,30273,51762
+ENSG00000159840,protein_coding,zyxin [Source:HGNC Symbol;Acc:13200],7,143078173,143088204,1,Ensembl_GRCh37,ZYX,ZYX,602002,13200,7791
+ENSG00000185899,protein_coding,"taste receptor, type 2, member 60 [Source:HGNC Symbol;Acc:20639]",7,143140546,143141502,1,Ensembl_GRCh37,TAS2R60,"TAS2R60,HOSA(JAPANESE)-T2R56",613968,20639,338398
+ENSG00000146904,protein_coding,EPH receptor A1 [Source:HGNC Symbol;Acc:3385],7,143087382,143105985,-1,Ensembl_GRCh37,EPHA1,EPHA1,179610,3385,2041
+ENSG00000144730,protein_coding,interleukin 17 receptor D [Source:HGNC Symbol;Acc:17616],3,57124010,57204334,-1,Ensembl_GRCh37,IL17RD,IL17RD,606807,17616,54756
+ENSG00000157500,protein_coding,"adaptor protein, phosphotyrosine interaction, PH domain and leucine zipper containing 1 [Source:HGNC Symbol;Acc:24035]",3,57261765,57307496,1,Ensembl_GRCh37,APPL1,APPL1,604299,24035,26060
+ENSG00000163666,protein_coding,HESX homeobox 1 [Source:HGNC Symbol;Acc:4877],3,57231944,57260549,-1,Ensembl_GRCh37,HESX1,HESX1,601802,4877,8820
+ENSG00000161682,protein_coding,"family with sequence similarity 171, member A2 [Source:HGNC Symbol;Acc:30480]",17,42430583,42441243,-1,Ensembl_GRCh37,FAM171A2,FAM171A2,,30480,284069
+ENSG00000013306,protein_coding,"solute carrier family 25, member 39 [Source:HGNC Symbol;Acc:24279]",17,42396993,42402238,-1,Ensembl_GRCh37,SLC25A39,SLC25A39,610820,24279,51629
+ENSG00000186566,protein_coding,G patch domain containing 8 [Source:HGNC Symbol;Acc:29066],17,42472652,42580798,-1,Ensembl_GRCh37,GPATCH8,GPATCH8,614396,29066,23131
+ENSG00000030582,protein_coding,granulin [Source:HGNC Symbol;Acc:4601],17,42422614,42430470,1,Ensembl_GRCh37,GRN,GRN,138945,4601,2896
+ENSG00000005961,protein_coding,"integrin, alpha 2b (platelet glycoprotein IIb of IIb/IIIa complex, antigen CD41) [Source:HGNC Symbol;Acc:6138]",17,42449548,42466873,-1,Ensembl_GRCh37,ITGA2B,ITGA2B,607759,6138,3674
+ENSG00000108309,protein_coding,RUN domain containing 3A [Source:HGNC Symbol;Acc:16984],17,42385781,42396039,1,Ensembl_GRCh37,RUNDC3A,RUNDC3A,605448,16984,10900

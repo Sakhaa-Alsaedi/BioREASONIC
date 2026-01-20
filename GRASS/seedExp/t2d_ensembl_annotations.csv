@@ -1,0 +1,51 @@
+ensembl_id,biotype,description,chromosome,start,end,strand,source,gene_name,uniprot_ids,omim_ids,hgnc_id,entrez_id
+ENSG00000148737,protein_coding,"transcription factor 7-like 2 (T-cell specific, HMG-box) [Source:HGNC Symbol;Acc:11641]",10,114710009,114927437,1,Ensembl_GRCh37,TCF7L2,TCF7L2,602228,11641,6934
+ENSG00000118971,protein_coding,cyclin D2 [Source:HGNC Symbol;Acc:1583],12,4382938,4414516,1,Ensembl_GRCh37,CCND2,CCND2,123833,1583,894
+ENSG00000106328,protein_coding,"fascin homolog 3, actin-bundling protein, testicular (Strongylocentrotus purpuratus) [Source:HGNC Symbol;Acc:3961]",7,127231463,127242198,1,Ensembl_GRCh37,FSCN3,FSCN3,,3961,29999
+ENSG00000106331,protein_coding,paired box 4 [Source:HGNC Symbol;Acc:8618],7,127250346,127255982,-1,Ensembl_GRCh37,PAX4,PAX4,167413,8618,5078
+ENSG00000197157,protein_coding,staphylococcal nuclease and tudor domain containing 1 [Source:HGNC Symbol;Acc:30646],7,127292234,127732661,1,Ensembl_GRCh37,SND1,SND1,602181,30646,27044
+ENSG00000179562,protein_coding,GRIP and coiled-coil domain containing 1 [Source:HGNC Symbol;Acc:19095],7,127220672,127233665,-1,Ensembl_GRCh37,GCC1,GCC1,607418,19095,79571
+ENSG00000004059,protein_coding,ADP-ribosylation factor 5 [Source:HGNC Symbol;Acc:658],7,127228399,127231759,1,Ensembl_GRCh37,ARF5,ARF5,103188,658,381
+ENSG00000122859,protein_coding,neurogenin 3 [Source:HGNC Symbol;Acc:13806],10,71331454,71332994,-1,Ensembl_GRCh37,NEUROG3,NEUROG3,604882,13806,50674
+ENSG00000099282,protein_coding,tetraspanin 15 [Source:HGNC Symbol;Acc:23298],10,71211229,71267425,1,Ensembl_GRCh37,TSPAN15,TSPAN15,613140,23298,23555
+ENSG00000078237,protein_coding,chromosome 12 open reading frame 5 [Source:HGNC Symbol;Acc:1185],12,4430371,4462338,1,Ensembl_GRCh37,C12orf5,TIGAR,610775,1185,57103
+ENSG00000118972,protein_coding,fibroblast growth factor 23 [Source:HGNC Symbol;Acc:3680],12,4477393,4488894,-1,Ensembl_GRCh37,FGF23,FGF23,605380,3680,8074
+ENSG00000132823,protein_coding,oxidative stress responsive serine-rich 1 [Source:HGNC Symbol;Acc:16105],20,42825136,42839431,-1,Ensembl_GRCh37,OSER1,OSER1,,16105,51526
+ENSG00000149596,protein_coding,junctophilin 2 [Source:HGNC Symbol;Acc:14202],20,42740335,42816218,-1,Ensembl_GRCh37,JPH2,JPH2,605267,14202,57158
+ENSG00000186635,protein_coding,"ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 1 [Source:HGNC Symbol;Acc:16925]",11,72396114,72504644,-1,Ensembl_GRCh37,ARAP1,ARAP1,606646,16925,116985
+ENSG00000214530,protein_coding,StAR-related lipid transfer (START) domain containing 10 [Source:HGNC Symbol;Acc:10666],11,72465774,72504726,-1,Ensembl_GRCh37,STARD10,STARD10,,10666,10809
+ENSG00000168010,protein_coding,autophagy related 16-like 2 (S. cerevisiae) [Source:HGNC Symbol;Acc:25464],11,72525353,72554719,1,Ensembl_GRCh37,ATG16L2,ATG16L2,,25464,89849
+ENSG00000100445,protein_coding,"short chain dehydrogenase/reductase family 39U, member 1 [Source:HGNC Symbol;Acc:20275]",14,24908972,24912111,-1,Ensembl_GRCh37,SDR39U1,SDR39U1,,20275,56948
+ENSG00000100968,protein_coding,"nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4 [Source:HGNC Symbol;Acc:7778]",14,24834879,24848810,1,Ensembl_GRCh37,NFATC4,NFATC4,602699,7778,4776
+ENSG00000100441,protein_coding,KH and NYN domain containing [Source:HGNC Symbol;Acc:20166],14,24898492,24910540,1,Ensembl_GRCh37,KHNYN,KHNYN,,20166,23351
+ENSG00000139899,protein_coding,cerebellin 3 precursor [Source:HGNC Symbol;Acc:20146],14,24895738,24900160,-1,Ensembl_GRCh37,CBLN3,CBLN3,612978,20146,643866
+ENSG00000205978,protein_coding,NYN domain and retroviral integrase containing [Source:HGNC Symbol;Acc:20165],14,24867992,24888494,1,Ensembl_GRCh37,NYNRIN,NYNRIN,,20165,57523
+ENSG00000053918,protein_coding,"potassium voltage-gated channel, KQT-like subfamily, member 1 [Source:HGNC Symbol;Acc:6294]",11,2465914,2870339,1,Ensembl_GRCh37,KCNQ1,KCNQ1,607542,6294,3784
+ENSG00000124191,protein_coding,TOX high mobility group box family member 2 [Source:HGNC Symbol;Acc:16095],20,42543504,42698256,1,Ensembl_GRCh37,TOX2,TOX2,611163,16095,84969
+ENSG00000182858,protein_coding,"ALG12, alpha-1,6-mannosyltransferase [Source:HGNC Symbol;Acc:19358]",22,50293877,50312106,-1,Ensembl_GRCh37,ALG12,ALG12,607144,19358,79087
+ENSG00000184164,protein_coding,cysteine-rich with EGF-like domains 2 [Source:HGNC Symbol;Acc:28150],22,50311815,50321188,1,Ensembl_GRCh37,CRELD2,CRELD2,607171,28150,79174
+ENSG00000198355,protein_coding,pim-3 oncogene [Source:HGNC Symbol;Acc:19310],22,50354161,50357728,1,Ensembl_GRCh37,PIM3,PIM3,610580,19310,415116
+ENSG00000136997,protein_coding,v-myc avian myelocytomatosis viral oncogene homolog [Source:HGNC Symbol;Acc:7553],8,128747680,128753674,1,Ensembl_GRCh37,MYC,"MYC,C-MYC",190080,7553,4609
+ENSG00000153815,protein_coding,c-Maf inducing protein [Source:HGNC Symbol;Acc:24319],16,81478775,81745367,1,Ensembl_GRCh37,CMIP,CMIP,610112,24319,80790
+ENSG00000101160,protein_coding,cathepsin Z [Source:HGNC Symbol;Acc:2547],20,57570240,57582302,-1,Ensembl_GRCh37,CTSZ,CTSZ,603169,2547,1522
+ENSG00000101158,protein_coding,negative elongation factor complex member C/D [Source:HGNC Symbol;Acc:15934],20,57556263,57570188,1,Ensembl_GRCh37,NELFCD,"TH1L,NELFCD",605297,15934,51497
+ENSG00000079691,protein_coding,leucine rich repeat containing 16A [Source:HGNC Symbol;Acc:21581],6,25279306,25620758,1,Ensembl_GRCh37,LRRC16A,LRRC16A,609593,21581,55604
+ENSG00000171791,protein_coding,B-cell CLL/lymphoma 2 [Source:HGNC Symbol;Acc:990],18,60790579,60987361,-1,Ensembl_GRCh37,BCL2,BCL2,151430,990,596
+ENSG00000111224,protein_coding,"poly (ADP-ribose) polymerase family, member 11 [Source:HGNC Symbol;Acc:1186]",12,3900213,3982608,-1,Ensembl_GRCh37,PARP11,PARP11,,1186,57097
+ENSG00000136231,protein_coding,insulin-like growth factor 2 mRNA binding protein 3 [Source:HGNC Symbol;Acc:28868],7,23349828,23510086,-1,Ensembl_GRCh37,IGF2BP3,IGF2BP3,608259,28868,10643
+ENSG00000140836,protein_coding,zinc finger homeobox 3 [Source:HGNC Symbol;Acc:777],16,72816784,73093597,-1,Ensembl_GRCh37,ZFHX3,ZFHX3,104155,777,463
+ENSG00000107249,protein_coding,GLIS family zinc finger 3 [Source:HGNC Symbol;Acc:28510],9,3824127,4348392,-1,Ensembl_GRCh37,GLIS3,GLIS3,610192,28510,169792
+ENSG00000100341,protein_coding,patatin-like phospholipase domain containing 5 [Source:HGNC Symbol;Acc:24888],22,44275558,44287893,-1,Ensembl_GRCh37,PNPLA5,PNPLA5,611589,24888,150379
+ENSG00000100344,protein_coding,patatin-like phospholipase domain containing 3 [Source:HGNC Symbol;Acc:18590],22,44319619,44360368,1,Ensembl_GRCh37,PNPLA3,PNPLA3,609567,18590,80339
+ENSG00000100347,protein_coding,SAMM50 sorting and assembly machinery component [Source:HGNC Symbol;Acc:24276],22,44351301,44406411,1,Ensembl_GRCh37,SAMM50,SAMM50,612058,24276,25813
+ENSG00000196735,protein_coding,"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:4942]",6,32595956,32614839,1,Ensembl_GRCh37,HLA-DQA1,"DQ-A1,HLA-DQA1",146880,4942,3117
+ENSG00000179344,protein_coding,"major histocompatibility complex, class II, DQ beta 1 [Source:HGNC Symbol;Acc:4944]",6,32627244,32636160,-1,Ensembl_GRCh37,HLA-DQB1,"HLA-DRB3,HLA-DQB1,HLA-DQB3",604305,4944,3119
+ENSG00000185920,protein_coding,patched 1 [Source:HGNC Symbol;Acc:9585],9,98205262,98279339,-1,Ensembl_GRCh37,PTCH1,"PTCH1,PTCH",601309,9585,5727
+ENSG00000043143,protein_coding,jade family PHD finger 2 [Source:HGNC Symbol;Acc:22984],5,133860003,133918918,1,Ensembl_GRCh37,JADE2,"JADE2,PHF15",610515,22984,23338
+ENSG00000254827,protein_coding,"solute carrier family 22 (organic cation transporter), member 18 antisense [Source:HGNC Symbol;Acc:10965]",11,2909010,2924970,-1,Ensembl_GRCh37,SLC22A18AS,SLC22A18AS,603240,10965,5003
+ENSG00000110628,protein_coding,"solute carrier family 22, member 18 [Source:HGNC Symbol;Acc:10964]",11,2920951,2946476,1,Ensembl_GRCh37,SLC22A18,"SLC22A18,DKFZP667A184",602631,10964,5002
+ENSG00000129757,protein_coding,"cyclin-dependent kinase inhibitor 1C (p57, Kip2) [Source:HGNC Symbol;Acc:1786]",11,2904443,2907111,-1,Ensembl_GRCh37,CDKN1C,CDKN1C,600856,1786,1028
+ENSG00000101162,protein_coding,"tubulin, beta 1 class VI [Source:HGNC Symbol;Acc:16257]",20,57594309,57601709,1,Ensembl_GRCh37,TUBB1,TUBB1,612901,16257,81027
+ENSG00000124172,protein_coding,"ATP synthase, H+ transporting, mitochondrial F1 complex, epsilon subunit [Source:HGNC Symbol;Acc:838]",20,57600522,57607437,-1,Ensembl_GRCh37,ATP5E,ATP5E,606153,838,514
+ENSG00000101166,protein_coding,slowmo homolog 2 (Drosophila) [Source:HGNC Symbol;Acc:15892],20,57608200,57617964,-1,Ensembl_GRCh37,SLMO2,SLMO2,,15892,51012
+ENSG00000138640,protein_coding,"family with sequence similarity 13, member A [Source:HGNC Symbol;Acc:19367]",4,89647106,90032549,-1,Ensembl_GRCh37,FAM13A,FAM13A,613299,19367,10144
