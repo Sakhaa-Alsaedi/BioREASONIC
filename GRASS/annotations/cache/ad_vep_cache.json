@@ -1,0 +1,1678 @@
+{
+  "rs429358": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "downstream_gene_variant,missense_variant",
+    "genes_affected": "TOMM40,APOE",
+    "colocated_variants": 3,
+    "strand": 1,
+    "allele_string": "T/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs429358"
+  },
+  "rs138573164": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "CBLC,BCAM",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs138573164"
+  },
+  "rs2889414": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "CBLC",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "A/C/G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs2889414"
+  },
+  "rs143332484": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant",
+    "genes_affected": "TREM2",
+    "colocated_variants": 3,
+    "strand": 1,
+    "allele_string": "C/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs143332484"
+  },
+  "rs6733839": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "genes_affected": "",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs6733839"
+  },
+  "rs76726049": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "ALPK2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs76726049"
+  },
+  "rs34173062": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,non_coding_transcript_variant,missense_variant,NMD_transcript_v",
+    "genes_affected": "SHARPIN,KIAA1875,MAF1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs34173062"
+  },
+  "rs10207628": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "BIN1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs10207628"
+  },
+  "rs183427010": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs183427010"
+  },
+  "rs814573": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs814573"
+  },
+  "rs72824905": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "downstream_gene_variant,missense_variant,non_coding_transcript_exon_variant",
+    "genes_affected": "PLCG2",
+    "colocated_variants": 4,
+    "strand": 1,
+    "allele_string": "C/G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs72824905"
+  },
+  "rs10649400": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,non_coding_transcript_variant,NMD_transcript_variant,intron_variant",
+    "genes_affected": "PICALM",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "-/A/AG/AT",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs10649400"
+  },
+  "rs3852860": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "CTB-129P6.4,PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs3852860"
+  },
+  "rs138799625": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,NMD_transcript_variant,3_prime_UTR_variant",
+    "genes_affected": "ATP8B4",
+    "colocated_variants": 2,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs138799625"
+  },
+  "rs6857": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant,non_coding_transcript_variant,3_prime_U",
+    "genes_affected": "CTB-129P6.4,TOMM40,PVRL2",
+    "colocated_variants": 2,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs6857"
+  },
+  "rs157592": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "A/C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs157592"
+  },
+  "rs376097536": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "APOC1,APOE",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "TG/-",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs376097536"
+  },
+  "rs3822030": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "IDUA,SLC26A1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs3822030"
+  },
+  "rs12721051": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "downstream_gene_variant,NMD_transcript_variant,3_prime_UTR_variant,intron_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/G",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs12721051"
+  },
+  "rs4420638": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "A/G",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs4420638"
+  },
+  "rs56131196": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs56131196"
+  },
+  "rs117618017": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "downstream_gene_variant,missense_variant,NMD_transcript_variant,intron_variant",
+    "genes_affected": "APH1B",
+    "colocated_variants": 2,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs117618017"
+  },
+  "rs11769559": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "non_coding_transcript_variant,intron_variant",
+    "genes_affected": "EPHA1-AS1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs11769559"
+  },
+  "rs4803765": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs4803765"
+  },
+  "rs184384746": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "genes_affected": "",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs184384746"
+  },
+  "rs10414043": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "APOC1,APOE",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs10414043"
+  },
+  "rs7256200": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "APOC1,APOE",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs7256200"
+  },
+  "rs5848": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "downstream_gene_variant,3_prime_UTR_variant",
+    "genes_affected": "FAM171A2,GRN",
+    "colocated_variants": 3,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs5848"
+  },
+  "rs769449": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_exon_variant,intron_variant",
+    "genes_affected": "TOMM40,APOE",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs769449"
+  },
+  "rs9931998": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "non_coding_transcript_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "RP11-960L18.1,PLCG2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs9931998"
+  },
+  "rs56407236": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "RP11-356C4.3,FAM157C",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs56407236"
+  },
+  "rs76320948": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "AC074212.3",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs76320948"
+  },
+  "rs187370608": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "genes_affected": "",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs187370608"
+  },
+  "rs10856": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,3_prime_UTR_variant",
+    "genes_affected": "CLASRP,RELB",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs10856"
+  },
+  "rs12721046": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,NMD_transcript_variant,intron_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs12721046"
+  },
+  "rs11218343": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,intron_variant",
+    "genes_affected": "SORL1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/A/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs11218343"
+  },
+  "rs5112": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "non_coding_transcript_exon_variant",
+    "genes_affected": "APOC1P1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/G",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs5112"
+  },
+  "rs111789331": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "APOC1,APOC1P1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs111789331"
+  },
+  "rs66626994": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "genes_affected": "APOC1P1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs66626994"
+  },
+  "rs141190797": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_variant,intron_variant",
+    "genes_affected": "HIF3A,AC007193.10",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs141190797"
+  },
+  "rs34215622": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,3_prime_UTR_variant",
+    "genes_affected": "TOMM40,APOE",
+    "colocated_variants": 0,
+    "strand": 1,
+    "allele_string": "GGGGGGG/GGGGGG/GGGGGGGG/GGGGGGGGG",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs34215622"
+  },
+  "rs5117": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "NMD_transcript_variant,intron_variant",
+    "genes_affected": "APOC1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/A/C/G",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs5117"
+  },
+  "rs71352238": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "CTB-129P6.4,TOMM40,PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs71352238"
+  },
+  "rs1799777": {
+    "most_severe_consequence": "5_prime_UTR_variant",
+    "all_consequences": "5_prime_UTR_variant,intron_variant",
+    "genes_affected": "ABCA1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "CC/C/CCC",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs1799777"
+  },
+  "rs438811": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant",
+    "genes_affected": "APOC1,APOE",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs438811"
+  },
+  "rs59007384": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "CTB-129P6.4,TOMM40,PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "G/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs59007384"
+  },
+  "rs71352239": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "genes_affected": "APOC1P1",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs71352239"
+  },
+  "rs34404554": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,upstream_gene_variant,intron_variant",
+    "genes_affected": "CTB-129P6.4,TOMM40,PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/G/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs34404554"
+  },
+  "rs11556505": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "downstream_gene_variant,missense_variant,upstream_gene_variant,synonymous_variant",
+    "genes_affected": "CTB-129P6.4,TOMM40,PVRL2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "C/A/T",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs11556505"
+  },
+  "rs143080277": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "genes_affected": "NCK2",
+    "colocated_variants": 1,
+    "strand": 1,
+    "allele_string": "T/C",
+    "vep_source": "Ensembl_VEP_GRCh37",
+    "snp_id": "rs143080277"
+  },
+  "rs41289512": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "C/G"
+  },
+  "rs4663105": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/C"
+  },
+  "rs12691088": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "APOC1",
+    "allele_string": "G/A/C"
+  },
+  "rs57537848": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "T/A/G"
+  },
+  "rs35396326": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "C/A/G"
+  },
+  "rs190712692": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "APOC1,APOC1P1",
+    "allele_string": "G/A/C/T"
+  },
+  "rs4803762": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A"
+  },
+  "rs1081105": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "APOC1,APOE",
+    "allele_string": "A/C/G"
+  },
+  "rs616338": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,downstream_gene_variant",
+    "vep_genes": "PHOSPHO1,ABI3",
+    "allele_string": "T/A/C"
+  },
+  "rs12151021": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "ABCA7",
+    "allele_string": "A/G/T"
+  },
+  "rs10933431": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "INPP5D",
+    "allele_string": "G/C"
+  },
+  "rs111371860": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "A/T"
+  },
+  "rs35763320": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "T/-"
+  },
+  "rs79701229": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "PVRL2,CTB-129P6.4",
+    "allele_string": "G/A"
+  },
+  "rs117310449": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "PVRL2,CTB-129P6.4,TOMM40",
+    "allele_string": "C/T"
+  },
+  "rs28658530": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "ERCC1",
+    "allele_string": "C/A/G/T"
+  },
+  "rs4575098": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "3_prime_UTR_variant",
+    "vep_genes": "ADAMTS4",
+    "allele_string": "G/A"
+  },
+  "rs10410833": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "MARK4,NKPD1,TRAPPC6A",
+    "allele_string": "C/A/G/T"
+  },
+  "rs11666698": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "RN7SL836P",
+    "allele_string": "A/G/T"
+  },
+  "rs112170101": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "RELB",
+    "allele_string": "G/A/C"
+  },
+  "rs146275714": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "G/A"
+  },
+  "rs199555322": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "MYBPC3,SPI1",
+    "allele_string": "TC/-"
+  },
+  "rs140480140": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant,downstream_gene_variant",
+    "vep_genes": "APOC1",
+    "allele_string": "G/A"
+  },
+  "rs75364577": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,NMD_transcript_variant",
+    "vep_genes": "CNN2",
+    "allele_string": "G/A"
+  },
+  "rs75932628": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant",
+    "vep_genes": "TREM2",
+    "allele_string": "C/A/T"
+  },
+  "rs201723718": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant",
+    "vep_genes": "NPAS1",
+    "allele_string": "C/-"
+  },
+  "rs111278892": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "AC011558.5,CNN2,ABCA7",
+    "allele_string": "C/G/T"
+  },
+  "rs147963283": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "IGFL1P2",
+    "allele_string": "C/A/T"
+  },
+  "rs200538373": {
+    "most_severe_consequence": "splice_donor_5th_base_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant,splice_donor_5th_base_variant,upstream_gene_variant",
+    "vep_genes": "HMHA1,ABCA7",
+    "allele_string": "G/A/C"
+  },
+  "rs113571662": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "CEACAM22P",
+    "allele_string": "G/A/T"
+  },
+  "rs4147929": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "HMHA1,ABCA7",
+    "allele_string": "A/C/G/T"
+  },
+  "rs73223431": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PTK2B",
+    "allele_string": "C/A/T"
+  },
+  "rs6509227": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,NMD_transcript_variant,upstream_gene_variant",
+    "vep_genes": "C19orf83,EML2,MIR330",
+    "allele_string": "A/C/G/T"
+  },
+  "rs610352": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "MS4A4E",
+    "allele_string": "G/A/C/T"
+  },
+  "rs867230": {
+    "most_severe_consequence": "5_prime_UTR_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,5_prime_UTR_variant",
+    "vep_genes": "CLU",
+    "allele_string": "C/A/G/T"
+  },
+  "rs74504435": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/G"
+  },
+  "rs28834970": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PTK2B",
+    "allele_string": "T/C"
+  },
+  "rs3826688": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "APOC1",
+    "allele_string": "T/C"
+  },
+  "rs74745468": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "FBXO33",
+    "allele_string": "G/A/T"
+  },
+  "rs12977604": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC4",
+    "allele_string": "C/A/G/T"
+  },
+  "rs28577986": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "IGHG1",
+    "allele_string": "G/A/C"
+  },
+  "rs564724": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "A/G/T"
+  },
+  "rs1065712": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "3_prime_UTR_variant,intron_variant,downstream_gene_variant,non_coding_transcript_exon_variant,NMD_transcript_variant",
+    "vep_genes": "RP11-589N15.2,CTSB",
+    "allele_string": "G/C"
+  },
+  "rs4292": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "CTD-2501B8.5,ACE",
+    "allele_string": "C/A/G/T"
+  },
+  "rs7384878": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "PILRB,PMS2P1,STAG3L5P,Y_RNA",
+    "allele_string": "C/T"
+  },
+  "rs5167": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "APOC4,APOC2,CTB-129P6.11",
+    "allele_string": "T/A/G"
+  },
+  "rs3752246": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "ABCA7",
+    "allele_string": "G/C/T"
+  },
+  "rs62375397": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "RP11-72L22.1",
+    "allele_string": "C/T"
+  },
+  "rs9381563": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "AL355353.1",
+    "allele_string": "C/A/G/T"
+  },
+  "rs113706587": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "RASGEF1C",
+    "allele_string": "G/A"
+  },
+  "rs6656401": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant",
+    "vep_genes": "AL691452.1,CR1",
+    "allele_string": "A/G/T"
+  },
+  "rs653765": {
+    "most_severe_consequence": "5_prime_UTR_variant",
+    "all_consequences": "upstream_gene_variant,5_prime_UTR_variant",
+    "vep_genes": "ADAM10",
+    "allele_string": "T/A/C/G"
+  },
+  "rs34674752": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,non_coding_transcript_exon_variant,NMD_transcript_variant,downstream_gene_variant",
+    "vep_genes": "CYC1,SHARPIN",
+    "allele_string": "G/A"
+  },
+  "rs16978738": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "ZNF225",
+    "allele_string": "A/T"
+  },
+  "rs77915913": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "T/A/C"
+  },
+  "rs10413096": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC4",
+    "allele_string": "G/A/C/T"
+  },
+  "rs35255921": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "RELB",
+    "allele_string": "G/A"
+  },
+  "rs17125944": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "FERMT2",
+    "allele_string": "T/C"
+  },
+  "rs11548656": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,non_coding_transcript_exon_variant",
+    "vep_genes": "PLCG2",
+    "allele_string": "A/G"
+  },
+  "rs10863418": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "CR1",
+    "allele_string": "C/A/G"
+  },
+  "rs532965": {
+    "most_severe_consequence": "regulatory_region_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "T/G"
+  },
+  "rs2357101": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "CEACAM22P",
+    "allele_string": "G/A"
+  },
+  "rs1441619": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "CEACAM22P",
+    "allele_string": "G/T"
+  },
+  "rs561654715": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "PVRL2,CTB-129P6.4,TOMM40",
+    "allele_string": "G/A"
+  },
+  "rs11728636": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A/C/T"
+  },
+  "rs12984029": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "AC010492.5,U6,AC098789.1",
+    "allele_string": "G/A"
+  },
+  "rs147330136": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "PLCG2",
+    "allele_string": "T/C"
+  },
+  "rs769446": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "APOE,TOMM40",
+    "allele_string": "T/C"
+  },
+  "rs72844190": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "HLA-DRB6,RNU1-61P",
+    "allele_string": "T/A/G"
+  },
+  "rs59430794": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "CTC-344H19.4,PGLYRP1",
+    "allele_string": "C/T"
+  },
+  "rs611267": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "MS4A4E",
+    "allele_string": "A/G/T"
+  },
+  "rs3935067": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "EPHA1-AS1,EPHA1",
+    "allele_string": "G/C"
+  },
+  "rs2007322": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "IGFL4",
+    "allele_string": "A/G"
+  },
+  "rs469420": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "AP000230.1,APP,AP001439.2",
+    "allele_string": "A/G/T"
+  },
+  "rs760136": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "TOMM40",
+    "allele_string": "A/G"
+  },
+  "rs11585858": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "3_prime_UTR_variant",
+    "vep_genes": "ADAMTS4",
+    "allele_string": "C/A/G"
+  },
+  "rs184588552": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,NMD_transcript_variant",
+    "vep_genes": "DACT3-AS1,PRKD2",
+    "allele_string": "T/C"
+  },
+  "rs555091835": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,NMD_transcript_variant",
+    "vep_genes": "PRKD2",
+    "allele_string": "C/T"
+  },
+  "rs12446759": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,non_coding_transcript_exon_variant,upstream_gene_variant",
+    "vep_genes": "RP11-960L18.1,PLCG2",
+    "allele_string": "G/A/C"
+  },
+  "rs2093760": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "CR1",
+    "allele_string": "A/G/T"
+  },
+  "rs62113693": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/C/G/T"
+  },
+  "rs679515": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "RP11-78B10.2,CR1",
+    "allele_string": "T/A/C/G"
+  },
+  "rs114360492": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "CNTNAP2",
+    "allele_string": "C/T"
+  },
+  "rs74093831": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "IGHG1",
+    "allele_string": "C/A/G"
+  },
+  "rs572028460": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "NMD_transcript_variant,3_prime_UTR_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "MED16,R3HDM4,RNU6-9",
+    "allele_string": "C/A/G"
+  },
+  "rs114812713": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "OARD1,APOBEC2",
+    "allele_string": "G/A/C"
+  },
+  "rs2526377": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "BZRAP1-AS1,BZRAP1,MIR4736,MIR142",
+    "allele_string": "A/G"
+  },
+  "rs3752231": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "AC011558.5,CNN2,ABCA7",
+    "allele_string": "C/A/T"
+  },
+  "rs4715019": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant",
+    "vep_genes": "CD2AP,RP11-385F7.1",
+    "allele_string": "T/A"
+  },
+  "rs7922621": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TSPAN14",
+    "allele_string": "C/A/G"
+  },
+  "rs2322599": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PTK2B",
+    "allele_string": "G/A/C"
+  },
+  "rs6987305": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PTK2B",
+    "allele_string": "G/A/C"
+  },
+  "rs11500477": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "AC090559.2,RP11-750H9.5",
+    "allele_string": "T/A"
+  },
+  "rs6605556": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/G"
+  },
+  "rs1004173": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "non_coding_transcript_exon_variant,upstream_gene_variant",
+    "vep_genes": "CD2AP,RP11-385F7.1",
+    "allele_string": "C/G/T"
+  },
+  "rs12974390": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "AC010492.5,U6,AC098789.1",
+    "allele_string": "G/A/T"
+  },
+  "rs11257238": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RP11-138I18.2",
+    "allele_string": "T/C"
+  },
+  "rs723212": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/G/T"
+  },
+  "rs28394864": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "RP11-81K2.1,RP11-1079K10.2,RP11-1079K10.3",
+    "allele_string": "G/A/C/T"
+  },
+  "rs10792831": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A"
+  },
+  "rs116347724": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "RASGEF1C",
+    "allele_string": "G/A"
+  },
+  "rs4291": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "CTD-2501B8.5,ACE",
+    "allele_string": "T/A/C"
+  },
+  "rs111274391": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "RASGEF1C",
+    "allele_string": "G/A"
+  },
+  "rs116155464": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "CNTNAP2",
+    "allele_string": "G/A"
+  },
+  "rs6701713": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "CR1",
+    "allele_string": "A/G/T"
+  },
+  "rs3857580": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TREML5P",
+    "allele_string": "A/C/G"
+  },
+  "rs12978931": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "A/C/G"
+  },
+  "rs8106813": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "APOC1P1",
+    "allele_string": "A/G"
+  },
+  "rs76261208": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,NMD_transcript_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "ZNF230",
+    "allele_string": "C/A"
+  },
+  "rs10838702": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "AC090559.2,RP11-750H9.5",
+    "allele_string": "G/A/C/T"
+  },
+  "rs365653": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "A/G"
+  },
+  "rs73050293": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "PVRL2",
+    "allele_string": "A/G"
+  },
+  "rs10411314": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,intron_variant",
+    "vep_genes": "MARK4,EXOC3L2",
+    "allele_string": "T/C"
+  },
+  "rs149302547": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,non_coding_transcript_exon_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "BCAM",
+    "allele_string": "C/A/G/T"
+  },
+  "rs117612135": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RELB",
+    "allele_string": "C/A/T"
+  },
+  "rs4714447": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "TREM1,RP1-229K20.5",
+    "allele_string": "C/T"
+  },
+  "rs11257240": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RP11-138I18.2",
+    "allele_string": "T/G"
+  },
+  "rs3764645": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "AC011558.5,CNN2,ABCA7",
+    "allele_string": "A/G"
+  },
+  "rs7254133": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "APOC1P1",
+    "allele_string": "C/G/T"
+  },
+  "rs12753": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,NMD_transcript_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "ZNF230",
+    "allele_string": "C/A"
+  },
+  "rs554656615": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "DNAJC19P3,AC005626.3",
+    "allele_string": "TTTTTTTTT/TTTTTTTT/TTTTTTTTTT/TTTTTTTTTTTT"
+  },
+  "rs12446781": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,non_coding_transcript_exon_variant,upstream_gene_variant",
+    "vep_genes": "RP11-960L18.1,PLCG2",
+    "allele_string": "G/A/C"
+  },
+  "rs4803773": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC4,APOC2",
+    "allele_string": "A/C/G/T"
+  },
+  "rs146459823": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,NMD_transcript_variant",
+    "vep_genes": "R3HDM4",
+    "allele_string": "C/G/T"
+  },
+  "rs3997854": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "XXbac-BPG254F23.7",
+    "allele_string": "T/A/G"
+  },
+  "rs3818361": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "CR1",
+    "allele_string": "A/C/G"
+  },
+  "rs4722760": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant",
+    "vep_genes": "JAZF1",
+    "allele_string": "A/G"
+  },
+  "rs1385742": {
+    "most_severe_consequence": "downstream_gene_variant",
+    "all_consequences": "downstream_gene_variant",
+    "vep_genes": "CD2AP",
+    "allele_string": "A/C/T"
+  },
+  "rs9271174": {
+    "most_severe_consequence": "regulatory_region_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "C/G"
+  },
+  "rs187876027": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A"
+  },
+  "rs7910643": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TSPAN14",
+    "allele_string": "G/A/T"
+  },
+  "rs9271192": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "C/A/T"
+  },
+  "rs113260531": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "SCIMP,RP11-333E1.1,RP11-333E1.2",
+    "allele_string": "G/A"
+  },
+  "rs7225002": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "KANSL1",
+    "allele_string": "A/C/G"
+  },
+  "rs4663097": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "BIN1",
+    "allele_string": "G/A/C/T"
+  },
+  "rs10422555": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "ZNF227",
+    "allele_string": "A/G"
+  },
+  "rs12434433": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "IGHG1",
+    "allele_string": "C/G/T"
+  },
+  "rs2967668": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "CBLC",
+    "allele_string": "A/G"
+  },
+  "rs2093761": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "CR1",
+    "allele_string": "A/G/T"
+  },
+  "rs2011704": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RP11-138I18.2",
+    "allele_string": "T/C"
+  },
+  "rs57402520": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "SCIMP,RP11-333E1.1,RP11-333E1.2",
+    "allele_string": "G/A/T"
+  },
+  "rs3745817": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "EML2",
+    "allele_string": "C/T"
+  },
+  "rs73045691": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC4",
+    "allele_string": "G/A"
+  },
+  "rs593742": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "ADAM10,RP11-30K9.7",
+    "allele_string": "A/G/T"
+  },
+  "rs10838709": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "non_coding_transcript_exon_variant,intron_variant,NMD_transcript_variant,non_coding_transcript_variant",
+    "vep_genes": "PSMC3",
+    "allele_string": "C/G/T"
+  },
+  "rs143399042": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "T/C"
+  },
+  "rs17057043": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "PTK2B",
+    "allele_string": "G/A/C"
+  },
+  "rs7941541": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A/C"
+  },
+  "rs2154481": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "APP",
+    "allele_string": "C/A/T"
+  },
+  "rs36127492": {
+    "most_severe_consequence": "synonymous_variant",
+    "all_consequences": "upstream_gene_variant,synonymous_variant",
+    "vep_genes": "INPP5D",
+    "allele_string": "C/G"
+  },
+  "rs283813": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "PVRL2,CTB-129P6.4,TOMM40",
+    "allele_string": "T/A/C"
+  },
+  "rs4938933": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "C/G/T"
+  },
+  "rs12982815": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "CEACAM22P",
+    "allele_string": "C/T"
+  },
+  "rs35259453": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "CEACAM22P",
+    "allele_string": "T/C"
+  },
+  "rs4562624": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "AL691452.1,CR1",
+    "allele_string": "A/C/G/T"
+  },
+  "rs572107": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "U3,RP11-30K9.6",
+    "allele_string": "T/A/C/G"
+  },
+  "rs112019714": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant,3_prime_UTR_variant,upstream_gene_variant",
+    "vep_genes": "APOE,TOMM40",
+    "allele_string": "T/C/G"
+  },
+  "rs6697005": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,downstream_gene_variant",
+    "vep_genes": "CR1",
+    "allele_string": "G/A"
+  },
+  "rs4663096": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "BIN1",
+    "allele_string": "T/A"
+  },
+  "rs113762960": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,upstream_gene_variant",
+    "vep_genes": "SCIMP,RP11-333E1.1",
+    "allele_string": "G/A/C"
+  },
+  "rs7920721": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RP11-138I18.2",
+    "allele_string": "A/G"
+  },
+  "rs34810028": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC4",
+    "allele_string": "A/C/G/T"
+  },
+  "rs12386125": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,downstream_gene_variant,NMD_transcript_variant,upstream_gene_variant",
+    "vep_genes": "EML2",
+    "allele_string": "A/G/T"
+  },
+  "rs6586028": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TSPAN14",
+    "allele_string": "C/T"
+  },
+  "rs1902660": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TSPAN14",
+    "allele_string": "G/A/C"
+  },
+  "rs61732533": {
+    "most_severe_consequence": "non_coding_transcript_exon_variant",
+    "all_consequences": "non_coding_transcript_exon_variant,downstream_gene_variant",
+    "vep_genes": "CTD-3065J16.6,OPLAH",
+    "allele_string": "G/A"
+  },
+  "rs3740688": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,intron_variant",
+    "vep_genes": "SPI1",
+    "allele_string": "G/A/T"
+  },
+  "rs10437655": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "SPI1",
+    "allele_string": "G/A/C/T"
+  },
+  "rs4844610": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "CR1",
+    "allele_string": "A/C/G/T"
+  },
+  "rs7900536": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant",
+    "vep_genes": "TSPAN14",
+    "allele_string": "C/A/G/T"
+  },
+  "rs114841132": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "RASGEF1C",
+    "allele_string": "G/A"
+  },
+  "rs7502862": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,3_prime_UTR_variant,downstream_gene_variant",
+    "vep_genes": "SCIMP,RP11-333E1.1",
+    "allele_string": "G/A"
+  },
+  "rs1038026": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "intron_variant,NMD_transcript_variant,3_prime_UTR_variant,upstream_gene_variant",
+    "vep_genes": "APOE,TOMM40",
+    "allele_string": "A/G/T"
+  },
+  "rs76207154": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant",
+    "vep_genes": "MME",
+    "allele_string": "G/C"
+  },
+  "rs9271164": {
+    "most_severe_consequence": "regulatory_region_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "C/G/T"
+  },
+  "rs181817835": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "intron_variant,non_coding_transcript_variant,NMD_transcript_variant",
+    "vep_genes": "ZNF234",
+    "allele_string": "G/A"
+  },
+  "rs2075650": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,intron_variant,downstream_gene_variant",
+    "vep_genes": "CTB-129P6.4,TOMM40,PVRL2",
+    "allele_string": "A/G"
+  },
+  "rs157582": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,intron_variant,downstream_gene_variant",
+    "vep_genes": "CTB-129P6.4,TOMM40,PVRL2",
+    "allele_string": "C/T"
+  },
+  "rs157581": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant,upstream_gene_variant,synonymous_variant,downstream_gene_variant",
+    "vep_genes": "CTB-129P6.4,TOMM40,PVRL2",
+    "allele_string": "T/A/C/G"
+  },
+  "rs1038025": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "NMD_transcript_variant,upstream_gene_variant,3_prime_UTR_variant,intron_variant",
+    "vep_genes": "TOMM40,APOE",
+    "allele_string": "T/C/G"
+  },
+  "rs200518989": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "NMD_transcript_variant,upstream_gene_variant,non_coding_transcript_variant,intron_variant",
+    "vep_genes": "FDFT1",
+    "allele_string": "G/-"
+  },
+  "rs11767557": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,non_coding_transcript_variant,intron_variant",
+    "vep_genes": "EPHA1,EPHA1-AS1",
+    "allele_string": "T/A/C"
+  },
+  "rs12358692": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "RP11-138I18.2",
+    "allele_string": "C/G/T"
+  },
+  "rs60394484": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "C/A/T"
+  },
+  "rs11666480": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "NMD_transcript_variant,upstream_gene_variant,non_coding_transcript_variant,downstream_gene_variant,intron_variant",
+    "vep_genes": "CTB-31O20.8,CTB-31O20.6,KLF16",
+    "allele_string": "C/G/T"
+  },
+  "rs149080927": {
+    "most_severe_consequence": "3_prime_UTR_variant",
+    "all_consequences": "3_prime_UTR_variant,NMD_transcript_variant,downstream_gene_variant,intron_variant",
+    "vep_genes": "CTB-31O20.6,KLF16",
+    "allele_string": "CCCCC/CCCC/CCCCCC"
+  },
+  "rs4485362": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_variant,intron_variant",
+    "vep_genes": "PLCG2",
+    "allele_string": "T/A/G"
+  },
+  "rs60049679": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "APOC1P1",
+    "allele_string": "G/A/C/T"
+  },
+  "rs35349669": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "upstream_gene_variant,intron_variant",
+    "vep_genes": "INPP5D",
+    "allele_string": "C/T"
+  },
+  "rs6448453": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "A/G/T"
+  },
+  "rs76396605": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant",
+    "vep_genes": "ZNF234",
+    "allele_string": "C/G/T"
+  },
+  "rs74579864": {
+    "most_severe_consequence": "intergenic_variant",
+    "all_consequences": "",
+    "vep_genes": "",
+    "allele_string": "G/A/C"
+  },
+  "rs202057333": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,intron_variant",
+    "vep_genes": "ZNF234",
+    "allele_string": "C/-"
+  },
+  "rs35106910": {
+    "most_severe_consequence": "missense_variant",
+    "all_consequences": "missense_variant",
+    "vep_genes": "CBLC",
+    "allele_string": "A/C/G"
+  },
+  "rs483082": {
+    "most_severe_consequence": "upstream_gene_variant",
+    "all_consequences": "upstream_gene_variant,downstream_gene_variant",
+    "vep_genes": "APOC1,APOE",
+    "allele_string": "G/T"
+  },
+  "rs28399637": {
+    "most_severe_consequence": "intron_variant",
+    "all_consequences": "downstream_gene_variant,non_coding_transcript_variant,intron_variant",
+    "vep_genes": "BCAM",
+    "allele_string": "G/A"
+  }
+}
