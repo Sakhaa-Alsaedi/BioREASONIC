@@ -219,7 +219,7 @@ bioreasonc-bench/
 │   │   └── benchmark_exporter.py    # Export to HuggingFace format
 │   ├── reacTax/                     # Taxonomy modules
 │   │   ├── structure.py             # S taxonomy
-│   │   ├── causal/                  # C taxonomy (critical)
+│   │   ├── causal/                  # C taxonomy 
 │   │   │   ├── discovery.py         # Causal discovery algorithms
 │   │   │   ├── inference.py         # Causal inference
 │   │   │   ├── mr.py                # Mendelian Randomization
@@ -308,5 +308,6 @@ USE_EXPERT_PROMPTS = True
   }
 }
 ```
+
 
 
