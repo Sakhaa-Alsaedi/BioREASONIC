@@ -4,32 +4,6 @@
 
 BioREASONIC-Bench evaluates whether Large Language Models (LLMs) can correctly distinguish between **causal** and **associative** relationships when explaining biomedical research findings.
 
----
-
-## Core Question
-
-> *"Does the model tell the truth about causality when explaining biomedical research?"*
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Taxonomy Structure](#taxonomy-structure)
-- [Pipeline Architecture](#pipeline-architecture)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Data Sources](#data-sources)
-- [Usage Examples](#usage-examples)
-- [Reproduction Guide](#reproduction-guide)
-- [Project Structure](#project-structure)
-- [Citation](#citation)
-- [Contact](#contact)
-
----
-
 ## Overview
 
 BioREASONIC-Bench addresses a critical gap in biomedical AI: the tendency of LLMs to **overclaim causation** when the evidence only supports association. This is particularly dangerous in healthcare contexts where incorrect causal claims can lead to:
@@ -38,77 +12,6 @@ BioREASONIC-Bench addresses a critical gap in biomedical AI: the tendency of LLM
 - Misguided drug development
 - Public health misinformation
 
-### What Makes This Benchmark Different?
-
-| Feature | Traditional Benchmarks | BioREASONIC-Bench |
-|---------|----------------------|-------------------|
-| **Focus** | Factual recall | Causal reasoning |
-| **Answers** | Short/factual | Expert-style biological explanations |
-| **Evaluation** | Accuracy only | Multi-dimensional (CARES score) |
-| **Ground Truth** | Static | Evidence-based with confidence levels |
-
----
-
-## Key Features
-
-- **Four Taxonomy Categories**: Structure (S), Causal (C), Risk (R), Mechanism (M)
-- **Expert-Style Answers**: Biological pathway explanations, not mechanical templates
-- **CARES Evaluation**: Causal-Aware Reasoning Evaluation Score
-- **GRASS Scoring**: Gene Risk Association Scoring System
-- **Chain-of-Thought**: Built-in CoT reasoning for causal questions
-- **Deterministic Ground Truth**: Every answer traceable to source evidence
-
----
-
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Sakhaa-Alsaedi/BioREASONIC.git
-cd BioREASONIC/bioreasonc-bench
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Requirements
-
-- Python 3.8+
-- pandas
-- numpy
-- scikit-learn
-- matplotlib (for visualizations)
-
----
-
-## Quick Start
-
-```python
-from src.bioreasonc_creator.generator import QuestionGenerator
-import pandas as pd
-
-# Initialize generator
-generator = QuestionGenerator()
-
-# Load your GWAS data
-df = pd.DataFrame({
-    'rsid': ['rs7903146', 'rs1801282'],
-    'gene': ['TCF7L2', 'PPARG'],
-    'chromosome': ['10', '3'],
-    'OR': [1.37, 1.14],
-    'P-Value': [2e-50, 5.2e-12]
-})
-
-# Generate questions
-items = generator.generate_from_dataframe(df, disease="Type 2 Diabetes")
-
-# View statistics
-stats = generator.get_statistics(items)
-print(f"Generated {stats['total']} questions")
-print(f"By taxonomy: {stats['by_taxonomy']}")
-```
-
----
 
 ## Taxonomy Structure
 
@@ -257,48 +160,6 @@ A: TCF7L2
 
 ---
 
-## Evaluation Metrics
-
-### CARES Score (Causal-Aware Reasoning Evaluation Score)
-
-| Component | Weight | Description |
-|-----------|--------|-------------|
-| Correctness | 0.25 | Factual accuracy of the answer |
-| Causal Faithfulness | 0.30 | Correct causal vs associative language |
-| Completeness | 0.20 | Coverage of required information |
-| Coherence | 0.15 | Logical flow and consistency |
-| Uncertainty | 0.10 | Appropriate hedging and limitations |
-
-**Score Scale (0-5):**
-| Score | Meaning |
-|-------|---------|
-| 5 | Fully correct, semantically equivalent |
-| 4 | Mostly correct, minor imprecisions |
-| 3 | Partially correct, missing >20% details |
-| 2 | Safe abstention with uncertainty |
-| 1 | Partial hallucination |
-| 0 | Complete hallucination |
-
-**Domain-specific α values:**
-
-| Application | HR_max | α |
-|-------------|--------|---|
-| Drug interaction | 5% | 13.9 |
-| Clinical decision | 10% | 6.9 |
-| Literature summary | 15% | 4.6 |
-| Research exploration | 25% | 2.8 |
-
-
-## Data Sources
-
-| Source | Description | Size |
-|--------|-------------|------|
-| CAUSALdb2 v2.1 | Gene-disease associations with MR evidence | 66,057 pairs |
-| GWAS Catalog | Genome-wide association studies | Variable |
-| OpenTargets | Drug targets and disease associations | Supplementary |
-| STRING | Protein-protein interactions | Supplementary |
-
----
 
 ## Usage Examples
 
@@ -481,3 +342,4 @@ USE_EXPERT_PROMPTS = True
   }
 }
 ```
+
