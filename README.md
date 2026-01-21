@@ -2,7 +2,7 @@
 
 <img width="5985" height="1072" alt="Image" src="https://github.com/user-attachments/assets/64a268ca-9fe2-4dda-a012-e6430a559704" />
 
-# BioREASONIC
+# BioREASONIC Agnatic Reasoning System
 
 ### A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning
 
@@ -14,7 +14,9 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.x-008CC1.svg)](https://neo4j.com/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://github.com/Sakhaa-Alsaedi/BioREASONIC/graphs/commit-activity)
 
+<!--
 [Paper](#citation) | [Web Demo](https://bioreasonicexplainer.kaust.edu.sa) | [Benchmark](#bioreasonicbench) | [Installation](#installation)
+-->
 
 </div>
 
@@ -33,14 +35,14 @@
 
 ## Key Features
 
-| Feature | Description |
-|---------|-------------|
-| **GRASS** | Genetic Risk Aggregation Scoring System for quantifying gene-level risk |
-| **Causal-Risk KG** | 1M+ nodes across 13 entity types and 20M+ relationships |
-| **Single-Agent Architecture** | 3-20× more efficient than multi-agent systems |
-| **CARES Metric** | Causal-Aware Reasoning Evaluation Score for LLM assessment |
-| **BioREASONIC-Bench** | Multi-aware reasoning benchmark (S-R-C-M taxonomy) |
-| **Web Interface** | Interactive BioREASONIC Explainer for causal-risk analysis |
+| Feature | Repository | Description |
+|--------|------------|-------------|
+| **A) GRASS** | — | Genetic Risk Aggregation Scoring System for quantifying gene-level disease risk |
+| **BioREASONIC Agent** | — | Single-agent causal GraphRAG system, achieving 3–20× higher efficiency than multi-agent baselines |
+| **BioREASONIC-Bench** | — | Multi-aware biomedical reasoning benchmark based on the S–R–C–M taxonomy |
+<!-- | **Web Interface** | — | Interactive BioREASONIC Explainer for causal risk graph analysis | -->
+| **Experiments** | [Notebook](./notebooks) | Executable notebooks reproducing all experiments reported in the manuscript |
+
 
 ---
 
@@ -170,7 +172,7 @@ print(f"  Mechanism: {cares_score.mechanism:.2f}")
 
 ---
 
-## 📊 BioREASONIC-Bench
+## BioREASONIC-Bench
 
 Our benchmark evaluates LLMs across four complementary reasoning taxonomies:
 
