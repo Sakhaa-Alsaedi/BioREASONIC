@@ -1,4 +1,4 @@
-# BioREASONIC Reviewer Package
+# BioREASONIC Agent System
 
 This package allows you to verify the results of the "BioREASONIC: Logic-Enhanced Biomedical Knowledge Graph Question Answering" paper.
 
