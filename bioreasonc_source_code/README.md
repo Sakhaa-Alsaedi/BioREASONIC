@@ -481,33 +481,3 @@ USE_EXPERT_PROMPTS = True
   }
 }
 ```
-
-
----
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## Contact
-
-- **Author**: Sakhaa Alsaedi
-- **Email**: sakhaa.alsaedi@kaust.edu.sa
-- **Institution**: King Abdullah University of Science and Technology (KAUST)
-- **GitHub**: [Sakhaa-Alsaedi](https://github.com/Sakhaa-Alsaedi)
-
----
-
-## Acknowledgments
-
-- CAUSALdb2 team for the gene-disease association database
-- GWAS Catalog for curated association data
-- OpenTargets for drug target information
-- EpiGraphDB for Mendelian Randomization evidence
-
----
-
-**Note**: This benchmark is designed for research purposes. Clinical decisions should not be based solely on LLM outputs without expert validation.
-
