@@ -31,9 +31,9 @@ All experiments require **LLM API keys**. Due to API availability constraints, w
 
 | Notebook | Manuscript Table/Figure | Task |
 |----------|------------------------|------|
-| `BioKGBench_Evaluation.ipynb` | Table 3, Table 5 | Expert-Level Verification (ELV) |
 | `Prompting_Strategy_Evaluation.ipynb` | Table 2, Figure 5 | Prompting strategy comparison |
-| `KGQA_Ablation_Study.ipynb` | Table 4 | KGQA ablation study |
+| `ELV_with_result.ipynb` | Table 3, Table 5 | Expert-Level Verification (ELV) |
+| `KGQA_with_result.ipynb` | Table 4 | KGQA ablation study |
 
 ---
 
