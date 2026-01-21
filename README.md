@@ -36,7 +36,7 @@
 ## Key Features
 
 | Feature | Repository | Description |
-|--------|------------|-------------|
+|--------|----------------------|-------------|
 | **A) GRASS** | [GRASS](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/GRASS) | Genetic Risk Aggregation Scoring System for quantifying gene-level disease risk |
 | **BioREASONIC Agent** | [bioreasonc-agent](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/bioreasonc-agent)| Single-agent causal GraphRAG system, achieving 3–20× higher efficiency than multi-agent baselines |
 | **BioREASONIC-Bench** |[Benchmarks](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/bioreasonc-agent/benchmarks/02_BioResonKGBench)| Multi-aware biomedical reasoning benchmark based on the S–R–C–M taxonomy |
