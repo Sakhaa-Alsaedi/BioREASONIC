@@ -38,8 +38,8 @@
 | Feature | Repository | Description |
 |--------|------------|-------------|
 | **A) GRASS** | [GRASS](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/GRASS) | Genetic Risk Aggregation Scoring System for quantifying gene-level disease risk |
-| **BioREASONIC Agent** | [Notebook](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/notebooks)| Single-agent causal GraphRAG system, achieving 3–20× higher efficiency than multi-agent baselines |
-| **BioREASONIC-Bench** | [Notebook](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/notebooks)| Multi-aware biomedical reasoning benchmark based on the S–R–C–M taxonomy |
+| **BioREASONIC Agent** | [bioreasonc-agent]([https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/notebooks](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/bioreasonc-agent))| Single-agent causal GraphRAG system, achieving 3–20× higher efficiency than multi-agent baselines |
+| **BioREASONIC-Bench** | [Benchmarks](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/notebooks)| Multi-aware biomedical reasoning benchmark based on the S–R–C–M taxonomy |
 <!-- | **Web Interface** | — | Interactive BioREASONIC Explainer for causal risk graph analysis | -->
 | **Experiments** | [Notebook](https://github.com/Sakhaa-Alsaedi/BioREASONIC/tree/main/notebooks) | Executable notebooks reproducing all experiments reported in the manuscript |
 
