@@ -127,40 +127,6 @@ Q: Identify the gene symbol mentioned in: 'TCF7L2 variant rs7903146 is
 A: TCF7L2
 ```
 
----
-
-## Pipeline Architecture
-
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                      BioREASONIC-Bench Pipeline                          │
-├──────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│   ┌────────────┐    ┌───────────┐    ┌───────────┐    ┌─────────────┐    │
-│   │ GWAS       │───▶│ Generator │───▶│ Validator │───▶│ Benchmark   │    │
-│   │ Data /GRAP │    │           │    │           │   │     Export   │    │
-│   └────────────┘    └───────────┘    └───────────┘    └─────────────┘    │
-│        │               │                 │                  │            │
-│        │               ▼                 ▼                  ▼            │
-│        │         ┌───────────┐    ┌───────────┐    ┌─────────────┐       │
-│        │         │ Expert    │    │ Multi-LLM │    │ HuggingFace │       │
-│        │         │ Prompts   │    │ QA Check  │    │ Format      │       │
-│        │         └───────────┘    └───────────┘    └─────────────┘       │
-│        │                                                                 │
-│        ▼                                                                 │
-│   ┌─────────────────────────────────────────────────────────────────┐    │
-│   │                       Data Sources                              │    │
-│   │  • CAUSALdb2 v2.1: 66,057 gene-disease pairs                    │    │
-│   │  • Evidence levels: very_strong, strong, moderate, weak         │    │
-│   │  • MR (Mendelian Randomization) causal evidence                 │    │
-│   └─────────────────────────────────────────────────────────────────┘    │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-
 ## Usage Examples
 
 ### Generate Benchmark from CSV
@@ -342,4 +308,5 @@ USE_EXPERT_PROMPTS = True
   }
 }
 ```
+
 
