@@ -1,0 +1,22 @@
+{
+  "dataset": "test.json",
+  "num_samples": 205,
+  "total_available": 205,
+  "models": [
+    "gpt-4o",
+    "gpt-4o-mini",
+    "gpt-4.1",
+    "gpt-4.1-mini",
+    "claude-3-haiku",
+    "deepseek-r1",
+    "deepseek-v3",
+    "llama-3.1-8b",
+    "qwen-2.5-7b"
+  ],
+  "approaches": [
+    "MultiAgent",
+    "ReAct-COT"
+  ],
+  "timestamp": "2026-01-05T16:07:29.550271",
+  "estimated_runtime_hours": 30.75
+}
