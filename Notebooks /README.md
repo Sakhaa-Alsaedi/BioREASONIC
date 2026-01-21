@@ -1,4 +1,4 @@
-# BioREASONIC
+# BioREASONIC Executed Experiment (Notebooks)
 
 **Paper**: BioREASONIC: A Causal-Oriented GraphRAG System for Multi-Aware Biomedical Reasoning  
 **Authors**: Sakhaa Alsaedi, Mohammed Saif, Takashi Gojobori, Xin Gao  
