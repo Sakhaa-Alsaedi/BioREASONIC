@@ -46,7 +46,7 @@ CARES/
 
 ### Run Complete Workflow
 ```bash
-cd /ibex/user/alsaedsb/ROCKET/Data/BioREASONIC/Task/CARES
+cd ../CARES
 python run_all.py
 ```
 
@@ -131,6 +131,3 @@ Where:
 pip install pandas numpy matplotlib seaborn
 ```
 
-## Author
-
-BioREASONIC Project
