@@ -47,44 +47,6 @@
 
 ---
 
-## BioREASONIC-Bench
-
-Our benchmark evaluates LLMs across four complementary reasoning taxonomies:
-
-| Taxonomy | Abbr. | Description | Questions |
-|----------|-------|-------------|-----------|
-| **Structure-aware** | S | Graph topology understanding | 300 |
-| **Risk-aware** | R | Genetic risk interpretation | 300 |
-| **Causal-aware** | C | Causal inference capabilities | 300 |
-| **Mechanism-aware** | M | Biological mechanism reasoning | 300 |
-
-
-### Benchmark Results
-
-**Table 1:** Average accuracy (%) across prompting strategies
-
-| Strategy | BR-QA | PubMedQA | MedQA | BR-MCQ | MedMCQA | MMLU-Med |
-|----------|-------|----------|-------|--------|---------|----------|
-| Zero-shot | 58.3 | 57.4 | 72.0 | 11.6 | 64.8 | 80.6 |
-| Few-shot | 40.1 | 52.4 | 18.6 | 13.1 | 43.6 | 80.1 |
-| CoT | 46.6 | 56.9 | 79.7 | 33.9 | 69.8 | 69.6 |
-| **Structured-CoT** | **64.4** | 55.9 | 77.0 | **64.5** | 66.8 | 73.2 |
-
----
-
-## Experiments
-
-### Single-Agent vs Multi-Agent Performance
-
-| Model | BioREASONIC (Single) | BKGAgent (Multi) |
-|-------|---------------------|------------------|
-| GPT-4.1 | **96.84%** | 56.32% |
-| GPT-4.1-mini | **95.26%** | 56.84% |
-| DeepSeek-v3 | **94.21%** | 64.74% |
-| Llama-3.1-8B | **80.00%** | 46.32% |
-
----
-
 ## Case Study: AD-T2D Biomarkers
 
 BioREASONIC identified novel candidate genes for Alzheimer's Disease (AD) and Type 2 Diabetes (T2D) comorbidity:
