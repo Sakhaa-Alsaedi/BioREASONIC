@@ -31,7 +31,8 @@ All experiments require **LLM API keys**. Due to API availability constraints, w
 
 | Notebook | Manuscript Table/Figure | Task |
 |----------|------------------------|------|
-| `Prompting_Strategy_Evaluation.ipynb` | Table 2, Figure 5 | Prompting strategy comparison |
+| `MedQA_biomedical_llm_complete_n_Samples.ipynb' | - | Testing the impact of batch size [50, 100, 200, 500, 1000] on LLM performance|
+| `KGQA_with_result.ipynb` , `Prompting_Strategy_Evaluation.ipynb' | Table 2, Figure 5 |Prompting strategy comparison |
 | `ELV_with_result.ipynb` | Table 3, Table 5 | Expert-Level Verification (ELV) |
 | `KGQA_with_result.ipynb` | Table 4 | KGQA ablation study |
 
