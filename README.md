@@ -8,7 +8,7 @@
 
 ![Image](https://github.com/user-attachments/assets/f7456ef1-818e-49fb-92be-e247b708cc21)
 
-[![Paper](https://img.shields.io/badge/Paper-ISMB%202026-blue.svg)](https://doi.org/XXXXX)
+<!-- [![Paper](https://img.shields.io/badge/Paper-ISMB%202026-blue.svg)](https://doi.org/XXXXX) -->
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-yellow.svg)](https://www.python.org/)
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.x-008CC1.svg)](https://neo4j.com/)
