@@ -229,30 +229,30 @@ A: TCF7L2
 ## Pipeline Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────────────┐
 │                      BioREASONIC-Bench Pipeline                          │
-├─────────────────────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
-│   ┌──────────┐    ┌───────────┐    ┌───────────┐    ┌─────────────┐    │
-│   │ GWAS     │───▶│ Generator │───▶│ Validator │───▶│ Benchmark   │    │
-│   │ Data     │    │           │    │           │    │ Export      │    │
-│   └──────────┘    └───────────┘    └───────────┘    └─────────────┘    │
-│        │               │                │                  │            │
-│        │               ▼                ▼                  ▼            │
-│        │         ┌───────────┐    ┌───────────┐    ┌─────────────┐     │
-│        │         │ Expert    │    │ Multi-LLM │    │ HuggingFace │     │
-│        │         │ Prompts   │    │ QA Check  │    │ Format      │     │
-│        │         └───────────┘    └───────────┘    └─────────────┘     │
-│        │                                                                │
-│        ▼                                                                │
-│   ┌─────────────────────────────────────────────────────────────────┐  │
-│   │                       Data Sources                               │  │
-│   │  • CAUSALdb2 v2.1: 66,057 gene-disease pairs                    │  │
-│   │  • Evidence levels: very_strong, strong, moderate, weak          │  │
-│   │  • MR (Mendelian Randomization) causal evidence                 │  │
-│   └─────────────────────────────────────────────────────────────────┘  │
+│   ┌────────────┐    ┌───────────┐    ┌───────────┐    ┌─────────────┐    │
+│   │ GWAS       │───▶│ Generator │───▶│ Validator │───▶│ Benchmark   │    │
+│   │ Data /GRAP │    │           │    │           │   │     Export   │    │
+│   └────────────┘    └───────────┘    └───────────┘    └─────────────┘    │
+│        │               │                 │                  │            │
+│        │               ▼                 ▼                  ▼            │
+│        │         ┌───────────┐    ┌───────────┐    ┌─────────────┐       │
+│        │         │ Expert    │    │ Multi-LLM │    │ HuggingFace │       │
+│        │         │ Prompts   │    │ QA Check  │    │ Format      │       │
+│        │         └───────────┘    └───────────┘    └─────────────┘       │
+│        │                                                                 │
+│        ▼                                                                 │
+│   ┌─────────────────────────────────────────────────────────────────┐    │
+│   │                       Data Sources                              │    │
+│   │  • CAUSALdb2 v2.1: 66,057 gene-disease pairs                    │    │
+│   │  • Evidence levels: very_strong, strong, moderate, weak         │    │
+│   │  • MR (Mendelian Randomization) causal evidence                 │    │
+│   └─────────────────────────────────────────────────────────────────┘    │
 │                                                                          │
-└─────────────────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -260,12 +260,6 @@ A: TCF7L2
 ## Evaluation Metrics
 
 ### CARES Score (Causal-Aware Reasoning Evaluation Score)
-
-Evaluates LLM reasoning quality with hallucination penalty:
-
-```
-CARES = [Σ w̃_k × CARES-k] × √(Φ(HR) × (1 - ECE))
-```
 
 | Component | Weight | Description |
 |-----------|--------|-------------|
@@ -294,39 +288,6 @@ CARES = [Σ w̃_k × CARES-k] × √(Φ(HR) × (1 - ECE))
 | Literature summary | 15% | 4.6 |
 | Research exploration | 25% | 2.8 |
 
----
-
-### GRASS Score (Gene Risk Association Scoring System)
-
-For gene prioritization and validation:
-
-```
-GRASS = Σ(PIP × FunctionalWeight × EvidenceScore)
-```
-
-**SNP Risk Components:**
-- S_ClinVar: Clinical significance (pathogenic=1.0, VUS=0.3, benign=0)
-- S_Impact: Functional impact (HIGH=1.0, MODERATE=0.6, LOW=0.3)
-- S_MAF: Minor allele frequency (rare variants weighted higher)
-- S_Quality: Quality metrics (QUAL, GQ, DP)
-
----
-
-### ROCKET Score (Risk-Omics Causal Knowledge Enrichment Trust)
-
-Integrates multi-omics evidence for therapeutic target prioritization:
-
-```
-ROCKET = σ(Σ w_k × S_k + Σ w_ij × S_i × S_j)
-```
-
-**Component Scores:**
-- S_R (Risk): WGRS score (weight 0.25)
-- S_S (Structure): Network centrality (weight 0.30)
-- S_E (Enrichment): Pathway/disease (weight 0.25)
-- S_M (Semantic): Knowledge graph (weight 0.20)
-
----
 
 ## Data Sources
 
@@ -447,7 +408,6 @@ bioreasonc-bench/
 ├── eval/
 │   ├── cares.py                     # CARES evaluation metric
 │   ├── grass.py                     # GRASS gene scoring
-│   ├── rocket.py                    # ROCKET integration
 │   ├── metrics.py                   # Additional metrics
 │   └── evaluate.py                  # Evaluation runner
 ├── config/
@@ -522,20 +482,6 @@ USE_EXPERT_PROMPTS = True
 }
 ```
 
----
-
-## Citation
-
-```bibtex
-@article{alsaedi2024bioreasonicbench,
-  title={BioREASONIC-Bench: A Benchmark for Explainable Causal Reasoning
-         in Biomedical Data},
-  author={Alsaedi, Sakhaa},
-  journal={arXiv preprint},
-  year={2024},
-  institution={King Abdullah University of Science and Technology (KAUST)}
-}
-```
 
 ---
 
@@ -564,3 +510,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Note**: This benchmark is designed for research purposes. Clinical decisions should not be based solely on LLM outputs without expert validation.
+
