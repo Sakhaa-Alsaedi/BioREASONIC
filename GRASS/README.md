@@ -65,32 +65,6 @@ GRASS/
     ├── GRASS_T2D_gene_scores.csv
     └── GRASS_master_scores.csv
 
-```
-
-## Pipeline Steps
-
-### Step 0: Load Pre-processed Data
-Loads SNP data with quality control filtering:
-- P-value: p < 5×10⁻⁸ (genome-wide significance)
-- MAF: 0.001 to 0.5
-- Risk direction: beta > 0
-
-### Step 3: Annotate SNPs
-Fetches annotations from:
-- **ClinVar**: Clinical significance
-- **VEP (Ensembl)**: Variant consequences
-
-### Step 3b: Extended Scores
-Calculates 4-component weighted SNP scores.
-
-### Step 4: Map to Genes
-Maps SNPs to genes within 500kb window using GRCh37 coordinates.
-
-### Step 5: GRASS Scores
-Aggregates SNP scores to gene-level using the GRASS formula.
-
-### Step 6 + Enrichment
-Prepares normalized rankings and runs pathway/disease enrichment via Enrichr and STRING PPI analysis.
 
 ## Configuration
 
@@ -153,19 +127,3 @@ Required columns:
 - **Functional annotations**: VEP (Ensembl), ClinVar
 - **Enrichment**: Enrichr, STRING PPI
 
-## Citation
-
-If you use GRASS in your research, please cite:
-
-```
-GRASS: Genetic Risk Aggregation Scoring System
-A gene prioritization framework integrating fine-mapping and GWAS evidence.
-```
-
-## License
-
-MIT License
-
-## Contact
-
-For questions or issues, please open a GitHub issue.
