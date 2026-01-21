@@ -243,18 +243,10 @@ BioREASONIC identified novel candidate genes for Alzheimer's Disease (AD) and Ty
 
 ---
 
-##  License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
----
-
 ## 📧 Contact
+ 
+**Sakhaa Alsaedi** - [sakhaa.alsaedi@kaust.edu.sa](mailto:sakhaa.alsaedi@kaust.edu.sa) and **Mohammed Saif** - [Mohammed.Saif@kaust.edu.sa](mailto:Mohammed.Saif@kaust.edu.sa)
 
-**Sakhaa Alsaedi** - [sakhaa.alsaedi@kaust.edu.sa](mailto:sakhaa.alsaedi@kaust.edu.sa)
-
-**Computational Bioscience Research Center (CBRC)**  
 King Abdullah University of Science and Technology (KAUST)  
 Thuwal, Saudi Arabia
 
